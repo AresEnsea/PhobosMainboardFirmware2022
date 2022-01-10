@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="vector2_8h" kind="file" language="C++">
+    <compoundname>vector2.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="bezier_8h" local="yes">Core/Prod/Inc/bezier.h</includedby>
+    <includedby refid="robot_8h" local="yes">Core/Prod/Inc/robot.h</includedby>
+    <includedby refid="vector2_8c" local="yes">Core/Prod/Src/vector2.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Prod/Inc/bezier.h</label>
+        <link refid="bezier_8h"/>
+      </node>
+      <node id="4">
+        <label>Core/Prod/Inc/odometry.h</label>
+        <link refid="odometry_8h"/>
+      </node>
+      <node id="5">
+        <label>Core/Prod/Inc/propulsion.h</label>
+        <link refid="propulsion_8h"/>
+      </node>
+      <node id="3">
+        <label>Core/Prod/Inc/robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structvector2" prot="public">vector2</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vector2_8h_1aa0c1b861c800c578169acd690b5d80b6" prot="public" static="no">
+        <type>struct <ref refid="structvector2" kindref="compound">vector2</ref></type>
+        <definition>typedef struct vector2 Vector2</definition>
+        <argsstring></argsstring>
+        <name>Vector2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="20" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vector2_8h_1a821b038b65af78d18bfb467903b2a85a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 vector2_new</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>vector2_new</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Renvoit un nouveau vecteur de coordonnées <formula id="2">$(x, y)$</formula>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;abscisse du point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;ordonnée du point. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="27" column="9" bodyfile="Core/Prod/Src/vector2.c" bodystart="4" bodyend="7" declfile="Core/Prod/Inc/vector2.h" declline="27" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vector2_display</definition>
+        <argsstring>(Vector2 u)</argsstring>
+        <name>vector2_display</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Affiche les coordonnées du vecteur <computeroutput>u</computeroutput> via <computeroutput>printf</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le vecteur à afficher. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="33" column="6" bodyfile="Core/Prod/Src/vector2.c" bodystart="10" bodyend="12" declfile="Core/Prod/Inc/vector2.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1af2f0520156a8c662c49860a7913f07ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vector2_norm</definition>
+        <argsstring>(Vector2 u)</argsstring>
+        <name>vector2_norm</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Renvoit la norme de <computeroutput>u</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le vecteur dont la norme est calculée. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="39" column="8" bodyfile="Core/Prod/Src/vector2.c" bodystart="15" bodyend="17" declfile="Core/Prod/Inc/vector2.h" declline="39" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a06d17e6358b8dbecd268afa873cb9eba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vector2_angle</definition>
+        <argsstring>(Vector2 u)</argsstring>
+        <name>vector2_angle</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rennvoit l&apos;angle formé par le vecteur <computeroutput>u</computeroutput> avec l&apos;horizontale. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le vecteur dont on calcule l&apos;angle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="45" column="8" bodyfile="Core/Prod/Src/vector2.c" bodystart="20" bodyend="22" declfile="Core/Prod/Inc/vector2.h" declline="45" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a7de90d9daa27357cbf29e0588ed8935a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vector2_dist</definition>
+        <argsstring>(Vector2 u, Vector2 v)</argsstring>
+        <name>vector2_dist</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Revoit la distance entre <computeroutput>u</computeroutput> et <computeroutput>v</computeroutput> (norme de la différence). L&apos;ordre n&apos;a pas d&apos;importance. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un premier vecteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un second vecteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="53" column="8" bodyfile="Core/Prod/Src/vector2.c" bodystart="25" bodyend="28" declfile="Core/Prod/Inc/vector2.h" declline="53" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1addf037d7729fb5baf80810fee41e1413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 vector2_sum</definition>
+        <argsstring>(Vector2 u, Vector2 v)</argsstring>
+        <name>vector2_sum</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcule la somme de deux vecteur <computeroutput>u</computeroutput> et <computeroutput>v</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un premier vecteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un second vecteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="60" column="9" bodyfile="Core/Prod/Src/vector2.c" bodystart="31" bodyend="34" declfile="Core/Prod/Inc/vector2.h" declline="60" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a1db069bf1c62849e00e2b02b96f1073d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 vector2_diff</definition>
+        <argsstring>(Vector2 u, Vector2 v)</argsstring>
+        <name>vector2_diff</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcule la différence <computeroutput>u - v</computeroutput> pour deux vecteur <computeroutput>u</computeroutput> et <computeroutput>v</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le premier vecteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le second vecteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="67" column="9" bodyfile="Core/Prod/Src/vector2.c" bodystart="37" bodyend="40" declfile="Core/Prod/Inc/vector2.h" declline="67" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a24814df5bf9841f11368adeb17d094d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vector2_dot</definition>
+        <argsstring>(Vector2 u, Vector2 v)</argsstring>
+        <name>vector2_dot</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcule le produit scalaire de deux vecteurs <computeroutput>u</computeroutput> et <computeroutput>v</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un premier vecteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un second vecteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="74" column="8" bodyfile="Core/Prod/Src/vector2.c" bodystart="43" bodyend="45" declfile="Core/Prod/Inc/vector2.h" declline="74" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1ae15342af1e40ae21fbc76d9a8ea8b209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vector2_cross</definition>
+        <argsstring>(Vector2 u, Vector2 v)</argsstring>
+        <name>vector2_cross</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcule le produit en croix de deux vecteurs <computeroutput>u</computeroutput> et <computeroutput>v</computeroutput>. Cela correspond à l&apos;aire (algébrique) du paralélogramme formé à partir des points <formula id="3">$0$</formula>, <formula id="4">$u$</formula>, <formula id="5">$u+v$</formula> et <formula id="6">$v$</formula>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un premier vecteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un second vecteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="83" column="8" bodyfile="Core/Prod/Src/vector2.c" bodystart="48" bodyend="50" declfile="Core/Prod/Inc/vector2.h" declline="83" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a6c9c4cf97c353f6ae9caf0addae1a49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vector2_normalize</definition>
+        <argsstring>(Vector2 *u)</argsstring>
+        <name>vector2_normalize</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalise le vecteur donné en entrée. Fonction à effet de bord. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers le vecteur à normaliser. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="89" column="6" bodyfile="Core/Prod/Src/vector2.c" bodystart="55" bodyend="64" declfile="Core/Prod/Inc/vector2.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1acf2cab5ad6bf5ddb8281dcfb24beb087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vector2_scale</definition>
+        <argsstring>(Vector2 *u, double k)</argsstring>
+        <name>vector2_scale</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplie le vecteur <computeroutput>*u</computeroutput> par le scalaire <computeroutput>k</computeroutput>. Fonction à effet de bord. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers le vecteur dont on change la longueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scalaire. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="96" column="6" bodyfile="Core/Prod/Src/vector2.c" bodystart="67" bodyend="70" declfile="Core/Prod/Inc/vector2.h" declline="96" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a090fe1d7de1fc3019c946c32dbdf4bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vector2_rotate</definition>
+        <argsstring>(Vector2 *u, double a)</argsstring>
+        <name>vector2_rotate</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applique une rotation de <computeroutput>a</computeroutput> radians au vecteur <computeroutput>*u</computeroutput>. Fonction à effet de bord. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers le vecteur dont on change l&apos;angle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle en radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="104" column="6" bodyfile="Core/Prod/Src/vector2.c" bodystart="73" bodyend="79" declfile="Core/Prod/Inc/vector2.h" declline="104" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vector2_8h_1a8c7390f599d70eaf163d8238a127fd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vector2_rotate90</definition>
+        <argsstring>(Vector2 *u)</argsstring>
+        <name>vector2_rotate90</name>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applique une rotation de 90° au vecteur <computeroutput>*u</computeroutput>. L&apos;effet est equivalent à l&apos;appel de <computeroutput>vector2_rotate</computeroutput> avec <computeroutput>a</computeroutput> <formula id="7">$ = \pi/2$</formula> mais évite de calculer <formula id="8">$\cos(\pi/2)$</formula> et <formula id="9">$\sin(\pi/2)$</formula>. Fonction à effet de bord. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers le vecteur dont on change l&apos;angle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="112" column="6" bodyfile="Core/Prod/Src/vector2.c" bodystart="82" bodyend="86" declfile="Core/Prod/Inc/vector2.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Un type <computeroutput>Vector2</computeroutput> pour représenter et manipuler des points du plan est défini dans ce fichier. Comme cette structure ne contient que deux champs, les variables de ce type sont directement passées en argument, sans indirection.</para>
+<para>Néanmoins, les fonctions à effet de bord prennent naturellement un pointeur vers la struture. Cela permet de bien distinguer les arguments voués à être uniquement lus de ceux qui sont également voués à être modifiés. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_VECTOR2_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_VECTOR2_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structvector2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvector2" kindref="compound">vector2</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="structvector2" kindref="compound">Vector2</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1a821b038b65af78d18bfb467903b2a85a" kindref="member">vector2_new</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" kindref="member">vector2_display</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1af2f0520156a8c662c49860a7913f07ae" kindref="member">vector2_norm</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a06d17e6358b8dbecd268afa873cb9eba" kindref="member">vector2_angle</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a7de90d9daa27357cbf29e0588ed8935a" kindref="member">vector2_dist</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1addf037d7729fb5baf80810fee41e1413" kindref="member">vector2_sum</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1a1db069bf1c62849e00e2b02b96f1073d" kindref="member">vector2_diff</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a24814df5bf9841f11368adeb17d094d4" kindref="member">vector2_dot</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1ae15342af1e40ae21fbc76d9a8ea8b209" kindref="member">vector2_cross</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a6c9c4cf97c353f6ae9caf0addae1a49a" kindref="member">vector2_normalize</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1acf2cab5ad6bf5ddb8281dcfb24beb087" kindref="member">vector2_scale</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a090fe1d7de1fc3019c946c32dbdf4bf8" kindref="member">vector2_rotate</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a8c7390f599d70eaf163d8238a127fd73" kindref="member">vector2_rotate90</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/vector2.h"/>
+  </compounddef>
+</doxygen>

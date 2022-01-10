@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="_d_r_v8825_8h" kind="file" language="C++">
+    <compoundname>DRV8825.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="yes">stm32f4xx_hal.h</includes>
+    <includes local="yes">tim.h</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includedby refid="motors_8h" local="yes">Core/Prod/Inc/motors.h</includedby>
+    <includedby refid="_d_r_v8825_8c" local="yes">Core/Prod/Src/DRV8825.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/DRV8825.h</label>
+        <link refid="_d_r_v8825_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="4">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/DRV8825.h</label>
+        <link refid="_d_r_v8825_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Prod/Inc/motors.h</label>
+        <link refid="motors_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_moteur" prot="public">Moteur</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_d_r_v8825_8h_1a0d0dda2009082c594ade95b5d2822f9c" prot="public" static="no">
+        <name>M_TO_S</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="10" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1a31cbade3f8edb728b06a18b804010544" prot="public" static="no">
+        <name>E3</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="11" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1a28dbb6f7204761817aeff15827fd85ca" prot="public" static="no">
+        <name>DRV8825_FORWARD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="13" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1a8c5be18922e54c715d313475492c20ff" prot="public" static="no">
+        <name>DRV8825_BACKWARD</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="14" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1ae94f00011cae9ee002036588d1a6c9bb" prot="public" static="no">
+        <name>DRV8825_ENABLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="16" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1ae042d7a02d99cb4e5fdf39499f5354fe" prot="public" static="no">
+        <name>DRV8825_DISABLE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="17" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1a3304c99f43f534878204486fc7b9673d" prot="public" static="no">
+        <name>RAYON</name>
+        <initializer>51.45/2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="19" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v8825_8h_1a9b043226b51a6ed4eff992382778534f" prot="public" static="no">
+        <name>PAS</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="20" column="9" bodyfile="Core/Prod/Inc/DRV8825.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_r_v8825_8h_1a1814c31fdd28c31e716fd122d1de28ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_init</definition>
+        <argsstring>(Moteur *drv8825, uint16_t PIN_EN, GPIO_TypeDef *GPIO_EN, uint16_t PIN_DIR, GPIO_TypeDef *GPIO_DIR, TIM_HandleTypeDef *timer, uint8_t chanel)</argsstring>
+        <name>DRV8825_init</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>PIN_EN</declname>
+        </param>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>GPIO_EN</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>PIN_DIR</declname>
+        </param>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>GPIO_DIR</declname>
+        </param>
+        <param>
+          <type>TIM_HandleTypeDef *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>chanel</declname>
+        </param>
+        <briefdescription>
+<para>initDRV8825 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numéro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de pin de enable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de la pin enable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numéro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de pin de DIR </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de la pin DIR </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>liée au moteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Chanel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>du timer (TIM_CHANNEL_x) avec x le numéro de chanel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="44" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="3" bodyend="28" declfile="Core/Prod/Inc/DRV8825.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1a454f69d72c75d29c5dfb55fffcebe36b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_setDir</definition>
+        <argsstring>(Moteur *drv8825, uint8_t dir)</argsstring>
+        <name>DRV8825_setDir</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+<para>permet d&apos;initialiser la direction du moteur </para>
+        </briefdescription>
+        <detaileddescription>
+<para>la structure qui contien les PIN du module <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FORWARD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>= le robot avance | BACKWARD = le robot recule </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="52" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="30" bodyend="32" declfile="Core/Prod/Inc/DRV8825.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1a2da377642725e024a8e416b1a5890b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_enable</definition>
+        <argsstring>(Moteur *drv8825)</argsstring>
+        <name>DRV8825_enable</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <briefdescription>
+<para>permet de bloquer le moteur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>la</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure qui contien les PIN du module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>START</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>= le moteur tourne | STOP = le moteur est bloqué </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="59" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="34" bodyend="36" declfile="Core/Prod/Inc/DRV8825.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1afd987d70fbb84ce3625d16d95a1faa35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_disable</definition>
+        <argsstring>(Moteur *drv8825)</argsstring>
+        <name>DRV8825_disable</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="60" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="38" bodyend="40" declfile="Core/Prod/Inc/DRV8825.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1abf8a04e0d653d8bce78b669876914f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_moveMotorRPM</definition>
+        <argsstring>(Moteur *drv8825, float rpm)</argsstring>
+        <name>DRV8825_moveMotorRPM</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rpm</declname>
+        </param>
+        <briefdescription>
+<para>Permet de définir une vitesse au moteur (RPM) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>la</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure qui contien les pin du module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vitesse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de rotation du moteur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="67" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="42" bodyend="45" declfile="Core/Prod/Inc/DRV8825.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1af46f22a588f2a296e2a8c39cc1157279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_moveMotorLineSpeed</definition>
+        <argsstring>(Moteur *drv8825, float vitesse)</argsstring>
+        <name>DRV8825_moveMotorLineSpeed</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vitesse</declname>
+        </param>
+        <briefdescription>
+<para>Permet de définir une vitesse linéaire (m/s) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>la</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure qui contien les pin du module </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vitesse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linéaire de la roue (m/s) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="74" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="47" bodyend="51" declfile="Core/Prod/Inc/DRV8825.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v8825_8h_1aca01e5dab2952d8ef4538f7c429dc467" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DRV8825_setFrequency</definition>
+        <argsstring>(Moteur *drv8825, uint16_t freq)</argsstring>
+        <name>DRV8825_setFrequency</name>
+        <param>
+          <type><ref refid="struct_moteur" kindref="compound">Moteur</ref> *</type>
+          <declname>drv8825</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>permet de modifier la fréquence de notre signal PWM </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>le</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer de notre moteur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>la</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structure qui contien les pin du module </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/DRV8825.h" line="83" column="6" bodyfile="Core/Prod/Src/DRV8825.c" bodystart="53" bodyend="101" declfile="Core/Prod/Inc/DRV8825.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f4xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>M_TO_S<sp/>60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E3<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRV8825_FORWARD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRV8825_BACKWARD<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRV8825_ENABLE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRV8825_DISABLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAYON<sp/>51.45/2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAS<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_moteur" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>dirPin;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<sp/>dirGPIO;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>stepPin;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>enablePin;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<sp/>enableGPIO;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>TIM_HandleTypeDef*<sp/>timer;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>chanel;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<ref refid="struct_moteur" kindref="compound">Moteur</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1a1814c31fdd28c31e716fd122d1de28ca" kindref="member">DRV8825_init</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825,uint16_t<sp/>PIN_EN,<sp/>GPIO_TypeDef<sp/>*<sp/>GPIO_EN,<sp/>uint16_t<sp/>PIN_DIR,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<sp/>GPIO_DIR,<sp/>TIM_HandleTypeDef*<sp/>timer,<sp/>uint8_t<sp/>chanel);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1a454f69d72c75d29c5dfb55fffcebe36b" kindref="member">DRV8825_setDir</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825,uint8_t<sp/>dir);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1a2da377642725e024a8e416b1a5890b76" kindref="member">DRV8825_enable</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DRV8825_disable(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1abf8a04e0d653d8bce78b669876914f59" kindref="member">DRV8825_moveMotorRPM</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rpm);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1af46f22a588f2a296e2a8c39cc1157279" kindref="member">DRV8825_moveMotorLineSpeed</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vitesse);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v8825_8h_1aca01e5dab2952d8ef4538f7c429dc467" kindref="member">DRV8825_setFrequency</ref>(<ref refid="struct_moteur" kindref="compound">Moteur</ref>*<sp/>drv8825,<sp/>uint16_t<sp/>freq);</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/DRV8825.h"/>
+  </compounddef>
+</doxygen>

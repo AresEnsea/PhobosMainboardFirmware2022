@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="dir_5d189f72b21093759a55927cf148c63a" kind="dir">
+    <compoundname>Core/Prod/Inc</compoundname>
+    <innerfile refid="bezier_8h">bezier.h</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="drv8825_8h">drv8825.h</innerfile>
+    <innerfile refid="odometry_8h">odometry.h</innerfile>
+    <innerfile refid="propulsion_8h">propulsion.h</innerfile>
+    <innerfile refid="robot_8h">robot.h</innerfile>
+    <innerfile refid="vector2_8h">vector2.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/Prod/Inc/"/>
+  </compounddef>
+</doxygen>

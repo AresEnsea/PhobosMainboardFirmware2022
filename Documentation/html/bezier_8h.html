@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phobos Mainboard Firmware: Référence du fichier Core/Prod/Inc/bezier.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Phobos Mainboard Firmware<span id="projectnumber">&#160;v0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_542ed4cc54dd0f66b276e41c84137820.html">Prod</a></li><li class="navelem"><a class="el" href="dir_5d189f72b21093759a55927cf148c63a.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier bezier.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="vector2_8h_source.html">vector2.h</a>&quot;</code><br />
+</div>
+<p><a href="bezier_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_bezier.html">Bezier</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:af5e634cb43395d4cca1f4176d72c7d4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#af5e634cb43395d4cca1f4176d72c7d4d">bezier_new</a> (double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4, int lutLength)</td></tr>
+<tr class="separator:af5e634cb43395d4cca1f4176d72c7d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c9661942fccc97d08bfe6c84f210bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a40c9661942fccc97d08bfe6c84f210bb">bezier_display</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b)</td></tr>
+<tr class="separator:a40c9661942fccc97d08bfe6c84f210bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1299bcdefd0ceabbfcd8e46b9273257a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a1299bcdefd0ceabbfcd8e46b9273257a">bezier_eval0</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, double t)</td></tr>
+<tr class="separator:a1299bcdefd0ceabbfcd8e46b9273257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f31abc5f33b6864fa1190496a5a83d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a7f31abc5f33b6864fa1190496a5a83d4">bezier_eval0Lut</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, double t)</td></tr>
+<tr class="separator:a7f31abc5f33b6864fa1190496a5a83d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac65735e2c61b2d4aa0115512f3317dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#aac65735e2c61b2d4aa0115512f3317dd">bezier_eval1</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, double t)</td></tr>
+<tr class="separator:aac65735e2c61b2d4aa0115512f3317dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76493119efa07167a97dbaf2c7e13055"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a76493119efa07167a97dbaf2c7e13055">bezier_eval2</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, double t)</td></tr>
+<tr class="separator:a76493119efa07167a97dbaf2c7e13055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9545f17c9cff50d191c692516640713"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#aa9545f17c9cff50d191c692516640713">bezier_curvature</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, double t)</td></tr>
+<tr class="separator:aa9545f17c9cff50d191c692516640713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2dd04b4d13ef2b92af85ae4778b1dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a0a2dd04b4d13ef2b92af85ae4778b1dd">bezier_projectLut</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, <a class="el" href="structvector2.html">Vector2</a> p)</td></tr>
+<tr class="separator:a0a2dd04b4d13ef2b92af85ae4778b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385a62959e6fd678b38e65f44998b0db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bezier_8h.html#a385a62959e6fd678b38e65f44998b0db">bezier_project</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b, <a class="el" href="structvector2.html">Vector2</a> p, double precision)</td></tr>
+<tr class="separator:a385a62959e6fd678b38e65f44998b0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p >Un type <code><a class="el" href="struct_bezier.html">Bezier</a></code> pour représenter et manipuler des courbes de Bézier est défini dans ce fichier. Les strutures de ce type sont toujours passées en argument par le bias d'un pointeur. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aa9545f17c9cff50d191c692516640713" name="aa9545f17c9cff50d191c692516640713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9545f17c9cff50d191c692516640713">&#9670;&nbsp;</a></span>bezier_curvature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bezier_curvature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Évalue la courbure de la courbe de Bézier <code>b</code> en <code>t</code>, la courbure étant l'inverse du rayon de courbure. La forumle utilisée vient d'un <br  />
+ <a href="https://en.wikipedia.org/wiki/
+Curvature#In_terms_of_a_general_parametrization">article wikipédia</a> à propos de la courbure. </p>
+
+</div>
+</div>
+<a id="a40c9661942fccc97d08bfe6c84f210bb" name="a40c9661942fccc97d08bfe6c84f210bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c9661942fccc97d08bfe6c84f210bb">&#9670;&nbsp;</a></span>bezier_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bezier_display </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Affiche les points qui définissent la courbe de Bézier. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1299bcdefd0ceabbfcd8e46b9273257a" name="a1299bcdefd0ceabbfcd8e46b9273257a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1299bcdefd0ceabbfcd8e46b9273257a">&#9670;&nbsp;</a></span>bezier_eval0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvector2.html">Vector2</a> bezier_eval0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Évalue la courbe de Bézier <code>b</code> en <code>t</code>. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre <img class="formulaInl" alt="$t\in[0;1]$" src="form_0.png" width="45" height="14"/>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f31abc5f33b6864fa1190496a5a83d4" name="a7f31abc5f33b6864fa1190496a5a83d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f31abc5f33b6864fa1190496a5a83d4">&#9670;&nbsp;</a></span>bezier_eval0Lut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvector2.html">Vector2</a> bezier_eval0Lut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Évalue la courbe de Bézier <code>b</code> en <code>t</code> approximativement grâce à la LUT (plus rapide). </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre <img class="formulaInl" alt="$t\in[0;1]$" src="form_0.png" width="45" height="14"/>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac65735e2c61b2d4aa0115512f3317dd" name="aac65735e2c61b2d4aa0115512f3317dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac65735e2c61b2d4aa0115512f3317dd">&#9670;&nbsp;</a></span>bezier_eval1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvector2.html">Vector2</a> bezier_eval1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Évalue la dérivée première de la courbe de Bézier <code>b</code> en <code>t</code>. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre <img class="formulaInl" alt="$t\in[0;1]$" src="form_0.png" width="45" height="14"/>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76493119efa07167a97dbaf2c7e13055" name="a76493119efa07167a97dbaf2c7e13055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76493119efa07167a97dbaf2c7e13055">&#9670;&nbsp;</a></span>bezier_eval2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvector2.html">Vector2</a> bezier_eval2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Évalue la dérivée seconde de la courbe de Bézier <code>b</code> en <code>t</code>. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre <img class="formulaInl" alt="$t\in[0;1]$" src="form_0.png" width="45" height="14"/>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5e634cb43395d4cca1f4176d72c7d4d" name="af5e634cb43395d4cca1f4176d72c7d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e634cb43395d4cca1f4176d72c7d4d">&#9670;&nbsp;</a></span>bezier_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_bezier.html">Bezier</a> * bezier_new </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lutLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Initialise une courbe de Bézier cubique à partir des points. Initialise également une LUT dont la taille est précisée en argument. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xn</td><td>La coordonnée en abscisse du n-ième point. </td></tr>
+    <tr><td class="paramname">yn</td><td>La coordonnée en ordonnée du n-ième point. </td></tr>
+    <tr><td class="paramname">lutLength</td><td>La longueur de la LUT contenant les points précalculés. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a385a62959e6fd678b38e65f44998b0db" name="a385a62959e6fd678b38e65f44998b0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a385a62959e6fd678b38e65f44998b0db">&#9670;&nbsp;</a></span>bezier_project()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bezier_project </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structvector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Recherche le point de la courbe de Bézier b le plus proche du point p grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre t où la distance minimum est atteinte. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">precision</td><td>La precision de la recherche par dichotomie. Doit être stritement positif. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a2dd04b4d13ef2b92af85ae4778b1dd" name="a0a2dd04b4d13ef2b92af85ae4778b1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2dd04b4d13ef2b92af85ae4778b1dd">&#9670;&nbsp;</a></span>bezier_projectLut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bezier_projectLut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structvector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Recherche le point de la courbe de Bézier <code>b</code> le plus proche du point <code>p</code> fourni en argument grâce à la LUT. Renvoit le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/> où la distance minimum est atteinte. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

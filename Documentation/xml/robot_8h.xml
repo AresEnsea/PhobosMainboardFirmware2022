@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="robot_8h" kind="file" language="C++">
+    <compoundname>robot.h</compoundname>
+    <includes refid="vector2_8h" local="yes">vector2.h</includes>
+    <includes refid="drv8825_8h" local="yes">drv8825.h</includes>
+    <includedby refid="odometry_8h" local="yes">Core/Prod/Inc/odometry.h</includedby>
+    <includedby refid="propulsion_8h" local="yes">Core/Prod/Inc/propulsion.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="8">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="9">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Core/Prod/Inc/odometry.h</label>
+        <link refid="odometry_8h"/>
+      </node>
+      <node id="3">
+        <label>Core/Prod/Inc/propulsion.h</label>
+        <link refid="propulsion_8h"/>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_robot" prot="public">Robot</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_robot" kindref="compound">Robot</ref></type>
+        <definition>Robot robot</definition>
+        <argsstring></argsstring>
+        <name>robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable globale représentant le robot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/robot.h" line="35" column="7" bodyfile="Core/Prod/Inc/robot.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ce fichier définit une structure <ref refid="struct_robot" kindref="compound">Robot</ref> permettant de stocker les états du robot ainsi que des structures liées au fonctionnement de certains de ses systèmes. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ROBOT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ROBOT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="vector2_8h" kindref="compound">vector2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="drv8825_8h" kindref="compound">drv8825.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct_robot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/><ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/><ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="struct_robot" kindref="compound">Robot</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" refkind="member"><highlight class="normal"><ref refid="struct_robot" kindref="compound">Robot</ref><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/robot.h"/>
+  </compounddef>
+</doxygen>

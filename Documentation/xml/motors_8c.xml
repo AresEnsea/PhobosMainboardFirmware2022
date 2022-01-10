@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="motors_8c" kind="file" language="C++">
+    <compoundname>motors.c</compoundname>
+    <includes refid="motors_8h" local="no">motors.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>motors.h</label>
+        <link refid="motors_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Src/motors.c</label>
+        <link refid="motors_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gpio.h</label>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="6">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="motors_8c_1a984b662dbcf5b55b90fc02e2f866a206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initMotors</definition>
+        <argsstring>()</argsstring>
+        <name>initMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialse les structures associées aux moteurs avec les les broches et timers configurées dans <ref refid="config_8h" kindref="compound">config.h</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/motors.c" line="7" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8c_1af272901f64f8137520f950dc65d8db0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>enableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/motors.c" line="15" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8c_1a674c201e68b73da999969d8b1232954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>disableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/motors.c" line="23" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8c_1a663e4d36c8de9a116c2baa889d843446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMotorSpeeds</definition>
+        <argsstring>(double left, double right)</argsstring>
+        <name>setMotorSpeeds</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/motors.c" line="32" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="32" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;motors.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Initialse<sp/>les<sp/>structures<sp/>associées<sp/>aux<sp/>moteurs<sp/>avec<sp/>les<sp/>les<sp/>broches<sp/>et<sp/>timers</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>configurées<sp/>dans<sp/>config.h.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initMotors(){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_init(&amp;leftMotor,<sp/><sp/>L_MOTOR_EN_Pin,<sp/>L_MOTOR_EN_GPIO_Port,<sp/>L_MOTOR_DIR_Pin,<sp/>L_MOTOR_DIR_GPIO_Port,<sp/>&amp;L_MOTOR_TIMER,<sp/>TIM_CHANNEL_1);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_init(&amp;rightMotor,<sp/>R_MOTOR_EN_Pin,<sp/>R_MOTOR_EN_GPIO_Port,<sp/>R_MOTOR_DIR_Pin,<sp/>R_MOTOR_DIR_GPIO_Port,<sp/>&amp;R_MOTOR_TIMER,<sp/>TIM_CHANNEL_4);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Mise<sp/>sous<sp/>tension<sp/>des<sp/>moteurs<sp/>pas-à-pas.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enableMotors(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_enable(&amp;leftMotor);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_enable(&amp;rightMotor);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>Mise<sp/>hors<sp/>tension<sp/>des<sp/>moteurs<sp/>pas-à-pas.<sp/>Ils<sp/>peuvent<sp/>alors<sp/>tourner<sp/>librement.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableMotors(){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_disable(&amp;leftMotor);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_disable(&amp;rightMotor);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Congigure<sp/>la<sp/>absolue<sp/>vitesse<sp/>et<sp/>le<sp/>sens<sp/>des<sp/>moteurs<sp/>en<sp/>fonction<sp/>des<sp/>deux</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>vitesses<sp/>relatives<sp/>données<sp/>en<sp/>argument.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMotorSpeeds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_setDir(&amp;leftMotor,<sp/>(left<sp/>&lt;<sp/>0)?DRV8825_BACKWARD:DRV8825_FORWARD);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_moveMotorLineSpeed(&amp;leftMotor,<sp/>fabs(left));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_setDir(&amp;rightMotor,<sp/>(right<sp/>&lt;<sp/>0)?DRV8825_BACKWARD:DRV8825_FORWARD);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>DRV8825_moveMotorLineSpeed(&amp;rightMotor,<sp/>fabs(right));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Src/motors.c"/>
+  </compounddef>
+</doxygen>

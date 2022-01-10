@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="motors_8h" kind="file" language="C++">
+    <compoundname>motors.h</compoundname>
+    <includes refid="drv8825_8h" local="yes">drv8825.h</includes>
+    <includes local="yes">gpio.h</includes>
+    <includes local="yes">tim.h</includes>
+    <includedby refid="motors_8c" local="no">Core/Prod/Src/motors.c</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/motors.h</label>
+        <link refid="motors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gpio.h</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="5">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="motors_8h_1a412e5295f0a0af623e7b482f5294a2db" prot="public" static="no" mutable="no">
+        <type>Moteur</type>
+        <definition>Moteur leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="5" column="8" bodyfile="Core/Prod/Inc/motors.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="motors_8h_1aaad0dd57d101ac025d67b3664d045013" prot="public" static="no" mutable="no">
+        <type>Moteur</type>
+        <definition>Moteur rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="6" column="8" bodyfile="Core/Prod/Inc/motors.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="motors_8h_1a984b662dbcf5b55b90fc02e2f866a206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initMotors</definition>
+        <argsstring>()</argsstring>
+        <name>initMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialse les structures associées aux moteurs avec les les broches et timers configurées dans <ref refid="config_8h" kindref="compound">config.h</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="12" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="7" bodyend="10" declfile="Core/Prod/Inc/motors.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8h_1af272901f64f8137520f950dc65d8db0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>enableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="17" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="15" bodyend="18" declfile="Core/Prod/Inc/motors.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8h_1a674c201e68b73da999969d8b1232954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>disableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="22" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="23" bodyend="26" declfile="Core/Prod/Inc/motors.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="motors_8h_1a663e4d36c8de9a116c2baa889d843446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMotorSpeeds</definition>
+        <argsstring>(double left, double right)</argsstring>
+        <name>setMotorSpeeds</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/motors.h" line="28" column="6" bodyfile="Core/Prod/Src/motors.c" bodystart="32" bodyend="38" declfile="Core/Prod/Inc/motors.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="drv8825_8h" kindref="compound">drv8825.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Moteur<sp/>leftMotor;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">Moteur<sp/>rightMotor;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initMotors();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Mise<sp/>sous<sp/>tension<sp/>des<sp/>moteurs<sp/>pas-à-pas.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enableMotors();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Mise<sp/>hors<sp/>tension<sp/>des<sp/>moteurs<sp/>pas-à-pas.<sp/>Ils<sp/>peuvent<sp/>alors<sp/>tourner<sp/>librement.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableMotors();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>Congigure<sp/>la<sp/>absolue<sp/>vitesse<sp/>et<sp/>le<sp/>sens<sp/>des<sp/>moteurs<sp/>en<sp/>fonction<sp/>des<sp/>deux</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>vitesses<sp/>relatives<sp/>données<sp/>en<sp/>argument.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMotorSpeeds(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>right);</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/motors.h"/>
+  </compounddef>
+</doxygen>

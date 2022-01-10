@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="propulsion_8c" kind="file" language="C++">
+    <compoundname>propulsion.c</compoundname>
+    <includes refid="propulsion_8h" local="yes">propulsion.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>propulsion.h</label>
+        <link refid="propulsion_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Src/propulsion.c</label>
+        <link refid="propulsion_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gpio.h</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="4">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="propulsion_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_robot" kindref="compound">Robot</ref></type>
+        <definition>Robot robot</definition>
+        <argsstring></argsstring>
+        <name>robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable globale représentant le robot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/propulsion.c" line="4" column="14" bodyfile="Core/Prod/Inc/robot.h" bodystart="35" bodyend="-1" declfile="Core/Prod/Src/propulsion.c" declline="4" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="propulsion_8c_1ab5253cb714d19da3fcb52152a6da9f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_init</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialse les deux moteurs pas-à-pas du bloc de propulsion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/propulsion.c" line="7" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="7" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8c_1ab3b8837d916f7291cd4d84ec04fadb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_enableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_enableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met sous tension les moteurs pas-à-pas du bloc de propulsion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/propulsion.c" line="23" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8c_1a11ba711add37c5ead9d5933c9f2d58bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_disableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_disableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met hors tension des moteurs pas-à-pas. Ils tournent alors librement. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/propulsion.c" line="29" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8c_1ac3d90a7696f75abf3fb2fefd3ac288ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_setSpeeds</definition>
+        <argsstring>(double left, double right)</argsstring>
+        <name>propulsion_setSpeeds</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure la vitesse absolue et le sens des moteurs en fonction des deux vitesses signées données en argument. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse du moteur gauche. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse du moteur droit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/propulsion.c" line="35" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="propulsion_8h" kindref="compound">propulsion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_robot" kindref="compound">Robot</ref><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1ab5253cb714d19da3fcb52152a6da9f88" kindref="member">propulsion_init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a0a1bf14db082eeab6742f0df39914701" kindref="member">drv8825_init</ref>(</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L_MOTOR_EN_Pin,<sp/>L_MOTOR_EN_GPIO_Port,<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L_MOTOR_DIR_Pin,<sp/>L_MOTOR_DIR_GPIO_Port,<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;L_MOTOR_TIMER,<sp/>TIM_CHANNEL_1</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a0a1bf14db082eeab6742f0df39914701" kindref="member">drv8825_init</ref>(</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>,<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R_MOTOR_EN_Pin,<sp/>R_MOTOR_EN_GPIO_Port,<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>R_MOTOR_DIR_Pin,<sp/>R_MOTOR_DIR_GPIO_Port,<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;R_MOTOR_TIMER,<sp/>TIM_CHANNEL_4</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1ab3b8837d916f7291cd4d84ec04fadb68" kindref="member">propulsion_enableMotors</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1acd1fc2c4b96475fee49ebd3dbf100d29" kindref="member">drv8825_enable</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1acd1fc2c4b96475fee49ebd3dbf100d29" kindref="member">drv8825_enable</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1a11ba711add37c5ead9d5933c9f2d58bb" kindref="member">propulsion_disableMotors</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" kindref="member">drv8825_disable</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" kindref="member">drv8825_disable</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1ac3d90a7696f75abf3fb2fefd3ac288ab" kindref="member">propulsion_setSpeeds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1af06fcf3e04748695fb994f75281c815f" kindref="member">drv8825_setDirection</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>,<sp/>(left<sp/>&lt;<sp/>0)?<ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" kindref="member">NEGATIVE</ref>:<ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" kindref="member">POSITIVE</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" kindref="member">drv8825_moveMotorLineSpeed</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>,<sp/>fabs(left));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1af06fcf3e04748695fb994f75281c815f" kindref="member">drv8825_setDirection</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>,<sp/>(right<sp/>&lt;<sp/>0)?<ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" kindref="member">NEGATIVE</ref>:<ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" kindref="member">POSITIVE</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" kindref="member">drv8825_moveMotorLineSpeed</ref>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>,<sp/>fabs(right));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Src/propulsion.c"/>
+  </compounddef>
+</doxygen>

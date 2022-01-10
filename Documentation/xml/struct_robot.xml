@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="struct_robot" kind="struct" language="C++" prot="public">
+    <compoundname>Robot</compoundname>
+    <includes refid="robot_8h" local="no">robot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Robot::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Robot::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vecteur représentant la position du robot en millimètres. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/robot.h" line="20" column="13" bodyfile="Core/Prod/Inc/robot.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_robot_1a27f0b601929076610e54c6d4b3716743" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Robot::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <qualifiedname>Robot::angle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Angle du robot en radians. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/robot.h" line="23" column="11" bodyfile="Core/Prod/Inc/robot.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+        <definition>Stepper* Robot::leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <qualifiedname>Robot::leftMotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stucture associée au moteur propulsif gauche. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/robot.h" line="26" column="13" bodyfile="Core/Prod/Inc/robot.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_robot_1a89aa10e821336c34552b649be2784fd4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+        <definition>Stepper* Robot::rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <qualifiedname>Robot::rightMotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stucture associée au moteur propulsif droit. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/robot.h" line="29" column="13" bodyfile="Core/Prod/Inc/robot.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La structure <ref refid="struct_robot" kindref="compound">Robot</ref> permet de stocker les états du robot ainsi que des structures liées au fonctionnement de certains de ses systèmes. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Robot</label>
+        <link refid="struct_robot"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>leftMotor</edgelabel>
+          <edgelabel>rightMotor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stepper</label>
+        <link refid="struct_stepper"/>
+      </node>
+      <node id="2">
+        <label>vector2</label>
+        <link refid="structvector2"/>
+      </node>
+    </collaborationgraph>
+    <location file="Core/Prod/Inc/robot.h" line="18" column="1" bodyfile="Core/Prod/Inc/robot.h" bodystart="18" bodyend="30"/>
+    <listofallmembers>
+      <member refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" prot="public" virt="non-virtual"><scope>Robot</scope><name>angle</name></member>
+      <member refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" prot="public" virt="non-virtual"><scope>Robot</scope><name>leftMotor</name></member>
+      <member refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" prot="public" virt="non-virtual"><scope>Robot</scope><name>position</name></member>
+      <member refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" prot="public" virt="non-virtual"><scope>Robot</scope><name>rightMotor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

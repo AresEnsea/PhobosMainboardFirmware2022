@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="structvector2" kind="struct" language="C++" prot="public">
+    <compoundname>vector2</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvector2_1a58dc79a521ff8fd13b858bf078429c85" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double vector2::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>vector2::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="18" column="12" bodyfile="Core/Prod/Inc/vector2.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvector2_1a27a1dc2b09f3dda1cb5d580272a196ce" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double vector2::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>vector2::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="19" column="12" bodyfile="Core/Prod/Inc/vector2.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/Prod/Inc/vector2.h" line="17" column="1" bodyfile="Core/Prod/Inc/vector2.h" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structvector2_1a58dc79a521ff8fd13b858bf078429c85" prot="public" virt="non-virtual"><scope>vector2</scope><name>x</name></member>
+      <member refid="structvector2_1a27a1dc2b09f3dda1cb5d580272a196ce" prot="public" virt="non-virtual"><scope>vector2</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

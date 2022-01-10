@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Phobos Mainboard Firmware:  Fichier source de Core/Prod/Inc/vector2.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Phobos Mainboard Firmware<span id="projectnumber">&#160;v0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_542ed4cc54dd0f66b276e41c84137820.html">Prod</a></li><li class="navelem"><a class="el" href="dir_5d189f72b21093759a55927cf148c63a.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">vector2.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vector2_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _VECTOR2_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define _VECTOR2_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structvector2.html">   17</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structvector2.html">vector2</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">double</span> x;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">double</span> y;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <a class="code hl_struct" href="structvector2.html">Vector2</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_struct" href="structvector2.html">Vector2</a> <a class="code hl_function" href="vector2_8h.html#a821b038b65af78d18bfb467903b2a85a">vector2_new</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="vector2_8h.html#a341d1d9c577a9c97628697d2f3bf1bf4">vector2_display</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">double</span> <a class="code hl_function" href="vector2_8h.html#af2f0520156a8c662c49860a7913f07ae">vector2_norm</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">double</span> <a class="code hl_function" href="vector2_8h.html#a06d17e6358b8dbecd268afa873cb9eba">vector2_angle</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">double</span> <a class="code hl_function" href="vector2_8h.html#a7de90d9daa27357cbf29e0588ed8935a">vector2_dist</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u, <a class="code hl_struct" href="structvector2.html">Vector2</a> v);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><a class="code hl_struct" href="structvector2.html">Vector2</a> <a class="code hl_function" href="vector2_8h.html#addf037d7729fb5baf80810fee41e1413">vector2_sum</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u, <a class="code hl_struct" href="structvector2.html">Vector2</a> v);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><a class="code hl_struct" href="structvector2.html">Vector2</a> <a class="code hl_function" href="vector2_8h.html#a1db069bf1c62849e00e2b02b96f1073d">vector2_diff</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u, <a class="code hl_struct" href="structvector2.html">Vector2</a> v);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">double</span> <a class="code hl_function" href="vector2_8h.html#a24814df5bf9841f11368adeb17d094d4">vector2_dot</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u, <a class="code hl_struct" href="structvector2.html">Vector2</a> v);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">double</span> <a class="code hl_function" href="vector2_8h.html#ae15342af1e40ae21fbc76d9a8ea8b209">vector2_cross</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a> u, <a class="code hl_struct" href="structvector2.html">Vector2</a> v);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="vector2_8h.html#a6c9c4cf97c353f6ae9caf0addae1a49a">vector2_normalize</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a>* u);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">void</span> <a class="code hl_function" href="vector2_8h.html#acf2cab5ad6bf5ddb8281dcfb24beb087">vector2_scale</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a>* u, <span class="keywordtype">double</span> k);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">void</span> <a class="code hl_function" href="vector2_8h.html#a090fe1d7de1fc3019c946c32dbdf4bf8">vector2_rotate</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a>* u, <span class="keywordtype">double</span> a);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">void</span> <a class="code hl_function" href="vector2_8h.html#a8c7390f599d70eaf163d8238a127fd73">vector2_rotate90</a>(<a class="code hl_struct" href="structvector2.html">Vector2</a>* u);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructvector2_html"><div class="ttname"><a href="structvector2.html">vector2</a></div><div class="ttdef"><b>Definition:</b> vector2.h:17</div></div>
+<div class="ttc" id="avector2_8h_html_a06d17e6358b8dbecd268afa873cb9eba"><div class="ttname"><a href="vector2_8h.html#a06d17e6358b8dbecd268afa873cb9eba">vector2_angle</a></div><div class="ttdeci">double vector2_angle(Vector2 u)</div><div class="ttdef"><b>Definition:</b> vector2.c:20</div></div>
+<div class="ttc" id="avector2_8h_html_a090fe1d7de1fc3019c946c32dbdf4bf8"><div class="ttname"><a href="vector2_8h.html#a090fe1d7de1fc3019c946c32dbdf4bf8">vector2_rotate</a></div><div class="ttdeci">void vector2_rotate(Vector2 *u, double a)</div><div class="ttdef"><b>Definition:</b> vector2.c:73</div></div>
+<div class="ttc" id="avector2_8h_html_a1db069bf1c62849e00e2b02b96f1073d"><div class="ttname"><a href="vector2_8h.html#a1db069bf1c62849e00e2b02b96f1073d">vector2_diff</a></div><div class="ttdeci">Vector2 vector2_diff(Vector2 u, Vector2 v)</div><div class="ttdef"><b>Definition:</b> vector2.c:37</div></div>
+<div class="ttc" id="avector2_8h_html_a24814df5bf9841f11368adeb17d094d4"><div class="ttname"><a href="vector2_8h.html#a24814df5bf9841f11368adeb17d094d4">vector2_dot</a></div><div class="ttdeci">double vector2_dot(Vector2 u, Vector2 v)</div><div class="ttdef"><b>Definition:</b> vector2.c:43</div></div>
+<div class="ttc" id="avector2_8h_html_a341d1d9c577a9c97628697d2f3bf1bf4"><div class="ttname"><a href="vector2_8h.html#a341d1d9c577a9c97628697d2f3bf1bf4">vector2_display</a></div><div class="ttdeci">void vector2_display(Vector2 u)</div><div class="ttdef"><b>Definition:</b> vector2.c:10</div></div>
+<div class="ttc" id="avector2_8h_html_a6c9c4cf97c353f6ae9caf0addae1a49a"><div class="ttname"><a href="vector2_8h.html#a6c9c4cf97c353f6ae9caf0addae1a49a">vector2_normalize</a></div><div class="ttdeci">void vector2_normalize(Vector2 *u)</div><div class="ttdef"><b>Definition:</b> vector2.c:55</div></div>
+<div class="ttc" id="avector2_8h_html_a7de90d9daa27357cbf29e0588ed8935a"><div class="ttname"><a href="vector2_8h.html#a7de90d9daa27357cbf29e0588ed8935a">vector2_dist</a></div><div class="ttdeci">double vector2_dist(Vector2 u, Vector2 v)</div><div class="ttdef"><b>Definition:</b> vector2.c:25</div></div>
+<div class="ttc" id="avector2_8h_html_a821b038b65af78d18bfb467903b2a85a"><div class="ttname"><a href="vector2_8h.html#a821b038b65af78d18bfb467903b2a85a">vector2_new</a></div><div class="ttdeci">Vector2 vector2_new(double x, double y)</div><div class="ttdef"><b>Definition:</b> vector2.c:4</div></div>
+<div class="ttc" id="avector2_8h_html_a8c7390f599d70eaf163d8238a127fd73"><div class="ttname"><a href="vector2_8h.html#a8c7390f599d70eaf163d8238a127fd73">vector2_rotate90</a></div><div class="ttdeci">void vector2_rotate90(Vector2 *u)</div><div class="ttdef"><b>Definition:</b> vector2.c:82</div></div>
+<div class="ttc" id="avector2_8h_html_acf2cab5ad6bf5ddb8281dcfb24beb087"><div class="ttname"><a href="vector2_8h.html#acf2cab5ad6bf5ddb8281dcfb24beb087">vector2_scale</a></div><div class="ttdeci">void vector2_scale(Vector2 *u, double k)</div><div class="ttdef"><b>Definition:</b> vector2.c:67</div></div>
+<div class="ttc" id="avector2_8h_html_addf037d7729fb5baf80810fee41e1413"><div class="ttname"><a href="vector2_8h.html#addf037d7729fb5baf80810fee41e1413">vector2_sum</a></div><div class="ttdeci">Vector2 vector2_sum(Vector2 u, Vector2 v)</div><div class="ttdef"><b>Definition:</b> vector2.c:31</div></div>
+<div class="ttc" id="avector2_8h_html_ae15342af1e40ae21fbc76d9a8ea8b209"><div class="ttname"><a href="vector2_8h.html#ae15342af1e40ae21fbc76d9a8ea8b209">vector2_cross</a></div><div class="ttdeci">double vector2_cross(Vector2 u, Vector2 v)</div><div class="ttdef"><b>Definition:</b> vector2.c:48</div></div>
+<div class="ttc" id="avector2_8h_html_af2f0520156a8c662c49860a7913f07ae"><div class="ttname"><a href="vector2_8h.html#af2f0520156a8c662c49860a7913f07ae">vector2_norm</a></div><div class="ttdeci">double vector2_norm(Vector2 u)</div><div class="ttdef"><b>Definition:</b> vector2.c:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

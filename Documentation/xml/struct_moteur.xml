@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="struct_moteur" kind="struct" language="C++" prot="public">
+    <compoundname>Moteur</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_moteur_1a3bca78b2078466916c2163eed6a822e8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Moteur::enablePin</definition>
+        <argsstring></argsstring>
+        <name>enablePin</name>
+        <qualifiedname>Moteur::enablePin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="26" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moteur_1a69b76e5813ec893e3c1835bb16d970e6" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* Moteur::enableGPIO</definition>
+        <argsstring></argsstring>
+        <name>enableGPIO</name>
+        <qualifiedname>Moteur::enableGPIO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="27" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moteur_1ac27a65cf274193329fb2efc7955ba1b7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Moteur::dirPin</definition>
+        <argsstring></argsstring>
+        <name>dirPin</name>
+        <qualifiedname>Moteur::dirPin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="29" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moteur_1af74deaa31f9b15e4b9413e99189789a3" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* Moteur::dirGPIO</definition>
+        <argsstring></argsstring>
+        <name>dirGPIO</name>
+        <qualifiedname>Moteur::dirGPIO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="30" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moteur_1a5c7c7624d3e6ce1b28b285bae19ed396" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef *</type>
+        <definition>TIM_HandleTypeDef* Moteur::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <qualifiedname>Moteur::timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="32" column="23" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_moteur_1a6694ba446cdbe110e04348bc9c58ce3b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Moteur::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <qualifiedname>Moteur::channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="33" column="13" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/Prod/Inc/drv8825.h" line="25" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="25" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_moteur_1a6694ba446cdbe110e04348bc9c58ce3b" prot="public" virt="non-virtual"><scope>Moteur</scope><name>channel</name></member>
+      <member refid="struct_moteur_1af74deaa31f9b15e4b9413e99189789a3" prot="public" virt="non-virtual"><scope>Moteur</scope><name>dirGPIO</name></member>
+      <member refid="struct_moteur_1ac27a65cf274193329fb2efc7955ba1b7" prot="public" virt="non-virtual"><scope>Moteur</scope><name>dirPin</name></member>
+      <member refid="struct_moteur_1a69b76e5813ec893e3c1835bb16d970e6" prot="public" virt="non-virtual"><scope>Moteur</scope><name>enableGPIO</name></member>
+      <member refid="struct_moteur_1a3bca78b2078466916c2163eed6a822e8" prot="public" virt="non-virtual"><scope>Moteur</scope><name>enablePin</name></member>
+      <member refid="struct_moteur_1a5c7c7624d3e6ce1b28b285bae19ed396" prot="public" virt="non-virtual"><scope>Moteur</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

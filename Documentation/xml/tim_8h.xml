@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="tim_8h" kind="file" language="C++">
+    <compoundname>tim.h</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includedby refid="_d_r_v8825_8h" local="yes">Core/Prod/Inc/DRV8825.h</includedby>
+    <includedby refid="motors_8h" local="yes">Core/Prod/Inc/motors.h</includedby>
+    <includedby refid="odometry_8c" local="yes">Core/Prod/Src/odometry.c</includedby>
+    <includedby refid="main_8c" local="yes">Core/Src/main.c</includedby>
+    <includedby refid="tim_8c" local="yes">Core/Src/tim.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Core/Inc/tim.h</label>
+        <link refid="tim_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Prod/Inc/DRV8825.h</label>
+        <link refid="_d_r_v8825_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Prod/Inc/motors.h</label>
+        <link refid="motors_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="5">
+        <label>Core/Src/tim.c</label>
+        <link refid="tim_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tim_8h_1a25fc663547539bc49fecc0011bd76ab5" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim1</definition>
+        <argsstring></argsstring>
+        <name>htim1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="34" column="26" bodyfile="Core/Src/tim.c" bodystart="27" bodyend="-1" declfile="Core/Inc/tim.h" declline="34" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a2c80fd5510e2990a59a5c90d745c716c" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim2</definition>
+        <argsstring></argsstring>
+        <name>htim2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="35" column="26" bodyfile="Core/Src/tim.c" bodystart="28" bodyend="-1" declfile="Core/Inc/tim.h" declline="35" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1aac3d2c59ee0e3bbae1b99529a154eb62" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim3</definition>
+        <argsstring></argsstring>
+        <name>htim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="36" column="26" bodyfile="Core/Src/tim.c" bodystart="29" bodyend="-1" declfile="Core/Inc/tim.h" declline="36" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a85788cec5a97ee377e4ee2e74f026484" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim4</definition>
+        <argsstring></argsstring>
+        <name>htim4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="37" column="26" bodyfile="Core/Src/tim.c" bodystart="30" bodyend="-1" declfile="Core/Inc/tim.h" declline="37" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a1564492831a79fa18466467c3420c3c3" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim6</definition>
+        <argsstring></argsstring>
+        <name>htim6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="38" column="26" bodyfile="Core/Src/tim.c" bodystart="31" bodyend="-1" declfile="Core/Inc/tim.h" declline="38" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1abb71bf3ee68e2a051fbeec6c3ab3012d" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim7</definition>
+        <argsstring></argsstring>
+        <name>htim7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="39" column="26" bodyfile="Core/Src/tim.c" bodystart="32" bodyend="-1" declfile="Core/Inc/tim.h" declline="39" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a5faa27108379f799afb6984010bf0384" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim8</definition>
+        <argsstring></argsstring>
+        <name>htim8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="40" column="26" bodyfile="Core/Src/tim.c" bodystart="33" bodyend="-1" declfile="Core/Inc/tim.h" declline="40" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="tim_8h_1a2f22f985c4f33318fdcd4cc996623bf4" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef</type>
+        <definition>TIM_HandleTypeDef htim11</definition>
+        <argsstring></argsstring>
+        <name>htim11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="41" column="26" bodyfile="Core/Src/tim.c" bodystart="34" bodyend="-1" declfile="Core/Inc/tim.h" declline="41" declcolumn="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tim_8h_1ad1f9d42690163f73f73e5b820c81ca14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM1_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM1_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="47" column="6" bodyfile="Core/Src/tim.c" bodystart="37" bodyend="80" declfile="Core/Inc/tim.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1a4b8ff887fd3fdf26605e35927e4ff202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM2_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM2_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="48" column="6" bodyfile="Core/Src/tim.c" bodystart="82" bodyend="120" declfile="Core/Inc/tim.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1a7912f2916786a2c33cb6fb8259ade58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM3_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM3_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="49" column="6" bodyfile="Core/Src/tim.c" bodystart="122" bodyend="164" declfile="Core/Inc/tim.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1aef1e0b132b1af1c923cc420a57180c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM4_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM4_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="50" column="6" bodyfile="Core/Src/tim.c" bodystart="166" bodyend="204" declfile="Core/Inc/tim.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1abbf5454212cb039fb90d523b2473af91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM6_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM6_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="51" column="6" bodyfile="Core/Src/tim.c" bodystart="206" bodyend="237" declfile="Core/Inc/tim.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1af1a30e036c07055e19487b8267790bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM7_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM7_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="52" column="6" bodyfile="Core/Src/tim.c" bodystart="239" bodyend="270" declfile="Core/Inc/tim.h" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1a265aef7a46164094e791259bf59d9cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM8_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM8_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="53" column="6" bodyfile="Core/Src/tim.c" bodystart="272" bodyend="339" declfile="Core/Inc/tim.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1a0b1802cec6c627135b6c10a1ab67f7f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MX_TIM11_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_TIM11_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="54" column="6" bodyfile="Core/Src/tim.c" bodystart="341" bodyend="380" declfile="Core/Inc/tim.h" declline="54" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tim_8h_1ae70bce6c39d0b570a7523b86738cec4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HAL_TIM_MspPostInit</definition>
+        <argsstring>(TIM_HandleTypeDef *htim)</argsstring>
+        <name>HAL_TIM_MspPostInit</name>
+        <param>
+          <type>TIM_HandleTypeDef *</type>
+          <declname>htim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>TIM8 GPIO Configuration PC9 ---<mdash/>&gt; TIM8_CH4</para>
+<para>TIM11 GPIO Configuration PB9 ---<mdash/>&gt; TIM11_CH1</para>
+        </inbodydescription>
+        <location file="Core/Inc/tim.h" line="56" column="6" bodyfile="Core/Src/tim.c" bodystart="522" bodyend="568" declfile="Core/Inc/tim.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains all the function prototypes for the <ref refid="tim_8c" kindref="compound">tim.c</ref> file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+<heading level="2"><center><copy/> Copyright (c) 2021 STMicroelectronics. All rights reserved.</center></heading>
+</para>
+<para>This software component is licensed by ST under BSD 3-Clause license, the &quot;License&quot;; You may not use this file except in compliance with the License. You may obtain a copy of the License at: opensource.org/licenses/BSD-3-Clause </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__TIM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TIM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim2;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim3;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim4;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim6;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim7;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim8;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>TIM_HandleTypeDef<sp/>htim11;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM1_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM2_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM3_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM4_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM6_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM7_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM8_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_TIM11_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tim_8h_1ae70bce6c39d0b570a7523b86738cec4b" kindref="member">HAL_TIM_MspPostInit</ref>(TIM_HandleTypeDef<sp/>*htim);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Prototypes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__TIM_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/************************<sp/>(C)<sp/>COPYRIGHT<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Core/Inc/tim.h"/>
+  </compounddef>
+</doxygen>

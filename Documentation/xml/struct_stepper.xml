@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="struct_stepper" kind="struct" language="C++" prot="public">
+    <compoundname>Stepper</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Stepper::enablePin</definition>
+        <argsstring></argsstring>
+        <name>enablePin</name>
+        <qualifiedname>Stepper::enablePin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numéro de la broche enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="18" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* Stepper::enableGPIO</definition>
+        <argsstring></argsstring>
+        <name>enableGPIO</name>
+        <qualifiedname>Stepper::enableGPIO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointeur vers la structure GPIO associé à la broche enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="20" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Stepper::dirPin</definition>
+        <argsstring></argsstring>
+        <name>dirPin</name>
+        <qualifiedname>Stepper::dirPin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numéro de la broche direction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="23" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" prot="public" static="no" mutable="no">
+        <type>GPIO_TypeDef *</type>
+        <definition>GPIO_TypeDef* Stepper::dirGPIO</definition>
+        <argsstring></argsstring>
+        <name>dirGPIO</name>
+        <qualifiedname>Stepper::dirGPIO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointeur vers la structure GPIO associé à la broche direction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="25" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef *</type>
+        <definition>TIM_HandleTypeDef* Stepper::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <qualifiedname>Stepper::timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timer lié à la génération du signal PWM. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="28" column="23" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Stepper::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <qualifiedname>Stepper::channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numéro de canal utilisé du timer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="30" column="13" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/Prod/Inc/drv8825.h" line="16" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" prot="public" virt="non-virtual"><scope>Stepper</scope><name>channel</name></member>
+      <member refid="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" prot="public" virt="non-virtual"><scope>Stepper</scope><name>dirGPIO</name></member>
+      <member refid="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" prot="public" virt="non-virtual"><scope>Stepper</scope><name>dirPin</name></member>
+      <member refid="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" prot="public" virt="non-virtual"><scope>Stepper</scope><name>enableGPIO</name></member>
+      <member refid="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" prot="public" virt="non-virtual"><scope>Stepper</scope><name>enablePin</name></member>
+      <member refid="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" prot="public" virt="non-virtual"><scope>Stepper</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

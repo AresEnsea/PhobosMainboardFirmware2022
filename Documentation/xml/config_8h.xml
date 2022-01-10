@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includedby refid="drv8825_8h" local="yes">Core/Prod/Inc/drv8825.h</includedby>
+    <includedby refid="odometry_8h" local="yes">Core/Prod/Inc/odometry.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Core/Prod/Inc/drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Core/Prod/Inc/odometry.h</label>
+        <link refid="odometry_8h"/>
+      </node>
+      <node id="5">
+        <label>Core/Prod/Inc/propulsion.h</label>
+        <link refid="propulsion_8h"/>
+      </node>
+      <node id="3">
+        <label>Core/Prod/Inc/robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" prot="public" static="no">
+        <name>TRUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="11" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" prot="public" static="no">
+        <name>FALSE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="12" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3c2648939c6647416893f6a7120b85df" prot="public" static="no">
+        <name>MATCH_DURATION</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="21" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6cfe7a065aac360f28070f22deaf5349" prot="public" static="no">
+        <name>ANGLE_STARTUP</name>
+        <initializer>110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="25" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1ac3f7038ce243ae376ed39a0ce14875" prot="public" static="no">
+        <name>ANGLE_PINCE_RELEASE</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="26" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1acdb268df040f64a42804d8253ac1ba5f" prot="public" static="no">
+        <name>ANGLE_PINCE_CATCH</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="27" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5c756ea14813116ecca633d2d461e506" prot="public" static="no">
+        <name>ANGLE_FLAG_REPOS</name>
+        <initializer>96</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="28" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8d9832525be5b237b2d74b28efe8ffd4" prot="public" static="no">
+        <name>ANGLE_FLAG_DEPLOY</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="29" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a59e277e8aa32e1f3ff561a1c12f32abd" prot="public" static="no">
+        <name>ANGLE_BRAS_RAISE</name>
+        <initializer>110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="30" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a52087ee651e6d2038636cecd9df53b28" prot="public" static="no">
+        <name>ANGLE_BRAS_DEPLOY</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="31" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2d05bcc021d66ae0458c269139222edc" prot="public" static="no">
+        <name>STEPS_PER_REV</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="35" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a793cd9403fa1b683e3da533bfa929788" prot="public" static="no">
+        <name>MICROSTEPS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="36" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6305a9adad96baccefbe61ccaa9fd1b3" prot="public" static="no">
+        <name>ROT_RPM_MAX</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="37" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1e3c1955977981d8725888aae1198e8b" prot="public" static="no">
+        <name>MOV_RPM_MAX</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="38" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa2197f97809b97a528eda7aaf1f2d1eb" prot="public" static="no">
+        <name>COEFF_CODEUR_L</name>
+        <initializer>0.0405726153</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="42" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1adf9a35ffe2b1ec4224e9f821d7690a27" prot="public" static="no">
+        <name>COEFF_CODEUR_R</name>
+        <initializer>0.0403868872</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="43" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5206172c2805a3143ce65d51d886a61f" prot="public" static="no">
+        <name>ENTRAXE</name>
+        <initializer>251</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="44" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1b46472ac9ac07edf24fc9f872caa74f" prot="public" static="no">
+        <name>R_ENCODER</name>
+        <initializer>htim1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="48" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae0bc6fff1ff52ddebb1eeb8402ec57fd" prot="public" static="no">
+        <name>L_ENCODER</name>
+        <initializer>htim3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="49" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7448037af61f486c737872dfa61ec99f" prot="public" static="no">
+        <name>R_MOTOR_TIMER</name>
+        <initializer>htim8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="50" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6705ac6aeb1f8673646623163ffd5148" prot="public" static="no">
+        <name>L_MOTOR_TIMER</name>
+        <initializer>htim11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="51" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="config_8h_1a1062901a7428fdd9c7f180f5e01ea056" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="10" column="13" bodyfile="Core/Prod/Inc/config.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ce fichier regroupe un grand nombre de constantes utilisées à diverses endroits dans le projet. Certaines permettent de configuer le fonctionnement du robot, d&apos;autres l&apos;activation ou non des affichages de debogage dans la console via un port USB serie. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bool;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRUE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FALSE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fonctions<sp/>du<sp/>robot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Module<sp/>Debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Age<sp/>of<sp/>bots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MATCH_DURATION<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>AX-12A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_STARTUP<sp/>110</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_PINCE_RELEASE<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_PINCE_CATCH<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_FLAG_REPOS<sp/>96<sp/></highlight><highlight class="comment">//<sp/>105</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_FLAG_DEPLOY<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_BRAS_RAISE<sp/>110</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_BRAS_DEPLOY<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Vitesses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STEPS_PER_REV<sp/><sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MICROSTEPS<sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROT_RPM_MAX<sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOV_RPM_MAX<sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Odométrie</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_L<sp/>0.0405726153</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_R<sp/>0.0403868872</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENTRAXE<sp/>251</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timer<sp/>names</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_ENCODER<sp/>htim1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_ENCODER<sp/>htim3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_MOTOR_TIMER<sp/>htim8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_MOTOR_TIMER<sp/>htim11</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/config.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="fr">
+  <compound refid="struct_bezier" kind="struct"><name>Bezier</name>
+    <member refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" kind="variable"><name>p1</name></member>
+    <member refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" kind="variable"><name>p2</name></member>
+    <member refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" kind="variable"><name>p3</name></member>
+    <member refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" kind="variable"><name>p4</name></member>
+    <member refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" kind="variable"><name>lut</name></member>
+    <member refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kind="variable"><name>lutLength</name></member>
+  </compound>
+  <compound refid="struct_robot" kind="struct"><name>Robot</name>
+    <member refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kind="variable"><name>position</name></member>
+    <member refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kind="variable"><name>angle</name></member>
+    <member refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kind="variable"><name>leftMotor</name></member>
+    <member refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kind="variable"><name>rightMotor</name></member>
+  </compound>
+  <compound refid="struct_stepper" kind="struct"><name>Stepper</name>
+    <member refid="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" kind="variable"><name>enablePin</name></member>
+    <member refid="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" kind="variable"><name>enableGPIO</name></member>
+    <member refid="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" kind="variable"><name>dirPin</name></member>
+    <member refid="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" kind="variable"><name>dirGPIO</name></member>
+    <member refid="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" kind="variable"><name>timer</name></member>
+    <member refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" kind="variable"><name>channel</name></member>
+  </compound>
+  <compound refid="structvector2" kind="struct"><name>vector2</name>
+    <member refid="structvector2_1a58dc79a521ff8fd13b858bf078429c85" kind="variable"><name>x</name></member>
+    <member refid="structvector2_1a27a1dc2b09f3dda1cb5d580272a196ce" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="bezier_8h" kind="file"><name>bezier.h</name>
+    <member refid="bezier_8h_1af5e634cb43395d4cca1f4176d72c7d4d" kind="function"><name>bezier_new</name></member>
+    <member refid="bezier_8h_1a40c9661942fccc97d08bfe6c84f210bb" kind="function"><name>bezier_display</name></member>
+    <member refid="bezier_8h_1a1299bcdefd0ceabbfcd8e46b9273257a" kind="function"><name>bezier_eval0</name></member>
+    <member refid="bezier_8h_1a7f31abc5f33b6864fa1190496a5a83d4" kind="function"><name>bezier_eval0Lut</name></member>
+    <member refid="bezier_8h_1aac65735e2c61b2d4aa0115512f3317dd" kind="function"><name>bezier_eval1</name></member>
+    <member refid="bezier_8h_1a76493119efa07167a97dbaf2c7e13055" kind="function"><name>bezier_eval2</name></member>
+    <member refid="bezier_8h_1aa9545f17c9cff50d191c692516640713" kind="function"><name>bezier_curvature</name></member>
+    <member refid="bezier_8h_1a0a2dd04b4d13ef2b92af85ae4778b1dd" kind="function"><name>bezier_projectLut</name></member>
+    <member refid="bezier_8h_1a385a62959e6fd678b38e65f44998b0db" kind="function"><name>bezier_project</name></member>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="config_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+    <member refid="config_8h_1a3c2648939c6647416893f6a7120b85df" kind="define"><name>MATCH_DURATION</name></member>
+    <member refid="config_8h_1a6cfe7a065aac360f28070f22deaf5349" kind="define"><name>ANGLE_STARTUP</name></member>
+    <member refid="config_8h_1a1ac3f7038ce243ae376ed39a0ce14875" kind="define"><name>ANGLE_PINCE_RELEASE</name></member>
+    <member refid="config_8h_1acdb268df040f64a42804d8253ac1ba5f" kind="define"><name>ANGLE_PINCE_CATCH</name></member>
+    <member refid="config_8h_1a5c756ea14813116ecca633d2d461e506" kind="define"><name>ANGLE_FLAG_REPOS</name></member>
+    <member refid="config_8h_1a8d9832525be5b237b2d74b28efe8ffd4" kind="define"><name>ANGLE_FLAG_DEPLOY</name></member>
+    <member refid="config_8h_1a59e277e8aa32e1f3ff561a1c12f32abd" kind="define"><name>ANGLE_BRAS_RAISE</name></member>
+    <member refid="config_8h_1a52087ee651e6d2038636cecd9df53b28" kind="define"><name>ANGLE_BRAS_DEPLOY</name></member>
+    <member refid="config_8h_1a2d05bcc021d66ae0458c269139222edc" kind="define"><name>STEPS_PER_REV</name></member>
+    <member refid="config_8h_1a793cd9403fa1b683e3da533bfa929788" kind="define"><name>MICROSTEPS</name></member>
+    <member refid="config_8h_1a6305a9adad96baccefbe61ccaa9fd1b3" kind="define"><name>ROT_RPM_MAX</name></member>
+    <member refid="config_8h_1a1e3c1955977981d8725888aae1198e8b" kind="define"><name>MOV_RPM_MAX</name></member>
+    <member refid="config_8h_1aa2197f97809b97a528eda7aaf1f2d1eb" kind="define"><name>COEFF_CODEUR_L</name></member>
+    <member refid="config_8h_1adf9a35ffe2b1ec4224e9f821d7690a27" kind="define"><name>COEFF_CODEUR_R</name></member>
+    <member refid="config_8h_1a5206172c2805a3143ce65d51d886a61f" kind="define"><name>ENTRAXE</name></member>
+    <member refid="config_8h_1a1b46472ac9ac07edf24fc9f872caa74f" kind="define"><name>R_ENCODER</name></member>
+    <member refid="config_8h_1ae0bc6fff1ff52ddebb1eeb8402ec57fd" kind="define"><name>L_ENCODER</name></member>
+    <member refid="config_8h_1a7448037af61f486c737872dfa61ec99f" kind="define"><name>R_MOTOR_TIMER</name></member>
+    <member refid="config_8h_1a6705ac6aeb1f8673646623163ffd5148" kind="define"><name>L_MOTOR_TIMER</name></member>
+    <member refid="config_8h_1a1062901a7428fdd9c7f180f5e01ea056" kind="typedef"><name>bool</name></member>
+  </compound>
+  <compound refid="drv8825_8h" kind="file"><name>drv8825.h</name>
+    <member refid="drv8825_8h_1a3304c99f43f534878204486fc7b9673d" kind="define"><name>RAYON</name></member>
+    <member refid="drv8825_8h_1a9b043226b51a6ed4eff992382778534f" kind="define"><name>PAS</name></member>
+    <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" kind="enum"><name>StepperDirection</name></member>
+    <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" kind="enumvalue"><name>POSITIVE</name></member>
+    <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" kind="enumvalue"><name>NEGATIVE</name></member>
+    <member refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332" kind="enum"><name>StepperState</name></member>
+    <member refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a33cf1d8ef1d06ee698a7fabf40eb3a7f" kind="enumvalue"><name>ACTIVE</name></member>
+    <member refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a48be352751e0dd34bbad624be5667ee2" kind="enumvalue"><name>PASSIVE</name></member>
+    <member refid="drv8825_8h_1a0a1bf14db082eeab6742f0df39914701" kind="function"><name>drv8825_init</name></member>
+    <member refid="drv8825_8h_1af06fcf3e04748695fb994f75281c815f" kind="function"><name>drv8825_setDirection</name></member>
+    <member refid="drv8825_8h_1acd1fc2c4b96475fee49ebd3dbf100d29" kind="function"><name>drv8825_enable</name></member>
+    <member refid="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" kind="function"><name>drv8825_disable</name></member>
+    <member refid="drv8825_8h_1a81de3e9930a1e964724b80c2994977d7" kind="function"><name>drv8825_setPWMFrequency</name></member>
+    <member refid="drv8825_8h_1a88f3979f18202f3deda5ccec46b7f14c" kind="function"><name>drv8825_setRotationSpeed</name></member>
+    <member refid="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" kind="function"><name>drv8825_moveMotorLineSpeed</name></member>
+  </compound>
+  <compound refid="odometry_8h" kind="file"><name>odometry.h</name>
+    <member refid="odometry_8h_1ae92830521f62c63d312a851c025b4515" kind="function"><name>updateRobotPosition</name></member>
+    <member refid="odometry_8h_1abfc4fd142f96b0f91ea850dc7be370c7" kind="function"><name>setRobotPosition</name></member>
+    <member refid="odometry_8h_1a99a2cbf22d50596029e564a8cd7ad977" kind="function"><name>setRobotAngle</name></member>
+  </compound>
+  <compound refid="propulsion_8h" kind="file"><name>propulsion.h</name>
+    <member refid="propulsion_8h_1ab5253cb714d19da3fcb52152a6da9f88" kind="function"><name>propulsion_init</name></member>
+    <member refid="propulsion_8h_1ab3b8837d916f7291cd4d84ec04fadb68" kind="function"><name>propulsion_enableMotors</name></member>
+    <member refid="propulsion_8h_1a11ba711add37c5ead9d5933c9f2d58bb" kind="function"><name>propulsion_disableMotors</name></member>
+    <member refid="propulsion_8h_1ac3d90a7696f75abf3fb2fefd3ac288ab" kind="function"><name>propulsion_setSpeeds</name></member>
+  </compound>
+  <compound refid="robot_8h" kind="file"><name>robot.h</name>
+    <member refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
+  </compound>
+  <compound refid="vector2_8h" kind="file"><name>vector2.h</name>
+    <member refid="vector2_8h_1aa0c1b861c800c578169acd690b5d80b6" kind="typedef"><name>Vector2</name></member>
+    <member refid="vector2_8h_1a821b038b65af78d18bfb467903b2a85a" kind="function"><name>vector2_new</name></member>
+    <member refid="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" kind="function"><name>vector2_display</name></member>
+    <member refid="vector2_8h_1af2f0520156a8c662c49860a7913f07ae" kind="function"><name>vector2_norm</name></member>
+    <member refid="vector2_8h_1a06d17e6358b8dbecd268afa873cb9eba" kind="function"><name>vector2_angle</name></member>
+    <member refid="vector2_8h_1a7de90d9daa27357cbf29e0588ed8935a" kind="function"><name>vector2_dist</name></member>
+    <member refid="vector2_8h_1addf037d7729fb5baf80810fee41e1413" kind="function"><name>vector2_sum</name></member>
+    <member refid="vector2_8h_1a1db069bf1c62849e00e2b02b96f1073d" kind="function"><name>vector2_diff</name></member>
+    <member refid="vector2_8h_1a24814df5bf9841f11368adeb17d094d4" kind="function"><name>vector2_dot</name></member>
+    <member refid="vector2_8h_1ae15342af1e40ae21fbc76d9a8ea8b209" kind="function"><name>vector2_cross</name></member>
+    <member refid="vector2_8h_1a6c9c4cf97c353f6ae9caf0addae1a49a" kind="function"><name>vector2_normalize</name></member>
+    <member refid="vector2_8h_1acf2cab5ad6bf5ddb8281dcfb24beb087" kind="function"><name>vector2_scale</name></member>
+    <member refid="vector2_8h_1a090fe1d7de1fc3019c946c32dbdf4bf8" kind="function"><name>vector2_rotate</name></member>
+    <member refid="vector2_8h_1a8c7390f599d70eaf163d8238a127fd73" kind="function"><name>vector2_rotate90</name></member>
+  </compound>
+  <compound refid="bezier_8c" kind="file"><name>bezier.c</name>
+    <member refid="bezier_8c_1af5e634cb43395d4cca1f4176d72c7d4d" kind="function"><name>bezier_new</name></member>
+    <member refid="bezier_8c_1a40c9661942fccc97d08bfe6c84f210bb" kind="function"><name>bezier_display</name></member>
+    <member refid="bezier_8c_1a1299bcdefd0ceabbfcd8e46b9273257a" kind="function"><name>bezier_eval0</name></member>
+    <member refid="bezier_8c_1a7f31abc5f33b6864fa1190496a5a83d4" kind="function"><name>bezier_eval0Lut</name></member>
+    <member refid="bezier_8c_1aac65735e2c61b2d4aa0115512f3317dd" kind="function"><name>bezier_eval1</name></member>
+    <member refid="bezier_8c_1a76493119efa07167a97dbaf2c7e13055" kind="function"><name>bezier_eval2</name></member>
+    <member refid="bezier_8c_1aa9545f17c9cff50d191c692516640713" kind="function"><name>bezier_curvature</name></member>
+    <member refid="bezier_8c_1a0a2dd04b4d13ef2b92af85ae4778b1dd" kind="function"><name>bezier_projectLut</name></member>
+    <member refid="bezier_8c_1a385a62959e6fd678b38e65f44998b0db" kind="function"><name>bezier_project</name></member>
+  </compound>
+  <compound refid="drv8825_8c" kind="file"><name>drv8825.c</name>
+    <member refid="drv8825_8c_1a0a1bf14db082eeab6742f0df39914701" kind="function"><name>drv8825_init</name></member>
+    <member refid="drv8825_8c_1af06fcf3e04748695fb994f75281c815f" kind="function"><name>drv8825_setDirection</name></member>
+    <member refid="drv8825_8c_1acd1fc2c4b96475fee49ebd3dbf100d29" kind="function"><name>drv8825_enable</name></member>
+    <member refid="drv8825_8c_1aae52eaba834630cd056bdfefb7f8878f" kind="function"><name>drv8825_disable</name></member>
+    <member refid="drv8825_8c_1a81de3e9930a1e964724b80c2994977d7" kind="function"><name>drv8825_setPWMFrequency</name></member>
+    <member refid="drv8825_8c_1a88f3979f18202f3deda5ccec46b7f14c" kind="function"><name>drv8825_setRotationSpeed</name></member>
+    <member refid="drv8825_8c_1a748dcd834b79da0f777686bfdc7c1241" kind="function"><name>drv8825_moveMotorLineSpeed</name></member>
+  </compound>
+  <compound refid="odometry_8c" kind="file"><name>odometry.c</name>
+    <member refid="odometry_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
+    <member refid="odometry_8c_1ab9e22ceaafb18b5207227c99bf6d2781" kind="function"><name>getRightEncoderCount</name></member>
+    <member refid="odometry_8c_1ad3aafb037398da1b115b7f5301374482" kind="function"><name>getLeftEncoderCount</name></member>
+    <member refid="odometry_8c_1a2a27cbc278dfbfc44cf24dc7db2bd661" kind="function"><name>resetRightEncoderCount</name></member>
+    <member refid="odometry_8c_1ad187ef11cd56645bd6aa9ee2eaffb72a" kind="function"><name>resetLeftEncoderCount</name></member>
+    <member refid="odometry_8c_1ae92830521f62c63d312a851c025b4515" kind="function"><name>updateRobotPosition</name></member>
+    <member refid="odometry_8c_1abfc4fd142f96b0f91ea850dc7be370c7" kind="function"><name>setRobotPosition</name></member>
+    <member refid="odometry_8c_1a99a2cbf22d50596029e564a8cd7ad977" kind="function"><name>setRobotAngle</name></member>
+  </compound>
+  <compound refid="propulsion_8c" kind="file"><name>propulsion.c</name>
+    <member refid="propulsion_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
+    <member refid="propulsion_8c_1ab5253cb714d19da3fcb52152a6da9f88" kind="function"><name>propulsion_init</name></member>
+    <member refid="propulsion_8c_1ab3b8837d916f7291cd4d84ec04fadb68" kind="function"><name>propulsion_enableMotors</name></member>
+    <member refid="propulsion_8c_1a11ba711add37c5ead9d5933c9f2d58bb" kind="function"><name>propulsion_disableMotors</name></member>
+    <member refid="propulsion_8c_1ac3d90a7696f75abf3fb2fefd3ac288ab" kind="function"><name>propulsion_setSpeeds</name></member>
+  </compound>
+  <compound refid="vector2_8c" kind="file"><name>vector2.c</name>
+    <member refid="vector2_8c_1a821b038b65af78d18bfb467903b2a85a" kind="function"><name>vector2_new</name></member>
+    <member refid="vector2_8c_1a341d1d9c577a9c97628697d2f3bf1bf4" kind="function"><name>vector2_display</name></member>
+    <member refid="vector2_8c_1af2f0520156a8c662c49860a7913f07ae" kind="function"><name>vector2_norm</name></member>
+    <member refid="vector2_8c_1a06d17e6358b8dbecd268afa873cb9eba" kind="function"><name>vector2_angle</name></member>
+    <member refid="vector2_8c_1a7de90d9daa27357cbf29e0588ed8935a" kind="function"><name>vector2_dist</name></member>
+    <member refid="vector2_8c_1addf037d7729fb5baf80810fee41e1413" kind="function"><name>vector2_sum</name></member>
+    <member refid="vector2_8c_1a1db069bf1c62849e00e2b02b96f1073d" kind="function"><name>vector2_diff</name></member>
+    <member refid="vector2_8c_1a24814df5bf9841f11368adeb17d094d4" kind="function"><name>vector2_dot</name></member>
+    <member refid="vector2_8c_1ae15342af1e40ae21fbc76d9a8ea8b209" kind="function"><name>vector2_cross</name></member>
+    <member refid="vector2_8c_1a6c9c4cf97c353f6ae9caf0addae1a49a" kind="function"><name>vector2_normalize</name></member>
+    <member refid="vector2_8c_1acf2cab5ad6bf5ddb8281dcfb24beb087" kind="function"><name>vector2_scale</name></member>
+    <member refid="vector2_8c_1a090fe1d7de1fc3019c946c32dbdf4bf8" kind="function"><name>vector2_rotate</name></member>
+    <member refid="vector2_8c_1a8c7390f599d70eaf163d8238a127fd73" kind="function"><name>vector2_rotate90</name></member>
+  </compound>
+  <compound refid="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir"><name>Core</name>
+  </compound>
+  <compound refid="dir_5d189f72b21093759a55927cf148c63a" kind="dir"><name>Core/Prod/Inc</name>
+  </compound>
+  <compound refid="dir_542ed4cc54dd0f66b276e41c84137820" kind="dir"><name>Core/Prod</name>
+  </compound>
+  <compound refid="dir_2c793b468410df1851f0676187b81005" kind="dir"><name>Core/Prod/Src</name>
+  </compound>
+</doxygenindex>

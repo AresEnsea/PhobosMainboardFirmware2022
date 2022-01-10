@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="odometry_8c" kind="file" language="C++">
+    <compoundname>odometry.c</compoundname>
+    <includes refid="odometry_8h" local="yes">odometry.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>odometry.h</label>
+        <link refid="odometry_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Src/odometry.c</label>
+        <link refid="odometry_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="11">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="odometry_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_robot" kindref="compound">Robot</ref></type>
+        <definition>Robot robot</definition>
+        <argsstring></argsstring>
+        <name>robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable globale représentant le robot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="4" column="14" bodyfile="Core/Prod/Inc/robot.h" bodystart="35" bodyend="-1" declfile="Core/Prod/Src/odometry.c" declline="4" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="odometry_8c_1ab9e22ceaafb18b5207227c99bf6d2781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getRightEncoderCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRightEncoderCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="7" column="9" bodyfile="Core/Prod/Src/odometry.c" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1ad3aafb037398da1b115b7f5301374482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getLeftEncoderCount</definition>
+        <argsstring>()</argsstring>
+        <name>getLeftEncoderCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="12" column="9" bodyfile="Core/Prod/Src/odometry.c" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1a2a27cbc278dfbfc44cf24dc7db2bd661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resetRightEncoderCount</definition>
+        <argsstring>()</argsstring>
+        <name>resetRightEncoderCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="17" column="6" bodyfile="Core/Prod/Src/odometry.c" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1ad187ef11cd56645bd6aa9ee2eaffb72a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resetLeftEncoderCount</definition>
+        <argsstring>()</argsstring>
+        <name>resetLeftEncoderCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="22" column="6" bodyfile="Core/Prod/Src/odometry.c" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1ae92830521f62c63d312a851c025b4515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateRobotPosition</definition>
+        <argsstring>()</argsstring>
+        <name>updateRobotPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lit les valeurs des codeuses puis calcule et met à jour la position du robot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="27" column="6" bodyfile="Core/Prod/Src/odometry.c" bodystart="27" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1abfc4fd142f96b0f91ea850dc7be370c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRobotPosition</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>setRobotPosition</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit la position du robot. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;abscisse de la position du robot en millimètres. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;ordonnée de la position du robot en millimètres. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="55" column="6" bodyfile="Core/Prod/Src/odometry.c" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="odometry_8c_1a99a2cbf22d50596029e564a8cd7ad977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRobotAngle</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>setRobotAngle</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit l&apos;angle formé entre le robot et (1, 0). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L&apos;angle du robot en radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/odometry.c" line="61" column="6" bodyfile="Core/Prod/Src/odometry.c" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="odometry_8h" kindref="compound">odometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_robot" kindref="compound">Robot</ref><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">int16_t<sp/>getRightEncoderCount(){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(int16_t)<sp/>R_ENCODER.Instance-&gt;CNT;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">int16_t<sp/>getLeftEncoderCount(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1<sp/>*<sp/>(int16_t)<sp/>L_ENCODER.Instance-&gt;CNT;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetRightEncoderCount(){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>R_ENCODER.Instance-&gt;CNT<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetLeftEncoderCount(){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>L_ENCODER.Instance-&gt;CNT<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="odometry_8h_1ae92830521f62c63d312a851c025b4515" kindref="member">updateRobotPosition</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//#if<sp/>MODULE_DEBUG<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>DEBUG_ODOMETRIE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Position<sp/>actuelle<sp/>:\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;x<sp/>:<sp/>%5.1lf\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;y<sp/>:<sp/>%5.1lf\r\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;a<sp/>:<sp/>%3.2lf\r\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.x,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.y,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valCodG<sp/>=<sp/>getLeftEncoderCount();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valCodD<sp/>=<sp/>getRightEncoderCount();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>resetRightEncoderCount();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>resetLeftEncoderCount();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r<sp/>=<sp/><sp/>(valCodG*COEFF_CODEUR_L<sp/>+<sp/>valCodD*COEFF_CODEUR_R)/2;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>(valCodD*COEFF_CODEUR_R<sp/>-<sp/>valCodG*COEFF_CODEUR_L)/ENTRAXE;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.x<sp/>+=<sp/>r<sp/>*<sp/>cos(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+<sp/>alpha/2);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.y<sp/>+=<sp/>r<sp/>*<sp/>sin(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+<sp/>alpha/2);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+=<sp/>alpha;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>&gt;<sp/>M_PI)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>=<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>-<sp/>M_TWOPI;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>&lt;<sp/>-M_PI)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>=<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+<sp/>M_TWOPI;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="odometry_8h_1abfc4fd142f96b0f91ea850dc7be370c7" kindref="member">setRobotPosition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.x<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.y<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="odometry_8h_1a99a2cbf22d50596029e564a8cd7ad977" kindref="member">setRobotAngle</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>=<sp/>angle;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Src/odometry.c"/>
+  </compounddef>
+</doxygen>

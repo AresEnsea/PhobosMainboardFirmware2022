@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="drv8825_8h" kind="file" language="C++">
+    <compoundname>drv8825.h</compoundname>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="yes">stm32f4xx_hal.h</includes>
+    <includes local="yes">tim.h</includes>
+    <includedby refid="robot_8h" local="yes">Core/Prod/Inc/robot.h</includedby>
+    <includedby refid="drv8825_8c" local="yes">Core/Prod/Src/drv8825.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="6">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Core/Prod/Inc/odometry.h</label>
+        <link refid="odometry_8h"/>
+      </node>
+      <node id="4">
+        <label>Core/Prod/Inc/propulsion.h</label>
+        <link refid="propulsion_8h"/>
+      </node>
+      <node id="2">
+        <label>Core/Prod/Inc/robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_stepper" prot="public">Stepper</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="drv8825_8h_1a3304c99f43f534878204486fc7b9673d" prot="public" static="no">
+        <name>RAYON</name>
+        <initializer>51.45/2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="12" column="9" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="drv8825_8h_1a9b043226b51a6ed4eff992382778534f" prot="public" static="no">
+        <name>PAS</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="13" column="9" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>StepperDirection</name>
+        <enumvalue id="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" prot="public">
+          <name>POSITIVE</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sense de rotation trigonométrique face à l&apos;axe du moteur. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" prot="public">
+          <name>NEGATIVE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sense de rotation des aiguilles d&apos;une montre. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit les deux sens de rotation pour les moteurs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="35" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="enum" id="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332" prot="public" static="no" strong="no">
+        <type></type>
+        <name>StepperState</name>
+        <enumvalue id="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a33cf1d8ef1d06ee698a7fabf40eb3a7f" prot="public">
+          <name>ACTIVE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Moteur sous prise. Le driver consomme de l&apos;énergie. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a48be352751e0dd34bbad624be5667ee2" prot="public">
+          <name>PASSIVE</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Moteur en libre rotation. Le driver ne consomme plus d&apos;énergie. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit deux états pour le driver. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="45" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="45" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="drv8825_8h_1a0a1bf14db082eeab6742f0df39914701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_init</definition>
+        <argsstring>(Stepper *stepper, uint16_t enablePin, GPIO_TypeDef *enableGPIO, uint16_t dirPin, GPIO_TypeDef *dirGPIO, TIM_HandleTypeDef *timer, uint8_t channel)</argsstring>
+        <name>drv8825_init</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>enablePin</declname>
+        </param>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>enableGPIO</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dirPin</declname>
+        </param>
+        <param>
+          <type>GPIO_TypeDef *</type>
+          <declname>dirGPIO</declname>
+        </param>
+        <param>
+          <type>TIM_HandleTypeDef *</type>
+          <declname>timer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise la structure <ref refid="struct_stepper" kindref="compound">Stepper</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enablePin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de la broche enable. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enableGPIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure GPIO associé à la broche enable. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de la broche direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirGPIO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure GPIO associé à la broche direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timer lié à la génération du signal PWM. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numéro de canal utilisé du timer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="64" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="4" bodyend="16" declfile="Core/Prod/Inc/drv8825.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1af06fcf3e04748695fb994f75281c815f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_setDirection</definition>
+        <argsstring>(Stepper *stepper, StepperDirection direction)</argsstring>
+        <name>drv8825_setDirection</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type><ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" kindref="member">StepperDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit la direction du moteur. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sens de rotation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="75" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="19" bodyend="21" declfile="Core/Prod/Inc/drv8825.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1acd1fc2c4b96475fee49ebd3dbf100d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_enable</definition>
+        <argsstring>(Stepper *stepper)</argsstring>
+        <name>drv8825_enable</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met le moteur sour prise. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="82" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="24" bodyend="30" declfile="Core/Prod/Inc/drv8825.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_disable</definition>
+        <argsstring>(Stepper *stepper)</argsstring>
+        <name>drv8825_disable</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met le moteur hors tension. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="89" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="33" bodyend="39" declfile="Core/Prod/Inc/drv8825.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1a81de3e9930a1e964724b80c2994977d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_setPWMFrequency</definition>
+        <argsstring>(Stepper *stepper, uint16_t frequency)</argsstring>
+        <name>drv8825_setPWMFrequency</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Définit la fréquence du signal PWM de commande du moteur. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La fréquence du signal généré. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="97" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="42" bodyend="98" declfile="Core/Prod/Inc/drv8825.h" declline="97" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1a88f3979f18202f3deda5ccec46b7f14c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_setRotationSpeed</definition>
+        <argsstring>(Stepper *stepper, float rpm)</argsstring>
+        <name>drv8825_setRotationSpeed</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rpm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definit la vitesse du moteur à partir d&apos;un nombre de tours par minute. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rpm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse de rotation du moteur en tours par minute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="105" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="101" bodyend="104" declfile="Core/Prod/Inc/drv8825.h" declline="105" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_moveMotorLineSpeed</definition>
+        <argsstring>(Stepper *stepper, float speed)</argsstring>
+        <name>drv8825_moveMotorLineSpeed</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Definit la vitesse du moteur par rapport à son déplacement sur la table. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stepper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers la structure associée au moteur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse du moteur sur la table en m/s. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/drv8825.h" line="113" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="107" bodyend="111" declfile="Core/Prod/Inc/drv8825.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Ce fichier contient l&apos;ensemble des fonctions relatives au pilotage des drivers DRV8825 pour les moteurs pas-à-pas. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f4xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAYON<sp/>51.45/2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAS<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_stepper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" kindref="member">enablePin</ref>;</highlight></codeline>
+<codeline lineno="20" refid="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<sp/><ref refid="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" kindref="member">enableGPIO</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" kindref="member">dirPin</ref>;</highlight></codeline>
+<codeline lineno="25" refid="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_TypeDef<sp/>*<sp/><ref refid="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" kindref="member">dirGPIO</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TIM_HandleTypeDef*<sp/><ref refid="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="30" refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" kindref="member">channel</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" kindref="member">POSITIVE</ref>=1,<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" kindref="member">NEGATIVE</ref>=0</highlight></codeline>
+<codeline lineno="41" refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" refkind="member"><highlight class="normal">}<sp/><ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" kindref="member">StepperDirection</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a33cf1d8ef1d06ee698a7fabf40eb3a7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a33cf1d8ef1d06ee698a7fabf40eb3a7f" kindref="member">ACTIVE</ref>=0,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a48be352751e0dd34bbad624be5667ee2" kindref="member">PASSIVE</ref>=1</highlight></codeline>
+<codeline lineno="51" refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332a48be352751e0dd34bbad624be5667ee2" refkind="member"><highlight class="normal">}<sp/><ref refid="drv8825_8h_1a137a3ab4a61a0a75b1dd36dd6fc37332" kindref="member">StepperState</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1a0a1bf14db082eeab6742f0df39914701" kindref="member">drv8825_init</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref><sp/>*stepper,<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>enablePin,<sp/>GPIO_TypeDef*<sp/>enableGPIO,<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>dirPin,<sp/>GPIO_TypeDef<sp/>*dirGPIO,<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TIM_HandleTypeDef<sp/>*timer,<sp/>uint8_t<sp/>channel);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1af06fcf3e04748695fb994f75281c815f" kindref="member">drv8825_setDirection</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper,<sp/><ref refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" kindref="member">StepperDirection</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1acd1fc2c4b96475fee49ebd3dbf100d29" kindref="member">drv8825_enable</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" kindref="member">drv8825_disable</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1a81de3e9930a1e964724b80c2994977d7" kindref="member">drv8825_setPWMFrequency</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper,<sp/>uint16_t<sp/>frequency);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1a88f3979f18202f3deda5ccec46b7f14c" kindref="member">drv8825_setRotationSpeed</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rpm);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" kindref="member">drv8825_moveMotorLineSpeed</ref>(<ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/>stepper,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed);</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/drv8825.h"/>
+  </compounddef>
+</doxygen>

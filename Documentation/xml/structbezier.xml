@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="structbezier" kind="struct" language="C++" prot="public">
+    <compoundname>bezier</compoundname>
+    <includes refid="bezier_8h" local="no">bezier.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbezier_1ae94ba0d21365551b930960934f45e36d" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <qualifiedname>bezier::p1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Début de la courbe. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="19" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbezier_1a73e57a72054823ab1da8347d36c32f8e" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier::p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <qualifiedname>bezier::p2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Premier point de contrôle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="22" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbezier_1a782580c1f7cfc2822a8e16d417948b2f" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier::p3</definition>
+        <argsstring></argsstring>
+        <name>p3</name>
+        <qualifiedname>bezier::p3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Second point de contrôle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="25" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbezier_1a3acea8dbc11ee2b72547b70b0ff7ec1a" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier::p4</definition>
+        <argsstring></argsstring>
+        <name>p4</name>
+        <qualifiedname>bezier::p4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fin de la courbe. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="28" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbezier_1a15e4ce74b9c888831949b49111f90a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+        <definition>Vector2* bezier::lut</definition>
+        <argsstring></argsstring>
+        <name>lut</name>
+        <qualifiedname>bezier::lut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointeur vers la LUT. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="31" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbezier_1a961ea4a5f3eb749a85f769b2c83b0d64" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bezier::lutLength</definition>
+        <argsstring></argsstring>
+        <name>lutLength</name>
+        <qualifiedname>bezier::lutLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Longeur de la LUT utilisée. Supérieur ou égal à deux. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="34" column="9" bodyfile="Core/Prod/Inc/bezier.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Courbe de Bézier cubique. Cette courbe est représentée par quatre points. La structure comprend également une LUT pour accelérer certains calculs. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>bezier</label>
+        <link refid="structbezier"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lut</edgelabel>
+          <edgelabel>p1</edgelabel>
+          <edgelabel>p2</edgelabel>
+          <edgelabel>p3</edgelabel>
+          <edgelabel>p4</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector2</label>
+        <link refid="structvector2"/>
+      </node>
+    </collaborationgraph>
+    <location file="Core/Prod/Inc/bezier.h" line="17" column="1" bodyfile="Core/Prod/Inc/bezier.h" bodystart="17" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structbezier_1a15e4ce74b9c888831949b49111f90a7f" prot="public" virt="non-virtual"><scope>bezier</scope><name>lut</name></member>
+      <member refid="structbezier_1a961ea4a5f3eb749a85f769b2c83b0d64" prot="public" virt="non-virtual"><scope>bezier</scope><name>lutLength</name></member>
+      <member refid="structbezier_1ae94ba0d21365551b930960934f45e36d" prot="public" virt="non-virtual"><scope>bezier</scope><name>p1</name></member>
+      <member refid="structbezier_1a73e57a72054823ab1da8347d36c32f8e" prot="public" virt="non-virtual"><scope>bezier</scope><name>p2</name></member>
+      <member refid="structbezier_1a782580c1f7cfc2822a8e16d417948b2f" prot="public" virt="non-virtual"><scope>bezier</scope><name>p3</name></member>
+      <member refid="structbezier_1a3acea8dbc11ee2b72547b70b0ff7ec1a" prot="public" virt="non-virtual"><scope>bezier</scope><name>p4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
