@@ -52,4 +52,4 @@ Mkfile.old
 dkms.conf
 
 .vscode/*
-#stm32
+.DS_Store

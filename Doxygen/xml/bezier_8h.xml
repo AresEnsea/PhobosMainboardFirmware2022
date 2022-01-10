@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="bezier_8h" kind="file" language="C++">
+    <compoundname>bezier.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="vector2_8h" local="yes">vector2.h</includes>
+    <includedby refid="bezier_8c" local="yes">Core/Prod/Src/bezier.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Core/Prod/Inc/bezier.h</label>
+        <link refid="bezier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_bezier" prot="public">Bezier</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bezier_8h_1ae09fc89e932c799fa1955727ed1b0522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+        <definition>Bezier * bezier_new</definition>
+        <argsstring>(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, int lutLength)</argsstring>
+        <name>bezier_new</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x4</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y4</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lutLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise une courbe de Bézier cubique à partir des points. Initialise également une LUT dont la taille est précisée en argument.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La coordonnée en abscisse du n-ième point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La coordonnée en ordonnée du n-ième point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lutLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La longueur de la LUT contenant les points précalculés. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="47" column="8" bodyfile="Core/Prod/Src/bezier.c" bodystart="4" bodyend="18" declfile="Core/Prod/Inc/bezier.h" declline="47" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1a40c9661942fccc97d08bfe6c84f210bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bezier_display</definition>
+        <argsstring>(Bezier *b)</argsstring>
+        <name>bezier_display</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Affiche les points qui définissent la courbe de Bézier. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="55" column="6" bodyfile="Core/Prod/Src/bezier.c" bodystart="21" bodyend="31" declfile="Core/Prod/Inc/bezier.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier_eval0</definition>
+        <argsstring>(Bezier *b, float t)</argsstring>
+        <name>bezier_eval0</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Évalue la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paramètre <formula id="0">$t\in[0;1]$</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="64" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="34" bodyend="40" declfile="Core/Prod/Inc/bezier.h" declline="64" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier_eval0Lut</definition>
+        <argsstring>(Bezier *b, float t)</argsstring>
+        <name>bezier_eval0Lut</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Évalue la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput> approximativement grâce à la LUT (plus rapide).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paramètre <formula id="0">$t\in[0;1]$</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="74" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="43" bodyend="46" declfile="Core/Prod/Inc/bezier.h" declline="74" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1a44516240d05979b19889e3f723e24c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier_eval1</definition>
+        <argsstring>(Bezier *b, float t)</argsstring>
+        <name>bezier_eval1</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Évalue la dérivée première de la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paramètre <formula id="0">$t\in[0;1]$</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="83" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="49" bodyend="55" declfile="Core/Prod/Inc/bezier.h" declline="83" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 bezier_eval2</definition>
+        <argsstring>(Bezier *b, float t)</argsstring>
+        <name>bezier_eval2</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Évalue la dérivée seconde de la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paramètre <formula id="0">$t\in[0;1]$</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="92" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="58" bodyend="64" declfile="Core/Prod/Inc/bezier.h" declline="92" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1aafefea9f784c278a5d2aa616ebb32701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float bezier_curvature</definition>
+        <argsstring>(Bezier *b, float t)</argsstring>
+        <name>bezier_curvature</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Évalue la courbure de la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput>, la courbure étant l&apos;inverse du rayon de courbure. La forumle utilisée vient d&apos;un <linebreak/>
+ <ulink url="https://en.wikipedia.org/wiki/
+Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à propos de la courbure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="101" column="7" bodyfile="Core/Prod/Src/bezier.c" bodystart="67" bodyend="75" declfile="Core/Prod/Inc/bezier.h" declline="101" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1a390368900974782bbaafefe8aee28ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float bezier_projectLut</definition>
+        <argsstring>(Bezier *b, Vector2 p)</argsstring>
+        <name>bezier_projectLut</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recherche le point de la courbe de Bézier <computeroutput>b</computeroutput> le plus proche du point <computeroutput>p</computeroutput> fourni en argument grâce à la LUT. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="109" column="7" bodyfile="Core/Prod/Src/bezier.c" bodystart="78" bodyend="90" declfile="Core/Prod/Inc/bezier.h" declline="109" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float bezier_project</definition>
+        <argsstring>(Bezier *b, Vector2 p, float precision)</argsstring>
+        <name>bezier_project</name>
+        <param>
+          <type><ref refid="struct_bezier" kindref="compound">Bezier</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recherche le point de la courbe de Bézier b le plus proche du point p grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte.</para>
+<para>Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre <formula id="1">$t$</formula>, cette fonction s&apos;execute en environ 60 µs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La precision de la recherche par dichotomie. Doit être stritement positif. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/bezier.h" line="123" column="7" bodyfile="Core/Prod/Src/bezier.c" bodystart="93" bodyend="116" declfile="Core/Prod/Inc/bezier.h" declline="123" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Un type <computeroutput><ref refid="struct_bezier" kindref="compound">Bezier</ref></computeroutput> pour représenter et manipuler des courbes de Bézier est défini dans ce fichier. Les strutures de ce type sont toujours passées en argument par le bias d&apos;un pointeur. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="vector2_8h" kindref="compound">vector2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="struct_bezier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" kindref="member">p1</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" kindref="member">p2</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" kindref="member">p3</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" kindref="member">p4</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/><ref refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" kindref="member">lut</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="struct_bezier" kindref="compound">Bezier</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/><ref refid="bezier_8h_1ae09fc89e932c799fa1955727ed1b0522" kindref="member">bezier_new</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x3,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y3,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x4,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y4,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lutLength);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a40c9661942fccc97d08bfe6c84f210bb" kindref="member">bezier_display</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" kindref="member">bezier_eval0</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" kindref="member">bezier_eval0Lut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a44516240d05979b19889e3f723e24c8c" kindref="member">bezier_eval1</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" kindref="member">bezier_eval2</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aafefea9f784c278a5d2aa616ebb32701" kindref="member">bezier_curvature</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>p);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" kindref="member">bezier_project</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>precision);</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/bezier.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="propulsion_8h" kind="file" language="C++">
+    <compoundname>propulsion.h</compoundname>
+    <includes local="yes">gpio.h</includes>
+    <includes local="yes">tim.h</includes>
+    <includes refid="robot_8h" local="yes">robot.h</includes>
+    <includedby refid="propulsion_8c" local="yes">Core/Prod/Src/propulsion.c</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>drv8825.h</label>
+        <link refid="drv8825_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Core/Prod/Inc/propulsion.h</label>
+        <link refid="propulsion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>robot.h</label>
+        <link refid="robot_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector2.h</label>
+        <link refid="vector2_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gpio.h</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+      <node id="3">
+        <label>tim.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="propulsion_8h_1a6c8d917619c728a19188925d158c3255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_initialize</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialse les deux moteurs pas-à-pas du bloc de propulsion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/propulsion.h" line="12" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="7" bodyend="23" declfile="Core/Prod/Inc/propulsion.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8h_1ab3b8837d916f7291cd4d84ec04fadb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_enableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_enableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met sous tension les moteurs pas-à-pas du bloc de propulsion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/propulsion.h" line="18" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="26" bodyend="29" declfile="Core/Prod/Inc/propulsion.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8h_1a11ba711add37c5ead9d5933c9f2d58bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_disableMotors</definition>
+        <argsstring>()</argsstring>
+        <name>propulsion_disableMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Met hors tension des moteurs pas-à-pas. Ils tournent alors librement. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/propulsion.h" line="24" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="32" bodyend="35" declfile="Core/Prod/Inc/propulsion.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="propulsion_8h_1ae8b1c752e1dd78ac5c5c8a48f310789f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void propulsion_setSpeeds</definition>
+        <argsstring>(float left, float right)</argsstring>
+        <name>propulsion_setSpeeds</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure la vitesse absolue et le sens des moteurs en fonction des deux vitesses signées données en argument. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse du moteur gauche. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vitesse du moteur droit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/propulsion.h" line="33" column="6" bodyfile="Core/Prod/Src/propulsion.c" bodystart="38" bodyend="44" declfile="Core/Prod/Inc/propulsion.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tim.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="robot_8h" kindref="compound">robot.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1a6c8d917619c728a19188925d158c3255" kindref="member">propulsion_initialize</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1ab3b8837d916f7291cd4d84ec04fadb68" kindref="member">propulsion_enableMotors</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1a11ba711add37c5ead9d5933c9f2d58bb" kindref="member">propulsion_disableMotors</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="propulsion_8h_1ae8b1c752e1dd78ac5c5c8a48f310789f" kindref="member">propulsion_setSpeeds</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>right);</highlight></codeline>
+    </programlisting>
+    <location file="Core/Prod/Inc/propulsion.h"/>
+  </compounddef>
+</doxygen>
