@@ -29,10 +29,10 @@
   <compound refid="bezier_8h" kind="file"><name>bezier.h</name>
     <member refid="bezier_8h_1ae09fc89e932c799fa1955727ed1b0522" kind="function"><name>bezier_new</name></member>
     <member refid="bezier_8h_1a40c9661942fccc97d08bfe6c84f210bb" kind="function"><name>bezier_display</name></member>
-    <member refid="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" kind="function"><name>bezier_eval0</name></member>
-    <member refid="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" kind="function"><name>bezier_eval0Lut</name></member>
-    <member refid="bezier_8h_1a44516240d05979b19889e3f723e24c8c" kind="function"><name>bezier_eval1</name></member>
-    <member refid="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" kind="function"><name>bezier_eval2</name></member>
+    <member refid="bezier_8h_1af052c95075be81a29eec3c37b79d4941" kind="function"><name>bezier_eval</name></member>
+    <member refid="bezier_8h_1ad6e8244e863235873ec208c470eba052" kind="function"><name>bezier_evalLut</name></member>
+    <member refid="bezier_8h_1a9ccc95ed67f1943c701f853d8bca6ec2" kind="function"><name>bezier_deriv1</name></member>
+    <member refid="bezier_8h_1abbf88d9b88d4faa234210bd1df4a9446" kind="function"><name>bezier_deriv2</name></member>
     <member refid="bezier_8h_1aafefea9f784c278a5d2aa616ebb32701" kind="function"><name>bezier_curvature</name></member>
     <member refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kind="function"><name>bezier_projectLut</name></member>
     <member refid="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" kind="function"><name>bezier_project</name></member>
@@ -111,10 +111,10 @@
   <compound refid="bezier_8c" kind="file"><name>bezier.c</name>
     <member refid="bezier_8c_1ae09fc89e932c799fa1955727ed1b0522" kind="function"><name>bezier_new</name></member>
     <member refid="bezier_8c_1a40c9661942fccc97d08bfe6c84f210bb" kind="function"><name>bezier_display</name></member>
-    <member refid="bezier_8c_1adfe8a942f835c72f6ec1404c5bd14788" kind="function"><name>bezier_eval0</name></member>
-    <member refid="bezier_8c_1a26efc4eac14b9c788103a5531ef81286" kind="function"><name>bezier_eval0Lut</name></member>
-    <member refid="bezier_8c_1a44516240d05979b19889e3f723e24c8c" kind="function"><name>bezier_eval1</name></member>
-    <member refid="bezier_8c_1a051e8e383f3f454070ab280d5e7fe965" kind="function"><name>bezier_eval2</name></member>
+    <member refid="bezier_8c_1af052c95075be81a29eec3c37b79d4941" kind="function"><name>bezier_eval</name></member>
+    <member refid="bezier_8c_1ad6e8244e863235873ec208c470eba052" kind="function"><name>bezier_evalLut</name></member>
+    <member refid="bezier_8c_1a9ccc95ed67f1943c701f853d8bca6ec2" kind="function"><name>bezier_deriv1</name></member>
+    <member refid="bezier_8c_1abbf88d9b88d4faa234210bd1df4a9446" kind="function"><name>bezier_deriv2</name></member>
     <member refid="bezier_8c_1aafefea9f784c278a5d2aa616ebb32701" kind="function"><name>bezier_curvature</name></member>
     <member refid="bezier_8c_1a390368900974782bbaafefe8aee28ae7" kind="function"><name>bezier_projectLut</name></member>
     <member refid="bezier_8c_1aa6ca1862b8689d242d0856b4d37dc9c2" kind="function"><name>bezier_project</name></member>
@@ -127,6 +127,7 @@
     <member refid="drv8825_8c_1a81de3e9930a1e964724b80c2994977d7" kind="function"><name>drv8825_setPWMFrequency</name></member>
     <member refid="drv8825_8c_1a88f3979f18202f3deda5ccec46b7f14c" kind="function"><name>drv8825_setRotationSpeed</name></member>
     <member refid="drv8825_8c_1a748dcd834b79da0f777686bfdc7c1241" kind="function"><name>drv8825_moveMotorLineSpeed</name></member>
+    <member refid="drv8825_8c_1aed2f60bc232e202b9bd5ebb2d717af56" kind="function"><name>drv8825_setSpeed</name></member>
   </compound>
   <compound refid="odometry_8c" kind="file"><name>odometry.c</name>
     <member refid="odometry_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>

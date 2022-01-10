@@ -120,22 +120,19 @@ int main(void)
 
   bezier_display(b);
 
-  printf("LUT initialized with %d entries.\r\n", b->lutLength);
+  float t = 0.25;
 
-  printf("\r\nEvaluation.\r\n");
-  double t = 0.25;
-  printf("b(%3.2f) = ", t); vector2_display(bezier_eval0(b, t));
-  printf("b'(%3.2f) = ", t); vector2_display(bezier_eval1(b, t));
-  printf("b''(%3.2f) = ", t); vector2_display(bezier_eval2(b, t));
+  printf("Ready?\r\n");
 
-  printf("b_lut(%3.2f) = ", t); vector2_display(bezier_eval0Lut(b, t));
+  HAL_Delay(1000);
 
-  printf("\r\nCurvature at t=%3.2f: %f\r\n", t, bezier_curvature(b, t));
+  printf("Batch start.\r\n");
 
-  printf("\r\nProjection.\r\n");
-  Vector2 test = { 50, 50 };
-  printf("t_lut = %f\r\n", bezier_projectLut(b, test));
-  printf("t_fine = %f\r\n", bezier_project(b, test, 0.0001));
+  for (int i=0; i<10000000; i++) {
+	  bezier_deriv2(b, t);
+  }
+
+  printf("Batch stop.\r\n");
 
 
   /* USER CODE END 2 */

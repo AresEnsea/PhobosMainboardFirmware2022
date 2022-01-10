@@ -351,6 +351,27 @@
         </inbodydescription>
         <location file="Core/Prod/Src/drv8825.c" line="107" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="107" bodyend="111"/>
       </memberdef>
+      <memberdef kind="function" id="drv8825_8c_1aed2f60bc232e202b9bd5ebb2d717af56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drv8825_setSpeed</definition>
+        <argsstring>(Stepper *stepper, float speed)</argsstring>
+        <name>drv8825_setSpeed</name>
+        <param>
+          <type><ref refid="struct_stepper" kindref="compound">Stepper</ref> *</type>
+          <declname>stepper</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Src/drv8825.c" line="114" column="6" bodyfile="Core/Prod/Src/drv8825.c" bodystart="114" bodyend="116"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -468,6 +489,11 @@
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>f<sp/>=<sp/>(PAS<sp/>*<sp/>speed)<sp/>/<sp/>(2<sp/>*<sp/>M_PI<sp/>*<sp/>RAYON);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a81de3e9930a1e964724b80c2994977d7" kindref="member">drv8825_setPWMFrequency</ref>(stepper,<sp/>f);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drv8825_setSpeed(<ref refid="struct_stepper" kindref="compound">Stepper</ref><sp/>*stepper,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="drv8825_8h_1a88f3979f18202f3deda5ccec46b7f14c" kindref="member">drv8825_setRotationSpeed</ref>(stepper,<sp/>speed<sp/>/<sp/>(2<sp/>*<sp/>M_PI<sp/>*<sp/>RAYON));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Core/Prod/Src/drv8825.c"/>
   </compounddef>

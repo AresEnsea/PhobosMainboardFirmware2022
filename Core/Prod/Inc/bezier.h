@@ -57,39 +57,47 @@ void bezier_display(Bezier* b);
 
 /**
  * Évalue la courbe de Bézier `b` en `t`.
+ * 
+ * Sur un Cortex M4, cette fonction s'exécute en 1,3 µs.
  *
  * @param b Pointeur vers une courbe de Bezier.
  * @param t Paramètre \f$t\in[0;1]\f$.
  */
-Vector2 bezier_eval0(Bezier* b, float t);
+Vector2 bezier_eval(Bezier* b, float t);
 
 
 /**
- * Évalue la courbe de Bézier `b` en `t` approximativement grâce à la LUT (plus 
- * rapide).
+ * Évalue la courbe de Bézier `b` en `t` approximativement grâce à la LUT (un 
+ * peu plus rapide).
+ * 
+ * Sur un Cortex M4, cette fonction s'exécute en 0,9 µs.
  *
  * @param b Pointeur vers une courbe de Bezier.
  * @param t Paramètre \f$t\in[0;1]\f$.
  */
-Vector2 bezier_eval0Lut(Bezier* b, float t);
+Vector2 bezier_evalLut(Bezier* b, float t);
 
 
 /**
  * Évalue la dérivée première de la courbe de Bézier `b` en `t`. 
+ * 
+ * Sur un Cortex M4, cette fonction s'exécute en 1,2 µs.
  *
  * @param b Pointeur vers une courbe de Bezier.
  * @param t Paramètre \f$t\in[0;1]\f$.
  */
-Vector2 bezier_eval1(Bezier* b, float t);
+Vector2 bezier_deriv1(Bezier* b, float t);
 
 
 /**
  * Évalue la dérivée seconde de la courbe de Bézier `b` en `t`. 
+ * 
+ * Sur un Cortex M4, cette fonction s'exécute en 1,0 µs.
  *
  * @param b Pointeur vers une courbe de Bezier.
  * @param t Paramètre \f$t\in[0;1]\f$.
  */
-Vector2 bezier_eval2(Bezier* b, float t);
+Vector2 bezier_deriv2(Bezier* b, float t);
 
 
 /**
@@ -97,6 +105,8 @@ Vector2 bezier_eval2(Bezier* b, float t);
  * l'inverse du rayon de courbure. La forumle utilisée vient d'un  
  * [article wikipédia](https://en.wikipedia.org/wiki/
  * Curvature#In_terms_of_a_general_parametrization) à propos de la courbure.
+ * 
+ * Sur un Cortex M4, cette fonction s'exécute en 8 µs.
  * 
  * @param b Pointeur vers une courbe de Bezier.
  * @param t Paramètre \f$t\in[0;1]\f$.
@@ -121,7 +131,7 @@ float bezier_projectLut(Bezier* b, Vector2 p);
  * Renvoit le paramètre \f$t\f$ où la distance minimum est atteinte.
  *
  * Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre \f$t\f$,
- * cette fonction s'execute en environ 60 µs.
+ * cette fonction s'execute en environ 60 µs sur un Cortex M4.
  *
  * @param b Pointeur vers une courbe de Bezier.
  * @param p Point que l'on souhaite projeter sur la courbe.
