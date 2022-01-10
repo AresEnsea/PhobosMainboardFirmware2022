@@ -161,12 +161,18 @@
     <member refid="vector2_8c_1ae38ede7c84def6097862a8bcdb67b003" kind="function"><name>vector2_rotate</name></member>
     <member refid="vector2_8c_1a8c7390f599d70eaf163d8238a127fd73" kind="function"><name>vector2_rotate90</name></member>
   </compound>
+  <compound refid="mainpage_8dox" kind="file"><name>mainpage.dox</name>
+  </compound>
   <compound refid="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir"><name>Core</name>
+  </compound>
+  <compound refid="dir_1148ebc2b25b55095aebf6f4cbb6efca" kind="dir"><name>Doxygen</name>
   </compound>
   <compound refid="dir_5d189f72b21093759a55927cf148c63a" kind="dir"><name>Core/Prod/Inc</name>
   </compound>
   <compound refid="dir_542ed4cc54dd0f66b276e41c84137820" kind="dir"><name>Core/Prod</name>
   </compound>
   <compound refid="dir_2c793b468410df1851f0676187b81005" kind="dir"><name>Core/Prod/Src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

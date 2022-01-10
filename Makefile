@@ -8,6 +8,6 @@
 # https://aresensea.github.io/PhobosMainboardFirmware2022/
 
 documentation:
-	'/Applications/Doxygen.app/Contents/Resources/doxygen' doxyconfig
+	'/Applications/Doxygen.app/Contents/Resources/doxygen' Doxygen/doxyconfig
 	rm -r ./docs/
 	cp -R Doxygen/html/ docs/

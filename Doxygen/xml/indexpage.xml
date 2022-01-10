@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Phobos Mainboard Firmware</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title>
+<para>Ce projet <emphasis>STM32CubeIDE</emphasis> concerne le robot pricipal Phobos qui participera à la Coupe de France de Robotique en 2022.</para>
+</sect1>
+<sect1 id="index_1structure_sec">
+<title>Struture du projet</title>
+<para>Tous les fichiers écrits par l&apos;équipe se trouvent dans le répertoire <computeroutput>Core/Prod/</computeroutput>. Ce site ne documente aucun fichier en dehors de ce dernier. Il a deux exceptions : <computeroutput>main.c</computeroutput> et <computeroutput>stm32f4xx_it.c</computeroutput>, qui sont générés par l&apos;IDE puis complétés par l&apos;équipe. Tous les autres fichiers sont générés intégarlement par l&apos;IDE et ne sont pas inclus dans la documentation.</para>
+<para>Le fichiers <computeroutput>.h</computeroutput> contiennent la documention. C&apos;est elle qui est reproduite sur ce site pour une consultation plus aisée. Les fichiers <computeroutput>.c</computeroutput> contiennent la substance du code. Les commentaires s&apos;y trouvant concernent son fonctionnement interne plutôt que son utilisation.</para>
+</sect1>
+<sect1 id="index_1install_sec">
+<title>Installation</title>
+<para>Le projet nécessite <emphasis>STM32CubeIDE</emphasis>. Clonner le répertoire git pour commencer à travailler dessus ou pour programmer le robot. </para>
+</sect1>
+    </detaileddescription>
+    <location file="Doxygen/mainpage.dox"/>
+  </compounddef>
+</doxygen>
