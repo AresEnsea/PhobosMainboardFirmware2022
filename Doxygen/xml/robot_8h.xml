@@ -107,7 +107,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="struct_robot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="20" refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="20" refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23" refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>

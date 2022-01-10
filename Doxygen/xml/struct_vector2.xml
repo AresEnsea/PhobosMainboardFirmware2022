@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="fr">
+  <compounddef id="struct_vector2" kind="struct" language="C++" prot="public">
+    <compoundname>Vector2</compoundname>
+    <includes refid="vector2_8h" local="no">vector2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_vector2_1a046bb8d17a876acc49415128dc0502f2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vector2::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Vector2::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="19" column="11" bodyfile="Core/Prod/Inc/vector2.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_1a0e07bad05f01ed811b909a2eef97f9e2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vector2::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Vector2::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/vector2.h" line="20" column="11" bodyfile="Core/Prod/Inc/vector2.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Représente un vecteur du plan grâce à deux <computeroutput>float</computeroutput>. </para>
+    </detaileddescription>
+    <location file="Core/Prod/Inc/vector2.h" line="18" column="1" bodyfile="Core/Prod/Inc/vector2.h" bodystart="18" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_vector2_1a046bb8d17a876acc49415128dc0502f2" prot="public" virt="non-virtual"><scope>Vector2</scope><name>x</name></member>
+      <member refid="struct_vector2_1a0e07bad05f01ed811b909a2eef97f9e2" prot="public" virt="non-virtual"><scope>Vector2</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

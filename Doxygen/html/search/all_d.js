@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vector2_0',['vector2',['../structvector2.html',1,'']]],
+  ['vector2_0',['Vector2',['../struct_vector2.html',1,'']]],
   ['vector2_2eh_1',['vector2.h',['../vector2_8h.html',1,'']]],
   ['vector2_5fangle_2',['vector2_angle',['../vector2_8h.html#a3f9b2fc4e7eb132d1973260f66ccbcaf',1,'vector2.c']]],
   ['vector2_5fcross_3',['vector2_cross',['../vector2_8h.html#aa21be8e2464843764cd901f5d7981dea',1,'vector2.c']]],

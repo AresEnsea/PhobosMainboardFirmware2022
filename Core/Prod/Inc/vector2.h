@@ -14,7 +14,8 @@
 #include <math.h>
 #include <stdio.h>
 
-typedef struct vector2 {
+/** Représente un vecteur du plan grâce à deux `float`. */
+typedef struct {
     float x;
     float y;
 } Vector2;

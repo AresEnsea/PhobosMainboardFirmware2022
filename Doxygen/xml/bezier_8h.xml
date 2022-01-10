@@ -144,7 +144,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="55" column="6" bodyfile="Core/Prod/Src/bezier.c" bodystart="21" bodyend="31" declfile="Core/Prod/Inc/bezier.h" declline="55" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 bezier_eval0</definition>
         <argsstring>(Bezier *b, float t)</argsstring>
         <name>bezier_eval0</name>
@@ -184,7 +184,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="64" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="34" bodyend="40" declfile="Core/Prod/Inc/bezier.h" declline="64" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 bezier_eval0Lut</definition>
         <argsstring>(Bezier *b, float t)</argsstring>
         <name>bezier_eval0Lut</name>
@@ -224,7 +224,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="74" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="43" bodyend="46" declfile="Core/Prod/Inc/bezier.h" declline="74" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="bezier_8h_1a44516240d05979b19889e3f723e24c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 bezier_eval1</definition>
         <argsstring>(Bezier *b, float t)</argsstring>
         <name>bezier_eval1</name>
@@ -264,7 +264,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="83" column="9" bodyfile="Core/Prod/Src/bezier.c" bodystart="49" bodyend="55" declfile="Core/Prod/Inc/bezier.h" declline="83" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 bezier_eval2</definition>
         <argsstring>(Bezier *b, float t)</argsstring>
         <name>bezier_eval2</name>
@@ -337,7 +337,7 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>p</declname>
         </param>
         <briefdescription>
@@ -359,7 +359,7 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
           <declname>b</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>p</declname>
         </param>
         <param>
@@ -402,15 +402,15 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="struct_bezier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="20" refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" kindref="member">p1</ref>;</highlight></codeline>
+<codeline lineno="20" refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" kindref="member">p1</ref>;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" kindref="member">p2</ref>;</highlight></codeline>
+<codeline lineno="23" refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" kindref="member">p2</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" kindref="member">p3</ref>;</highlight></codeline>
+<codeline lineno="26" refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" kindref="member">p3</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" kindref="member">p4</ref>;</highlight></codeline>
+<codeline lineno="29" refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" kindref="member">p4</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/><ref refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" kindref="member">lut</ref>;</highlight></codeline>
+<codeline lineno="32" refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref>*<sp/><ref refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" kindref="member">lut</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">}<sp/><ref refid="struct_bezier" kindref="compound">Bezier</ref>;</highlight></codeline>
@@ -423,25 +423,25 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a40c9661942fccc97d08bfe6c84f210bb" kindref="member">bezier_display</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" kindref="member">bezier_eval0</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1adfe8a942f835c72f6ec1404c5bd14788" kindref="member">bezier_eval0</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" kindref="member">bezier_eval0Lut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a26efc4eac14b9c788103a5531ef81286" kindref="member">bezier_eval0Lut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a44516240d05979b19889e3f723e24c8c" kindref="member">bezier_eval1</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a44516240d05979b19889e3f723e24c8c" kindref="member">bezier_eval1</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" kindref="member">bezier_eval2</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="bezier_8h_1a051e8e383f3f454070ab280d5e7fe965" kindref="member">bezier_eval2</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aafefea9f784c278a5d2aa616ebb32701" kindref="member">bezier_curvature</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>p);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" kindref="member">bezier_project</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>precision);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" kindref="member">bezier_project</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>precision);</highlight></codeline>
     </programlisting>
     <location file="Core/Prod/Inc/bezier.h"/>
   </compounddef>

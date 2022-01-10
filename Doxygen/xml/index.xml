@@ -22,9 +22,9 @@
     <member refid="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" kind="variable"><name>timer</name></member>
     <member refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" kind="variable"><name>channel</name></member>
   </compound>
-  <compound refid="structvector2" kind="struct"><name>vector2</name>
-    <member refid="structvector2_1a76d1e0abcde35596481a7f9e1f30880c" kind="variable"><name>x</name></member>
-    <member refid="structvector2_1acc316e5d28b03846f92b1757c38ae35c" kind="variable"><name>y</name></member>
+  <compound refid="struct_vector2" kind="struct"><name>Vector2</name>
+    <member refid="struct_vector2_1a046bb8d17a876acc49415128dc0502f2" kind="variable"><name>x</name></member>
+    <member refid="struct_vector2_1a0e07bad05f01ed811b909a2eef97f9e2" kind="variable"><name>y</name></member>
   </compound>
   <compound refid="bezier_8h" kind="file"><name>bezier.h</name>
     <member refid="bezier_8h_1ae09fc89e932c799fa1955727ed1b0522" kind="function"><name>bezier_new</name></member>
@@ -93,7 +93,6 @@
     <member refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
   </compound>
   <compound refid="vector2_8h" kind="file"><name>vector2.h</name>
-    <member refid="vector2_8h_1aa0c1b861c800c578169acd690b5d80b6" kind="typedef"><name>Vector2</name></member>
     <member refid="vector2_8h_1ad79bb88f4e389a80385e63e2aadb98b8" kind="function"><name>vector2_new</name></member>
     <member refid="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" kind="function"><name>vector2_display</name></member>
     <member refid="vector2_8h_1a81d330926c7259e16904619fa2ea6730" kind="function"><name>vector2_norm</name></member>

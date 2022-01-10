@@ -27,7 +27,7 @@
     </incdepgraph>
       <sectiondef kind="func">
       <memberdef kind="function" id="vector2_8c_1ad79bb88f4e389a80385e63e2aadb98b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 vector2_new</definition>
         <argsstring>(float x, float y)</argsstring>
         <name>vector2_new</name>
@@ -72,7 +72,7 @@
         <argsstring>(Vector2 u)</argsstring>
         <name>vector2_display</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <briefdescription>
@@ -100,7 +100,7 @@
         <argsstring>(Vector2 u)</argsstring>
         <name>vector2_norm</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <briefdescription>
@@ -128,7 +128,7 @@
         <argsstring>(Vector2 u)</argsstring>
         <name>vector2_angle</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <briefdescription>
@@ -156,11 +156,11 @@
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_dist</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -196,11 +196,11 @@
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_dist2</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -231,16 +231,16 @@
         <location file="Core/Prod/Src/vector2.c" line="31" column="7" bodyfile="Core/Prod/Src/vector2.c" bodystart="31" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="vector2_8c_1addf037d7729fb5baf80810fee41e1413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 vector2_sum</definition>
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_sum</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -271,16 +271,16 @@
         <location file="Core/Prod/Src/vector2.c" line="37" column="9" bodyfile="Core/Prod/Src/vector2.c" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="vector2_8c_1a1db069bf1c62849e00e2b02b96f1073d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 vector2_diff</definition>
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_diff</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -316,11 +316,11 @@
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_dot</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -356,11 +356,11 @@
         <argsstring>(Vector2 u, Vector2 v)</argsstring>
         <name>vector2_cross</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>u</declname>
         </param>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
           <declname>v</declname>
         </param>
         <briefdescription>
@@ -396,7 +396,7 @@
         <argsstring>(Vector2 *u)</argsstring>
         <name>vector2_normalize</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
           <declname>u</declname>
         </param>
         <briefdescription>
@@ -424,7 +424,7 @@
         <argsstring>(Vector2 *u, float k)</argsstring>
         <name>vector2_scale</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
           <declname>u</declname>
         </param>
         <param>
@@ -464,7 +464,7 @@
         <argsstring>(Vector2 *u, float a)</argsstring>
         <name>vector2_rotate</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
           <declname>u</declname>
         </param>
         <param>
@@ -504,7 +504,7 @@
         <argsstring>(Vector2 *u)</argsstring>
         <name>vector2_rotate90</name>
         <param>
-          <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+          <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
           <declname>u</declname>
         </param>
         <briefdescription>
@@ -535,64 +535,64 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="vector2_8h" kindref="compound">vector2.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1ad79bb88f4e389a80385e63e2aadb98b8" kindref="member">vector2_new</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u<sp/>=<sp/>{<sp/>x,<sp/>y<sp/>};</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1ad79bb88f4e389a80385e63e2aadb98b8" kindref="member">vector2_new</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u<sp/>=<sp/>{<sp/>x,<sp/>y<sp/>};</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" kindref="member">vector2_display</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a341d1d9c577a9c97628697d2f3bf1bf4" kindref="member">vector2_display</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;{<sp/>x:<sp/>%f,<sp/>y:<sp/>%f<sp/>}\r\n&quot;</highlight><highlight class="normal">,<sp/>u.x,<sp/>u.y);</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a81d330926c7259e16904619fa2ea6730" kindref="member">vector2_norm</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a81d330926c7259e16904619fa2ea6730" kindref="member">vector2_norm</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(u.x*u.x<sp/>+<sp/>u.y*u.y);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a3f9b2fc4e7eb132d1973260f66ccbcaf" kindref="member">vector2_angle</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a3f9b2fc4e7eb132d1973260f66ccbcaf" kindref="member">vector2_angle</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u)<sp/>{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>atan2(u.y,<sp/>u.x);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1aa40da8c3cb4b3376a4b7839c36dac5aa" kindref="member">vector2_dist</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1aa40da8c3cb4b3376a4b7839c36dac5aa" kindref="member">vector2_dist</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a81d330926c7259e16904619fa2ea6730" kindref="member">vector2_norm</ref>(diff);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>diff.x*diff.x<sp/>+<sp/>diff.y*diff.y;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1addf037d7729fb5baf80810fee41e1413" kindref="member">vector2_sum</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>sum<sp/>=<sp/>{<sp/>v.x<sp/>+<sp/>u.x,<sp/>v.y<sp/>+<sp/>u.y<sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1addf037d7729fb5baf80810fee41e1413" kindref="member">vector2_sum</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>sum<sp/>=<sp/>{<sp/>v.x<sp/>+<sp/>u.x,<sp/>v.y<sp/>+<sp/>u.y<sp/>};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><ref refid="structvector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1a1db069bf1c62849e00e2b02b96f1073d" kindref="member">vector2_diff</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/><ref refid="vector2_8h_1a1db069bf1c62849e00e2b02b96f1073d" kindref="member">vector2_diff</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>diff<sp/>=<sp/>{<sp/>v.x<sp/>-<sp/>u.x,<sp/>v.y<sp/>-<sp/>u.y<sp/>};</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>diff;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a8a4545123aa930af862e80be1ce568b5" kindref="member">vector2_dot</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a8a4545123aa930af862e80be1ce568b5" kindref="member">vector2_dot</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u.x<sp/>*<sp/>v.x<sp/>+<sp/>u.y<sp/>*<sp/>v.y;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1aa21be8e2464843764cd901f5d7981dea" kindref="member">vector2_cross</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="structvector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1aa21be8e2464843764cd901f5d7981dea" kindref="member">vector2_cross</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>u,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>v)<sp/>{</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u.x<sp/>*<sp/>v.y<sp/>-<sp/>u.y<sp/>*<sp/>v.x;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fonctions<sp/>à<sp/>effet<sp/>de<sp/>bord<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a6c9c4cf97c353f6ae9caf0addae1a49a" kindref="member">vector2_normalize</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a6c9c4cf97c353f6ae9caf0addae1a49a" kindref="member">vector2_normalize</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref>*<sp/>u)<sp/>{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l<sp/>=<sp/><ref refid="vector2_8h_1a81d330926c7259e16904619fa2ea6730" kindref="member">vector2_norm</ref>(*u);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;x<sp/>/=<sp/>l;</highlight></codeline>
@@ -604,13 +604,13 @@
 <codeline lineno="70"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a4970e516110151466702e818fdd88ecd" kindref="member">vector2_scale</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>k)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a4970e516110151466702e818fdd88ecd" kindref="member">vector2_scale</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>k)<sp/>{</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;x<sp/>*=<sp/>k;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;y<sp/>*=<sp/>k;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1ae38ede7c84def6097862a8bcdb67b003" kindref="member">vector2_rotate</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1ae38ede7c84def6097862a8bcdb67b003" kindref="member">vector2_rotate</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref>*<sp/>u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a)<sp/>{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cos_a<sp/>=<sp/>cos(a);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sin_a<sp/>=<sp/>sin(a);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newX<sp/>=<sp/>cos_a*u-&gt;x<sp/>-<sp/>sin_a*u-&gt;y;</highlight></codeline>
@@ -619,7 +619,7 @@
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a8c7390f599d70eaf163d8238a127fd73" kindref="member">vector2_rotate90</ref>(<ref refid="structvector2" kindref="compound">Vector2</ref>*<sp/>u)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vector2_8h_1a8c7390f599d70eaf163d8238a127fd73" kindref="member">vector2_rotate90</ref>(<ref refid="struct_vector2" kindref="compound">Vector2</ref>*<sp/>u)<sp/>{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newX<sp/>=<sp/>-u-&gt;y;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;y<sp/>=<sp/>u-&gt;x;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;x<sp/>=<sp/>newX;</highlight></codeline>

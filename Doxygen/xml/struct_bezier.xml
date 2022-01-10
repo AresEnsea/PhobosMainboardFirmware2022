@@ -5,7 +5,7 @@
     <includes refid="bezier_8h" local="no">bezier.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_bezier_1a179065ecfc03fc2b434abbc9b9b7c490" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 Bezier::p1</definition>
         <argsstring></argsstring>
         <name>p1</name>
@@ -20,7 +20,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="20" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 Bezier::p2</definition>
         <argsstring></argsstring>
         <name>p2</name>
@@ -35,7 +35,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="23" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 Bezier::p3</definition>
         <argsstring></argsstring>
         <name>p3</name>
@@ -50,7 +50,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="26" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 Bezier::p4</definition>
         <argsstring></argsstring>
         <name>p4</name>
@@ -65,7 +65,7 @@
         <location file="Core/Prod/Inc/bezier.h" line="29" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref> *</type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
         <definition>Vector2* Bezier::lut</definition>
         <argsstring></argsstring>
         <name>lut</name>
@@ -113,8 +113,8 @@
         </childnode>
       </node>
       <node id="2">
-        <label>vector2</label>
-        <link refid="structvector2"/>
+        <label>Vector2</label>
+        <link refid="struct_vector2"/>
       </node>
     </collaborationgraph>
     <location file="Core/Prod/Inc/bezier.h" line="18" column="1" bodyfile="Core/Prod/Inc/bezier.h" bodystart="18" bodyend="36"/>

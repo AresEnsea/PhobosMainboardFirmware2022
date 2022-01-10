@@ -5,7 +5,7 @@
     <includes refid="robot_8h" local="no">robot.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" prot="public" static="no" mutable="no">
-        <type><ref refid="structvector2" kindref="compound">Vector2</ref></type>
+        <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
         <definition>Vector2 Robot::position</definition>
         <argsstring></argsstring>
         <name>position</name>
@@ -87,8 +87,8 @@
         <link refid="struct_stepper"/>
       </node>
       <node id="2">
-        <label>vector2</label>
-        <link refid="structvector2"/>
+        <label>Vector2</label>
+        <link refid="struct_vector2"/>
       </node>
     </collaborationgraph>
     <location file="Core/Prod/Inc/robot.h" line="18" column="1" bodyfile="Core/Prod/Inc/robot.h" bodystart="18" bodyend="30"/>
