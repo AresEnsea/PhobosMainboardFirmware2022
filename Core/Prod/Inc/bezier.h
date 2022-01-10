@@ -97,6 +97,9 @@ Vector2 bezier_eval2(Bezier* b, float t);
  * l'inverse du rayon de courbure. La forumle utilisée vient d'un  
  * [article wikipédia](https://en.wikipedia.org/wiki/
  * Curvature#In_terms_of_a_general_parametrization) à propos de la courbure.
+ * 
+ * @param b Pointeur vers une courbe de Bezier.
+ * @param t Paramètre \f$t\in[0;1]\f$.
  */
 float bezier_curvature(Bezier* b, float t);
 
@@ -105,18 +108,23 @@ float bezier_curvature(Bezier* b, float t);
  * Recherche le point de la courbe de Bézier `b` le plus proche du point `p` 
  * fourni en argument grâce à la LUT. Renvoit le paramètre \f$t\f$ où la 
  * distance minimum est atteinte.
+ * 
+ * @param b Pointeur vers une courbe de Bezier.
+ * @param p Point que l'on souhaite projeter sur la courbe.
  */
 float bezier_projectLut(Bezier* b, Vector2 p);
 
 
 /**
- * Recherche le point de la courbe de Bézier b le plus proche du point p grâce à
- * la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le 
- * paramètre \f$t\f$ où la distance minimum est atteinte.
+ * Recherche le point de la courbe de Bézier `b` le plus proche du point `p` 
+ * grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. 
+ * Renvoit le paramètre \f$t\f$ où la distance minimum est atteinte.
  *
  * Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre \f$t\f$,
  * cette fonction s'execute en environ 60 µs.
  *
+ * @param b Pointeur vers une courbe de Bezier.
+ * @param p Point que l'on souhaite projeter sur la courbe.
  * @param precision La precision de la recherche par dichotomie. Doit être 
  * stritement positif.
  */

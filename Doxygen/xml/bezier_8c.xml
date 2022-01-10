@@ -322,7 +322,25 @@
         <detaileddescription>
 <para>Évalue la courbure de la courbe de Bézier <computeroutput>b</computeroutput> en <computeroutput>t</computeroutput>, la courbure étant l&apos;inverse du rayon de courbure. La forumle utilisée vient d&apos;un <linebreak/>
  <ulink url="https://en.wikipedia.org/wiki/
-Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à propos de la courbure. </para>
+Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à propos de la courbure.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Paramètre <formula id="0">$t\in[0;1]$</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -344,7 +362,25 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Recherche le point de la courbe de Bézier <computeroutput>b</computeroutput> le plus proche du point <computeroutput>p</computeroutput> fourni en argument grâce à la LUT. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte. </para>
+<para>Recherche le point de la courbe de Bézier <computeroutput>b</computeroutput> le plus proche du point <computeroutput>p</computeroutput> fourni en argument grâce à la LUT. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point que l&apos;on souhaite projeter sur la courbe. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -370,9 +406,25 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Recherche le point de la courbe de Bézier b le plus proche du point p grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte.</para>
+<para>Recherche le point de la courbe de Bézier <computeroutput>b</computeroutput> le plus proche du point <computeroutput>p</computeroutput> grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte.</para>
 <para>Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre <formula id="1">$t$</formula>, cette fonction s&apos;execute en environ 60 µs.</para>
 <para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointeur vers une courbe de <ref refid="struct_bezier" kindref="compound">Bezier</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point que l&apos;on souhaite projeter sur la courbe. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
 <parameternamelist>
 <parametername>precision</parametername>
 </parameternamelist>

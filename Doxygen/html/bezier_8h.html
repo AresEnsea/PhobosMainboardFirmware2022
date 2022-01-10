@@ -135,7 +135,14 @@ Fonctions</h2></td></tr>
 </div><div class="memdoc">
 <p >Évalue la courbure de la courbe de Bézier <code>b</code> en <code>t</code>, la courbure étant l'inverse du rayon de courbure. La forumle utilisée vient d'un <br  />
  <a href="https://en.wikipedia.org/wiki/
-Curvature#In_terms_of_a_general_parametrization">article wikipédia</a> à propos de la courbure. </p>
+Curvature#In_terms_of_a_general_parametrization">article wikipédia</a> à propos de la courbure.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">t</td><td>Paramètre <img class="formulaInl" alt="$t\in[0;1]$" src="form_0.png" width="45" height="14"/>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -417,10 +424,12 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</a> à propo
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Recherche le point de la courbe de Bézier b le plus proche du point p grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/> où la distance minimum est atteinte.</p>
+<p >Recherche le point de la courbe de Bézier <code>b</code> le plus proche du point <code>p</code> grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/> où la distance minimum est atteinte.</p>
 <p >Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/>, cette fonction s'execute en environ 60 µs.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">p</td><td>Point que l'on souhaite projeter sur la courbe. </td></tr>
     <tr><td class="paramname">precision</td><td>La precision de la recherche par dichotomie. Doit être stritement positif. </td></tr>
   </table>
   </dd>
@@ -453,7 +462,14 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</a> à propo
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Recherche le point de la courbe de Bézier <code>b</code> le plus proche du point <code>p</code> fourni en argument grâce à la LUT. Renvoit le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/> où la distance minimum est atteinte. </p>
+<p >Recherche le point de la courbe de Bézier <code>b</code> le plus proche du point <code>p</code> fourni en argument grâce à la LUT. Renvoit le paramètre <img class="formulaInl" alt="$t$" src="form_1.png" width="5" height="9"/> où la distance minimum est atteinte.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Pointeur vers une courbe de <a class="el" href="struct_bezier.html">Bezier</a>. </td></tr>
+    <tr><td class="paramname">p</td><td>Point que l'on souhaite projeter sur la courbe. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
