@@ -216,13 +216,13 @@
         <detaileddescription>
 <para>Définit la vitesse des moteurs de sorte que le robot suive le meilleur arc de cercle approximant le point de la courbe Bézier le plus proche du robot.</para>
 <para>Appelée à intervalles réguliers, cette fonction fait suivre au robot la courbe de Bézier fournie en argument.</para>
-<para>Remarque: le robot doit se trouver au début de la courbe et dans la bonne orientation pour que la fonction ait l&apos;effet souhaité.</para>
+<para>Remarque : le robot doit se trouver au début de la courbe et dans la bonne orientation pour que la fonction ait l&apos;effet souhaité.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>La courbe de Bézier à suivre. </para>
+<para>Pointeur vers la courbe de Bézier à suivre. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

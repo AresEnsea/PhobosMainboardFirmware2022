@@ -170,7 +170,9 @@
   <option  id='HTML_HEADER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='HTML_FOOTER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='HTML_STYLESHEET' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='HTML_EXTRA_STYLESHEET' default='yes' type='stringlist'>
+  <option  id='HTML_EXTRA_STYLESHEET' default='no' type='stringlist'>
+    <value><![CDATA[Doxygen/doxygen-awesome.css]]></value>
+    <value><![CDATA[Doxygen/doxygen-awesome-sidebar-only.css]]></value>
   </option>
   <option  id='HTML_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
@@ -205,7 +207,7 @@
   <option  id='GENERATE_ECLIPSEHELP' default='yes' type='bool'><value>NO</value></option>
   <option  id='ECLIPSE_DOC_ID' default='yes' type='string'><value><![CDATA[org.doxygen.Project]]></value></option>
   <option  id='DISABLE_INDEX' default='yes' type='bool'><value>NO</value></option>
-  <option  id='GENERATE_TREEVIEW' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_TREEVIEW' default='no' type='bool'><value>YES</value></option>
   <option  id='FULL_SIDEBAR' default='yes' type='bool'><value>NO</value></option>
   <option  id='ENUM_VALUES_PER_LINE' default='yes' type='int'><value>4</value></option>
   <option  id='TREEVIEW_WIDTH' default='yes' type='int'><value>250</value></option>
@@ -215,7 +217,7 @@
   <option  id='FORMULA_FONTSIZE' default='yes' type='int'><value>10</value></option>
   <option  id='FORMULA_TRANSPARENT' default='yes' type='bool'><value>YES</value></option>
   <option  id='FORMULA_MACROFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='USE_MATHJAX' default='yes' type='bool'><value>NO</value></option>
+  <option  id='USE_MATHJAX' default='no' type='bool'><value>YES</value></option>
   <option  id='MATHJAX_VERSION' default='yes' type='string'><value>MathJax_2</value></option>
   <option  id='MATHJAX_FORMAT' default='yes' type='string'><value>HTML-CSS</value></option>
   <option  id='MATHJAX_RELPATH' default='yes' type='string'><value><![CDATA[]]></value></option>

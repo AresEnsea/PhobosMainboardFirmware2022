@@ -55,9 +55,9 @@ void propulsion_updatePosition(float dt);
  * Appelée à intervalles réguliers, cette fonction fait suivre au robot la 
  * courbe de Bézier fournie en argument.
  * 
- * Remarque: le robot doit se trouver au début de la courbe et dans la bonne
+ * Remarque : le robot doit se trouver au début de la courbe et dans la bonne
  * orientation pour que la fonction ait l'effet souhaité.
  * 
- * @param b La courbe de Bézier à suivre. 
+ * @param b Pointeur vers la courbe de Bézier à suivre. 
  */
 void propulsion_followBezier(Bezier* b);

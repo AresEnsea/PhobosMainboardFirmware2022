@@ -5,7 +5,7 @@
  * Ce projet *STM32CubeIDE* concerne le robot pricipal Phobos qui participera à
  * la Coupe de France de Robotique en 2022.
  * 
- * \section structure_sec Struture du projet
+ * \section structure_sec Structure du projet
  * 
  * Tous les fichiers écrits par l'équipe se trouvent dans le répertoire 
  * `Core/Prod/`. Ce site ne documente aucun fichier en dehors de ce dernier. 
