@@ -4,6 +4,9 @@
 #include "gpio.h"
 #include "tim.h"
 #include "robot.h"
+#include "config.h"
+#include "bezier.h"
+#include <stdio.h>
 
 
 /**
@@ -31,3 +34,30 @@ void propulsion_disableMotors();
  * @param right Vitesse du moteur droit.
  */
 void propulsion_setSpeeds(float left, float right);
+
+
+/**
+ * Simule la présence de l'odometrie. La position du robot est mise à jour en
+ * fonction de la vitesse des deux moteurs et d'autres paramètres du robot.
+ * 
+ * Cette fonction est vouée à être appelée depuis un timer. 
+ * 
+ * @param dt Durée passée à la vitesse actuelle (approximativement). Durée entre
+ * deux appels de cette fonction. Période d'interruption.
+ */
+void propulsion_updatePosition(float dt);
+
+
+/**
+ * Définit la vitesse des moteurs de sorte que le robot suive le meilleur arc de
+ * cercle approximant le point de la courbe Bézier le plus proche du robot.
+ * 
+ * Appelée à intervalles réguliers, cette fonction fait suivre au robot la 
+ * courbe de Bézier fournie en argument.
+ * 
+ * Remarque: le robot doit se trouver au début de la courbe et dans la bonne
+ * orientation pour que la fonction ait l'effet souhaité.
+ * 
+ * @param b La courbe de Bézier à suivre. 
+ */
+void propulsion_followBezier(Bezier* b);

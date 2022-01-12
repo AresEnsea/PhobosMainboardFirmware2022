@@ -27,9 +27,12 @@
 /* USER CODE BEGIN Includes */
 #include "propulsion.h"
 #include "odometry.h"
+#include "robot.h"
 #include "bezier.h"
 #include <stdio.h>
 #include <math.h>
+
+extern Robot robot;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -108,7 +111,10 @@ int main(void)
   MX_TIM6_Init();
   MX_TIM4_Init();
   MX_USART2_UART_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
+
+  HAL_TIM_Base_Start_IT(&htim5);
 
   printf("Initializing propulsion system.\r\n");
   propulsion_initialize();
@@ -116,24 +122,13 @@ int main(void)
   printf("Enabling propulsion system.\r\n");
   propulsion_enableMotors();
 
-  Bezier* b = bezier_new(0, 0, 100, 0, 0, 100, 100, 100, 30);
+  HAL_Delay(100);
 
-  bezier_display(b);
+  updateRobotPosition();
 
-  float t = 0.25;
-
-  printf("Ready?\r\n");
-
-  HAL_Delay(1000);
-
-  printf("Batch start.\r\n");
-
-  for (int i=0; i<10000000; i++) {
-	  bezier_deriv2(b, t);
-  }
-
-  printf("Batch stop.\r\n");
-
+  //Bezier* b = bezier_new(0, 0, 1000, 0, 0, 1000, 1000, 1000, 30);
+  Bezier* b = bezier_new(125, 849, 799, 843, 1698, 1654, 1698, 202, 30);
+  setRobotPosition(125, 849);
 
   /* USER CODE END 2 */
 
@@ -142,8 +137,9 @@ int main(void)
   int count = 0;
 
   while (1) {
-	  count++;
-	  HAL_Delay(100);
+	  //updateRobotPosition();
+
+	  propulsion_followBezier(b);
 
 
     /* USER CODE END WHILE */

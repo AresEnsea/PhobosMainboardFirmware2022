@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="18" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="18" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="15" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_stepper_1a678ee6d654fbfd06311be4e8ecb7dcc8" prot="public" static="no" mutable="no">
         <type>GPIO_TypeDef *</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="20" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="20" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="17" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_stepper_1a27a0f2226b47ee5e8e75de2c47f5546e" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="23" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="23" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="20" column="14" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" prot="public" static="no" mutable="no">
         <type>GPIO_TypeDef *</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="25" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="25" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="22" column="19" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_stepper_1a11955e8aafa5d3f744fed34c47a8657d" prot="public" static="no" mutable="no">
         <type>TIM_HandleTypeDef *</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="28" column="23" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="28" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="25" column="23" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
@@ -91,14 +91,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/drv8825.h" line="30" column="13" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="30" bodyend="-1"/>
+        <location file="Core/Prod/Inc/drv8825.h" line="27" column="13" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/Prod/Inc/drv8825.h" line="16" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="16" bodyend="31"/>
+    <location file="Core/Prod/Inc/drv8825.h" line="13" column="1" bodyfile="Core/Prod/Inc/drv8825.h" bodystart="13" bodyend="28"/>
     <listofallmembers>
       <member refid="struct_stepper_1ac8cbf733de5fd4f1a7bf48ff33a13dbc" prot="public" virt="non-virtual"><scope>Stepper</scope><name>channel</name></member>
       <member refid="struct_stepper_1a8b16c86ec517eacb54d7e857d5c136a7" prot="public" virt="non-virtual"><scope>Stepper</scope><name>dirGPIO</name></member>

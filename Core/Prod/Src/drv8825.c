@@ -102,15 +102,3 @@ void drv8825_setRotationSpeed(Stepper *stepper, float rpm) {
 	uint16_t f = (rpm / 60) * STEPS_PER_REV * MICROSTEPS;
 	drv8825_setPWMFrequency(stepper, f);
 }
-
-
-void drv8825_moveMotorLineSpeed(Stepper *stepper, float speed) {
-	speed = speed * 1000;
-	uint16_t f = (PAS * speed) / (2 * M_PI * RAYON);
-	drv8825_setPWMFrequency(stepper, f);
-}
-
-
-void drv8825_setSpeed(Stepper *stepper, float speed) {
-	drv8825_setRotationSpeed(stepper, speed / (2 * M_PI * RAYON));
-}

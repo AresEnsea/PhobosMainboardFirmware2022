@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/robot.h" line="35" column="7" bodyfile="Core/Prod/Inc/robot.h" bodystart="35" bodyend="-1"/>
+        <location file="Core/Prod/Inc/robot.h" line="37" column="7" bodyfile="Core/Prod/Inc/robot.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -112,13 +112,15 @@
 <codeline lineno="23" refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26" refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/><ref refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kindref="member">leftMotor</ref>;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/><ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="struct_robot" kindref="compound">Robot</ref>;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" refkind="member"><highlight class="normal"><ref refid="struct_robot" kindref="compound">Robot</ref><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>leftSpeed;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_stepper" kindref="compound">Stepper</ref>*<sp/><ref refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kindref="member">rightMotor</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rightSpeed;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="struct_robot" kindref="compound">Robot</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" refkind="member"><highlight class="normal"><ref refid="struct_robot" kindref="compound">Robot</ref><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="Core/Prod/Inc/robot.h"/>
   </compounddef>

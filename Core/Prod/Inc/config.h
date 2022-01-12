@@ -31,17 +31,19 @@ typedef int bool;
 #define ANGLE_BRAS_DEPLOY 10
 
 
-// Config Vitesses
+// Config propulsion
 #define STEPS_PER_REV  200
-#define MICROSTEPS     32
+#define MICROSTEPS     16
+#define WHEEL_RADIUS   38.6
 #define ROT_RPM_MAX    30
 #define MOV_RPM_MAX    50
+#define ENTRAXE_MOTOR  192
 
 
 // Config Odométrie
 #define COEFF_CODEUR_L 0.0405726153
-#define COEFF_CODEUR_R 0.0403868872
-#define ENTRAXE 251
+#define COEFF_CODEUR_R 0.0405726153//0.0403868872
+#define ENTRAXE_ODOMETRY 265
 
 
 // Timer names

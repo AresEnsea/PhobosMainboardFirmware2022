@@ -25,7 +25,7 @@ void resetLeftEncoderCount(){
 
 
 void updateRobotPosition(){
-	printf("x: %.1fmm, y: %.1fmm, angle: %.1fdeg\r\n", robot.position.x, robot.position.y, robot.angle/2/M_PI*360);
+	//printf("x: %.1fmm, y: %.1fmm, angle: %.1fdeg\r\n", robot.position.x, robot.position.y, robot.angle/2/M_PI*360);
 
 	int valCodG = getLeftEncoderCount();
 	int valCodD = getRightEncoderCount();
@@ -34,7 +34,7 @@ void updateRobotPosition(){
 	resetLeftEncoderCount();
 
 	float r =  (valCodG*COEFF_CODEUR_L + valCodD*COEFF_CODEUR_R)/2;
-	float alpha = (valCodD*COEFF_CODEUR_R - valCodG*COEFF_CODEUR_L)/ENTRAXE;
+	float alpha = (valCodD*COEFF_CODEUR_R - valCodG*COEFF_CODEUR_L)/ENTRAXE_ODOMETRY;
 
 	robot.position.x += r * cos(robot.angle + alpha/2);
 	robot.position.y += r * sin(robot.angle + alpha/2);

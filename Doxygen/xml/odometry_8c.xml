@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Src/odometry.c" line="4" column="14" bodyfile="Core/Prod/Inc/robot.h" bodystart="35" bodyend="-1" declfile="Core/Prod/Src/odometry.c" declline="4" declcolumn="14"/>
+        <location file="Core/Prod/Src/odometry.c" line="4" column="14" bodyfile="Core/Prod/Inc/robot.h" bodystart="37" bodyend="-1" declfile="Core/Prod/Src/odometry.c" declline="4" declcolumn="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -254,7 +254,7 @@
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="odometry_8h_1ae92830521f62c63d312a851c025b4515" kindref="member">updateRobotPosition</ref>(){</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;x:<sp/>%.1fmm,<sp/>y:<sp/>%.1fmm,<sp/>angle:<sp/>%.1fdeg\r\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.x,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.y,<sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref>/2/M_PI*360);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;x:<sp/>%.1fmm,<sp/>y:<sp/>%.1fmm,<sp/>angle:<sp/>%.1fdeg\r\n&quot;,<sp/>robot.position.x,<sp/>robot.position.y,<sp/>robot.angle/2/M_PI*360);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valCodG<sp/>=<sp/>getLeftEncoderCount();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valCodD<sp/>=<sp/>getRightEncoderCount();</highlight></codeline>
@@ -263,7 +263,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>resetLeftEncoderCount();</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r<sp/>=<sp/><sp/>(valCodG*COEFF_CODEUR_L<sp/>+<sp/>valCodD*COEFF_CODEUR_R)/2;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>(valCodD*COEFF_CODEUR_R<sp/>-<sp/>valCodG*COEFF_CODEUR_L)/ENTRAXE;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>(valCodD*COEFF_CODEUR_R<sp/>-<sp/>valCodG*COEFF_CODEUR_L)/ENTRAXE_ODOMETRY;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.x<sp/>+=<sp/>r<sp/>*<sp/>cos(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+<sp/>alpha/2);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kindref="member">position</ref>.y<sp/>+=<sp/>r<sp/>*<sp/>sin(<ref refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kindref="member">robot</ref>.<ref refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kindref="member">angle</ref><sp/>+<sp/>alpha/2);</highlight></codeline>

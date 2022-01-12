@@ -74,6 +74,9 @@ $(function() {
 <div class="textblock"><code>#include &quot;gpio.h&quot;</code><br />
 <code>#include &quot;tim.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="robot_8h_source.html">robot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bezier_8h_source.html">bezier.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div>
 <p><a href="propulsion_8h_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
@@ -87,6 +90,10 @@ Fonctions</h2></td></tr>
 <tr class="separator:a11ba711add37c5ead9d5933c9f2d58bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b1c752e1dd78ac5c5c8a48f310789f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="propulsion_8h.html#ae8b1c752e1dd78ac5c5c8a48f310789f">propulsion_setSpeeds</a> (float left, float right)</td></tr>
 <tr class="separator:ae8b1c752e1dd78ac5c5c8a48f310789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9929205fa69f972bc7789e950c7abe74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="propulsion_8h.html#a9929205fa69f972bc7789e950c7abe74">propulsion_updatePosition</a> (float dt)</td></tr>
+<tr class="separator:a9929205fa69f972bc7789e950c7abe74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf38964abca8e5d42f472c025763691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="propulsion_8h.html#a5cf38964abca8e5d42f472c025763691">propulsion_followBezier</a> (<a class="el" href="struct_bezier.html">Bezier</a> *b)</td></tr>
+<tr class="separator:a5cf38964abca8e5d42f472c025763691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des fonctions</h2>
 <a id="a11ba711add37c5ead9d5933c9f2d58bb" name="a11ba711add37c5ead9d5933c9f2d58bb"></a>
@@ -122,6 +129,33 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Met sous tension les moteurs pas-à-pas du bloc de propulsion. </p>
+
+</div>
+</div>
+<a id="a5cf38964abca8e5d42f472c025763691" name="a5cf38964abca8e5d42f472c025763691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf38964abca8e5d42f472c025763691">&#9670;&nbsp;</a></span>propulsion_followBezier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void propulsion_followBezier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bezier.html">Bezier</a> *&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Définit la vitesse des moteurs de sorte que le robot suive le meilleur arc de cercle approximant le point de la courbe Bézier le plus proche du robot.</p>
+<p >Appelée à intervalles réguliers, cette fonction fait suivre au robot la courbe de Bézier fournie en argument.</p>
+<p >Remarque: le robot doit se trouver au début de la courbe et dans la bonne orientation pour que la fonction ait l'effet souhaité.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>La courbe de Bézier à suivre. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -172,6 +206,32 @@ Fonctions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">left</td><td>Vitesse du moteur gauche. </td></tr>
     <tr><td class="paramname">right</td><td>Vitesse du moteur droit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9929205fa69f972bc7789e950c7abe74" name="a9929205fa69f972bc7789e950c7abe74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9929205fa69f972bc7789e950c7abe74">&#9670;&nbsp;</a></span>propulsion_updatePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void propulsion_updatePosition </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Simule la présence de l'odometrie. La position du robot est mise à jour en fonction de la vitesse des deux moteurs et d'autres paramètres du robot.</p>
+<p >Cette fonction est vouée à être appelée depuis un timer.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>Durée passée à la vitesse actuelle (approximativement). Durée entre deux appels de cette fonction. Période d'interruption. </td></tr>
   </table>
   </dd>
 </dl>

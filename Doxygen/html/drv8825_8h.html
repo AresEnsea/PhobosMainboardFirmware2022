@@ -68,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Structures de données</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Énumérations</a> &#124;
 <a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle"><div class="title">Référence du fichier drv8825.h</div></div>
@@ -85,15 +84,6 @@ $(function() {
 Structures de données</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_stepper.html">Stepper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a3304c99f43f534878204486fc7b9673d"><td class="memItemLeft" align="right" valign="top"><a id="a3304c99f43f534878204486fc7b9673d" name="a3304c99f43f534878204486fc7b9673d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>RAYON</b>&#160;&#160;&#160;51.45/2</td></tr>
-<tr class="separator:a3304c99f43f534878204486fc7b9673d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b043226b51a6ed4eff992382778534f"><td class="memItemLeft" align="right" valign="top"><a id="a9b043226b51a6ed4eff992382778534f" name="a9b043226b51a6ed4eff992382778534f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PAS</b>&#160;&#160;&#160;200</td></tr>
-<tr class="separator:a9b043226b51a6ed4eff992382778534f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Énumérations</h2></td></tr>
@@ -120,8 +110,6 @@ Fonctions</h2></td></tr>
 <tr class="separator:a81de3e9930a1e964724b80c2994977d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f3979f18202f3deda5ccec46b7f14c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv8825_8h.html#a88f3979f18202f3deda5ccec46b7f14c">drv8825_setRotationSpeed</a> (<a class="el" href="struct_stepper.html">Stepper</a> *stepper, float rpm)</td></tr>
 <tr class="separator:a88f3979f18202f3deda5ccec46b7f14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a748dcd834b79da0f777686bfdc7c1241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv8825_8h.html#a748dcd834b79da0f777686bfdc7c1241">drv8825_moveMotorLineSpeed</a> (<a class="el" href="struct_stepper.html">Stepper</a> *stepper, float speed)</td></tr>
-<tr class="separator:a748dcd834b79da0f777686bfdc7c1241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p >Ce fichier contient l'ensemble des fonctions relatives au pilotage des drivers DRV8825 pour les moteurs pas-à-pas. </p>
@@ -281,41 +269,6 @@ Fonctions</h2></td></tr>
     <tr><td class="paramname">dirGPIO</td><td>Pointeur vers la structure GPIO associé à la broche direction. </td></tr>
     <tr><td class="paramname">timer</td><td>Timer lié à la génération du signal PWM. </td></tr>
     <tr><td class="paramname">channel</td><td>Numéro de canal utilisé du timer. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a748dcd834b79da0f777686bfdc7c1241" name="a748dcd834b79da0f777686bfdc7c1241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a748dcd834b79da0f777686bfdc7c1241">&#9670;&nbsp;</a></span>drv8825_moveMotorLineSpeed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void drv8825_moveMotorLineSpeed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_stepper.html">Stepper</a> *&#160;</td>
-          <td class="paramname"><em>stepper</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Definit la vitesse du moteur par rapport à son déplacement sur la table. </p><dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stepper</td><td>Pointeur vers la structure associée au moteur. </td></tr>
-    <tr><td class="paramname">speed</td><td>Vitesse du moteur sur la table en m/s. </td></tr>
   </table>
   </dd>
 </dl>

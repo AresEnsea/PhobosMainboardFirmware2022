@@ -24,9 +24,11 @@ typedef struct {
 
     /** Stucture associée au moteur propulsif gauche. */
     Stepper* leftMotor;
+    float leftSpeed;
 
     /** Stucture associée au moteur propulsif droit. */
     Stepper* rightMotor;
+    float rightSpeed;
 } Robot;
 
 /**

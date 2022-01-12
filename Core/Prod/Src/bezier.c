@@ -75,7 +75,7 @@ float bezier_curvature(Bezier* b, float t) {
 }
 
 
-float bezier_projectLut(Bezier* b, Vector2 p) {
+float bezier_projectLut(Bezier* b, Vector2 p) { // 19 µs 
     float minDist = INFINITY;
     float minIndex = 0;
     for (int i=0; i<b->lutLength; i++) {
@@ -93,21 +93,20 @@ float bezier_projectLut(Bezier* b, Vector2 p) {
 float bezier_project(Bezier* b, Vector2 p, float precision) {
     float tLut = bezier_projectLut(b, p);
 
-    float t_a = tLut - 1.0/(b->lutLength-1);
+    float halfWidth = 1.0/(b->lutLength-1);
+
+    float t_a = tLut - halfWidth;
     t_a = (t_a<0)?0:t_a;
 
-    float t_b = tLut + 1.0/(b->lutLength-1);
+    float t_b = tLut + halfWidth;
     t_b = (t_b>1)?1:t_b;
 
     Vector2 p_a, p_b;
-    float dist_a, dist_b;
 
-    while (t_b-t_a > precision) {
+    while (t_b - t_a > precision) {
         p_a = bezier_eval(b, t_a);
         p_b = bezier_eval(b, t_b);
-        dist_a = vector2_dist2(p, p_a);
-        dist_b = vector2_dist2(p, p_b);
-        if (dist_a < dist_b)
+        if (vector2_dist2(p, p_a) < vector2_dist2(p, p_b))
             t_b = (t_a + t_b)/2;
         else
             t_a = (t_a + t_b)/2;

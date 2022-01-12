@@ -5,6 +5,7 @@
     <includes local="no">math.h</includes>
     <includedby refid="drv8825_8h" local="yes">Core/Prod/Inc/drv8825.h</includedby>
     <includedby refid="odometry_8h" local="yes">Core/Prod/Inc/odometry.h</includedby>
+    <includedby refid="propulsion_8h" local="yes">Core/Prod/Inc/propulsion.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>Core/Prod/Inc/config.h</label>
@@ -23,6 +24,8 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -172,7 +175,7 @@
       </memberdef>
       <memberdef kind="define" id="config_8h_1a793cd9403fa1b683e3da533bfa929788" prot="public" static="no">
         <name>MICROSTEPS</name>
-        <initializer>32</initializer>
+        <initializer>16</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -180,6 +183,17 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Core/Prod/Inc/config.h" line="36" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aaa6f04f6f0d7cf1008a53279acf49f07" prot="public" static="no">
+        <name>WHEEL_RADIUS</name>
+        <initializer>38.6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="37" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a6305a9adad96baccefbe61ccaa9fd1b3" prot="public" static="no">
         <name>ROT_RPM_MAX</name>
@@ -190,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="37" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="37" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="38" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a1e3c1955977981d8725888aae1198e8b" prot="public" static="no">
         <name>MOV_RPM_MAX</name>
@@ -201,7 +215,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="38" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="38" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="39" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1acbda6fa9f4de5b6ba5e14711121f815a" prot="public" static="no">
+        <name>ENTRAXE_MOTOR</name>
+        <initializer>192</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Prod/Inc/config.h" line="40" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aa2197f97809b97a528eda7aaf1f2d1eb" prot="public" static="no">
         <name>COEFF_CODEUR_L</name>
@@ -212,29 +237,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="42" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="42" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="44" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1adf9a35ffe2b1ec4224e9f821d7690a27" prot="public" static="no">
         <name>COEFF_CODEUR_R</name>
-        <initializer>0.0403868872</initializer>
+        <initializer>0.0405726153</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="43" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="43" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="45" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="45" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="config_8h_1a5206172c2805a3143ce65d51d886a61f" prot="public" static="no">
-        <name>ENTRAXE</name>
-        <initializer>251</initializer>
+      <memberdef kind="define" id="config_8h_1ab1f28e5370b1c87050caad9fc588afd8" prot="public" static="no">
+        <name>ENTRAXE_ODOMETRY</name>
+        <initializer>265</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="44" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="44" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="46" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a1b46472ac9ac07edf24fc9f872caa74f" prot="public" static="no">
         <name>R_ENCODER</name>
@@ -245,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="48" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="48" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="50" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ae0bc6fff1ff52ddebb1eeb8402ec57fd" prot="public" static="no">
         <name>L_ENCODER</name>
@@ -256,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="49" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="49" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="51" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a7448037af61f486c737872dfa61ec99f" prot="public" static="no">
         <name>R_MOTOR_TIMER</name>
@@ -267,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="50" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="50" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="52" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a6705ac6aeb1f8673646623163ffd5148" prot="public" static="no">
         <name>L_MOTOR_TIMER</name>
@@ -278,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/config.h" line="51" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="51" bodyend="-1"/>
+        <location file="Core/Prod/Inc/config.h" line="53" column="9" bodyfile="Core/Prod/Inc/config.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -329,24 +354,26 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANGLE_BRAS_DEPLOY<sp/>10</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Vitesses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>propulsion</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STEPS_PER_REV<sp/><sp/>200</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MICROSTEPS<sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROT_RPM_MAX<sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOV_RPM_MAX<sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Odométrie</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_L<sp/>0.0405726153</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_R<sp/>0.0403868872</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENTRAXE<sp/>251</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timer<sp/>names</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_ENCODER<sp/>htim1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_ENCODER<sp/>htim3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_MOTOR_TIMER<sp/>htim8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_MOTOR_TIMER<sp/>htim11</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MICROSTEPS<sp/><sp/><sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHEEL_RADIUS<sp/><sp/><sp/>38.6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROT_RPM_MAX<sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOV_RPM_MAX<sp/><sp/><sp/><sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENTRAXE_MOTOR<sp/><sp/>192</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Config<sp/>Odométrie</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_L<sp/>0.0405726153</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFF_CODEUR_R<sp/>0.0405726153</highlight><highlight class="comment">//0.0403868872</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENTRAXE_ODOMETRY<sp/>265</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Timer<sp/>names</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_ENCODER<sp/>htim1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_ENCODER<sp/>htim3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>R_MOTOR_TIMER<sp/>htim8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L_MOTOR_TIMER<sp/>htim11</highlight></codeline>
     </programlisting>
     <location file="Core/Prod/Inc/config.h"/>
   </compounddef>

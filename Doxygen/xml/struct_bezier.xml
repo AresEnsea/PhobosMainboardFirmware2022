@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="20" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="20" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="22" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ad379f502e5e5cab87843daa7e4411287" prot="public" static="no" mutable="no">
         <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="23" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="23" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="25" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ad63ad420a29de7549b32997fe8e27ff6" prot="public" static="no" mutable="no">
         <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="26" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="26" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="28" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1a37b9d953a7e35cd786ca60714ac7633e" prot="public" static="no" mutable="no">
         <type><ref refid="struct_vector2" kindref="compound">Vector2</ref></type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="29" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="29" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="31" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" prot="public" static="no" mutable="no">
         <type><ref refid="struct_vector2" kindref="compound">Vector2</ref> *</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="32" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="32" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="34" column="13" bodyfile="Core/Prod/Inc/bezier.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Inc/bezier.h" line="35" column="9" bodyfile="Core/Prod/Inc/bezier.h" bodystart="35" bodyend="-1"/>
+        <location file="Core/Prod/Inc/bezier.h" line="37" column="9" bodyfile="Core/Prod/Inc/bezier.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -117,7 +117,7 @@
         <link refid="struct_vector2"/>
       </node>
     </collaborationgraph>
-    <location file="Core/Prod/Inc/bezier.h" line="18" column="1" bodyfile="Core/Prod/Inc/bezier.h" bodystart="18" bodyend="36"/>
+    <location file="Core/Prod/Inc/bezier.h" line="20" column="1" bodyfile="Core/Prod/Inc/bezier.h" bodystart="20" bodyend="38"/>
     <listofallmembers>
       <member refid="struct_bezier_1ae57dfe077ca9e285a77f277c5947da27" prot="public" virt="non-virtual"><scope>Bezier</scope><name>lut</name></member>
       <member refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" prot="public" virt="non-virtual"><scope>Bezier</scope><name>lutLength</name></member>

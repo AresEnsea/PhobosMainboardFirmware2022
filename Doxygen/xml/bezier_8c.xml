@@ -412,7 +412,7 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
         </briefdescription>
         <detaileddescription>
 <para>Recherche le point de la courbe de Bézier <computeroutput>b</computeroutput> le plus proche du point <computeroutput>p</computeroutput> grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. Renvoit le paramètre <formula id="1">$t$</formula> où la distance minimum est atteinte.</para>
-<para>Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre <formula id="1">$t$</formula>, cette fonction s&apos;execute en environ 60 µs sur un Cortex M4.</para>
+<para>Pour une LUT de taille 30 et une précision de 0,01% sur le paramètre <formula id="1">$t$</formula>, cette fonction s&apos;execute en environ 60 µs sur un Cortex M4.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>b</parametername>
@@ -442,7 +442,7 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Prod/Src/bezier.c" line="93" column="7" bodyfile="Core/Prod/Src/bezier.c" bodystart="93" bodyend="116"/>
+        <location file="Core/Prod/Src/bezier.c" line="93" column="7" bodyfile="Core/Prod/Src/bezier.c" bodystart="93" bodyend="115"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -527,7 +527,7 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
 <codeline lineno="75"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>19<sp/>µs<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minDist<sp/>=<sp/>INFINITY;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>minIndex<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;b-&gt;<ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>;<sp/>i++)<sp/>{</highlight></codeline>
@@ -545,27 +545,26 @@ Curvature#In_terms_of_a_general_parametrization">article wikipédia</ulink> à p
 <codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="bezier_8h_1aa6ca1862b8689d242d0856b4d37dc9c2" kindref="member">bezier_project</ref>(<ref refid="struct_bezier" kindref="compound">Bezier</ref>*<sp/>b,<sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>precision)<sp/>{</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tLut<sp/>=<sp/><ref refid="bezier_8h_1a390368900974782bbaafefe8aee28ae7" kindref="member">bezier_projectLut</ref>(b,<sp/>p);</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t_a<sp/>=<sp/>tLut<sp/>-<sp/>1.0/(b-&gt;<ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>-1);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>t_a<sp/>=<sp/>(t_a&lt;0)?0:t_a;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t_b<sp/>=<sp/>tLut<sp/>+<sp/>1.0/(b-&gt;<ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>-1);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>t_b<sp/>=<sp/>(t_b&gt;1)?1:t_b;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p_a,<sp/>p_b;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dist_a,<sp/>dist_b;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(t_b-t_a<sp/>&gt;<sp/>precision)<sp/>{</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_a<sp/>=<sp/><ref refid="bezier_8h_1af052c95075be81a29eec3c37b79d4941" kindref="member">bezier_eval</ref>(b,<sp/>t_a);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_b<sp/>=<sp/><ref refid="bezier_8h_1af052c95075be81a29eec3c37b79d4941" kindref="member">bezier_eval</ref>(b,<sp/>t_b);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist_a<sp/>=<sp/><ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(p,<sp/>p_a);</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist_b<sp/>=<sp/><ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(p,<sp/>p_b);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist_a<sp/>&lt;<sp/>dist_b)</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_b<sp/>=<sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_a<sp/>=<sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>halfWidth<sp/>=<sp/>1.0/(b-&gt;<ref refid="struct_bezier_1a91942ece6a30446a1e2e96bc056dfb55" kindref="member">lutLength</ref>-1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t_a<sp/>=<sp/>tLut<sp/>-<sp/>halfWidth;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>t_a<sp/>=<sp/>(t_a&lt;0)?0:t_a;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t_b<sp/>=<sp/>tLut<sp/>+<sp/>halfWidth;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>t_b<sp/>=<sp/>(t_b&gt;1)?1:t_b;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2" kindref="compound">Vector2</ref><sp/>p_a,<sp/>p_b;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(t_b<sp/>-<sp/>t_a<sp/>&gt;<sp/>precision)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_a<sp/>=<sp/><ref refid="bezier_8h_1af052c95075be81a29eec3c37b79d4941" kindref="member">bezier_eval</ref>(b,<sp/>t_a);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_b<sp/>=<sp/><ref refid="bezier_8h_1af052c95075be81a29eec3c37b79d4941" kindref="member">bezier_eval</ref>(b,<sp/>t_b);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(p,<sp/>p_a)<sp/>&lt;<sp/><ref refid="vector2_8h_1ae0a2f3590d8cdd5a3add61257d1ab0dc" kindref="member">vector2_dist2</ref>(p,<sp/>p_b))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_b<sp/>=<sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_a<sp/>=<sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(t_a<sp/>+<sp/>t_b)/2;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Core/Prod/Src/bezier.c"/>
   </compounddef>

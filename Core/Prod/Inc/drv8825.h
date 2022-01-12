@@ -9,9 +9,6 @@
 #include "stm32f4xx_hal.h"
 #include "tim.h"
 
-#define RAYON 51.45/2
-#define PAS 200
-
 
 typedef struct {
     /** Numéro de la broche enable. */
@@ -103,11 +100,3 @@ void drv8825_setPWMFrequency(Stepper* stepper, uint16_t frequency);
  * @param rpm Vitesse de rotation du moteur en tours par minute.
  */
 void drv8825_setRotationSpeed(Stepper* stepper, float rpm);
-
-
-/**
- * Definit la vitesse du moteur par rapport à son déplacement sur la table.
- * @param stepper Pointeur vers la structure associée au moteur.
- * @param speed Vitesse du moteur sur la table en m/s.
- */
-void drv8825_moveMotorLineSpeed(Stepper* stepper, float speed);

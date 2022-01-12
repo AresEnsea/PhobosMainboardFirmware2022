@@ -4,6 +4,8 @@
  * défini dans ce fichier. Les strutures de ce type sont toujours passées en 
  * argument par le bias d'un pointeur.
  */
+#ifndef _BEZIER_
+#define _BEZIER_
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -130,7 +132,7 @@ float bezier_projectLut(Bezier* b, Vector2 p);
  * grâce à la LUT, puis une recherche plus fine est réalisée par dichotomie. 
  * Renvoit le paramètre \f$t\f$ où la distance minimum est atteinte.
  *
- * Pour une LUT de taille 30 et une précision de 0.01% sur le paramètre \f$t\f$,
+ * Pour une LUT de taille 30 et une précision de 0,01% sur le paramètre \f$t\f$,
  * cette fonction s'execute en environ 60 µs sur un Cortex M4.
  *
  * @param b Pointeur vers une courbe de Bezier.
@@ -139,3 +141,5 @@ float bezier_projectLut(Bezier* b, Vector2 p);
  * stritement positif.
  */
 float bezier_project(Bezier* b, Vector2 p, float precision);
+
+#endif

@@ -12,7 +12,9 @@
     <member refid="struct_robot_1a75d804981f3e7a92b2c468757ed5eeac" kind="variable"><name>position</name></member>
     <member refid="struct_robot_1a27f0b601929076610e54c6d4b3716743" kind="variable"><name>angle</name></member>
     <member refid="struct_robot_1a26d0c39a73dad0a14d48c4c3033284ae" kind="variable"><name>leftMotor</name></member>
+    <member refid="struct_robot_1a756927309ee045fb212ba562d8b30bbf" kind="variable"><name>leftSpeed</name></member>
     <member refid="struct_robot_1a89aa10e821336c34552b649be2784fd4" kind="variable"><name>rightMotor</name></member>
+    <member refid="struct_robot_1af8188ea0530d4cd815579e62f96ee86a" kind="variable"><name>rightSpeed</name></member>
   </compound>
   <compound refid="struct_stepper" kind="struct"><name>Stepper</name>
     <member refid="struct_stepper_1abe07d8f91ca27d95b14ea6109950cc54" kind="variable"><name>enablePin</name></member>
@@ -50,11 +52,13 @@
     <member refid="config_8h_1a52087ee651e6d2038636cecd9df53b28" kind="define"><name>ANGLE_BRAS_DEPLOY</name></member>
     <member refid="config_8h_1a2d05bcc021d66ae0458c269139222edc" kind="define"><name>STEPS_PER_REV</name></member>
     <member refid="config_8h_1a793cd9403fa1b683e3da533bfa929788" kind="define"><name>MICROSTEPS</name></member>
+    <member refid="config_8h_1aaa6f04f6f0d7cf1008a53279acf49f07" kind="define"><name>WHEEL_RADIUS</name></member>
     <member refid="config_8h_1a6305a9adad96baccefbe61ccaa9fd1b3" kind="define"><name>ROT_RPM_MAX</name></member>
     <member refid="config_8h_1a1e3c1955977981d8725888aae1198e8b" kind="define"><name>MOV_RPM_MAX</name></member>
+    <member refid="config_8h_1acbda6fa9f4de5b6ba5e14711121f815a" kind="define"><name>ENTRAXE_MOTOR</name></member>
     <member refid="config_8h_1aa2197f97809b97a528eda7aaf1f2d1eb" kind="define"><name>COEFF_CODEUR_L</name></member>
     <member refid="config_8h_1adf9a35ffe2b1ec4224e9f821d7690a27" kind="define"><name>COEFF_CODEUR_R</name></member>
-    <member refid="config_8h_1a5206172c2805a3143ce65d51d886a61f" kind="define"><name>ENTRAXE</name></member>
+    <member refid="config_8h_1ab1f28e5370b1c87050caad9fc588afd8" kind="define"><name>ENTRAXE_ODOMETRY</name></member>
     <member refid="config_8h_1a1b46472ac9ac07edf24fc9f872caa74f" kind="define"><name>R_ENCODER</name></member>
     <member refid="config_8h_1ae0bc6fff1ff52ddebb1eeb8402ec57fd" kind="define"><name>L_ENCODER</name></member>
     <member refid="config_8h_1a7448037af61f486c737872dfa61ec99f" kind="define"><name>R_MOTOR_TIMER</name></member>
@@ -62,8 +66,6 @@
     <member refid="config_8h_1a1062901a7428fdd9c7f180f5e01ea056" kind="typedef"><name>bool</name></member>
   </compound>
   <compound refid="drv8825_8h" kind="file"><name>drv8825.h</name>
-    <member refid="drv8825_8h_1a3304c99f43f534878204486fc7b9673d" kind="define"><name>RAYON</name></member>
-    <member refid="drv8825_8h_1a9b043226b51a6ed4eff992382778534f" kind="define"><name>PAS</name></member>
     <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8" kind="enum"><name>StepperDirection</name></member>
     <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a03d440bbbfb042afc85347f994b44fb5" kind="enumvalue"><name>POSITIVE</name></member>
     <member refid="drv8825_8h_1a4b62263a8ccd6a4e8526f5b9ec6203d8a62d66a51fa7574c652597716f7709865" kind="enumvalue"><name>NEGATIVE</name></member>
@@ -76,7 +78,6 @@
     <member refid="drv8825_8h_1aae52eaba834630cd056bdfefb7f8878f" kind="function"><name>drv8825_disable</name></member>
     <member refid="drv8825_8h_1a81de3e9930a1e964724b80c2994977d7" kind="function"><name>drv8825_setPWMFrequency</name></member>
     <member refid="drv8825_8h_1a88f3979f18202f3deda5ccec46b7f14c" kind="function"><name>drv8825_setRotationSpeed</name></member>
-    <member refid="drv8825_8h_1a748dcd834b79da0f777686bfdc7c1241" kind="function"><name>drv8825_moveMotorLineSpeed</name></member>
   </compound>
   <compound refid="odometry_8h" kind="file"><name>odometry.h</name>
     <member refid="odometry_8h_1ae92830521f62c63d312a851c025b4515" kind="function"><name>updateRobotPosition</name></member>
@@ -88,6 +89,8 @@
     <member refid="propulsion_8h_1ab3b8837d916f7291cd4d84ec04fadb68" kind="function"><name>propulsion_enableMotors</name></member>
     <member refid="propulsion_8h_1a11ba711add37c5ead9d5933c9f2d58bb" kind="function"><name>propulsion_disableMotors</name></member>
     <member refid="propulsion_8h_1ae8b1c752e1dd78ac5c5c8a48f310789f" kind="function"><name>propulsion_setSpeeds</name></member>
+    <member refid="propulsion_8h_1a9929205fa69f972bc7789e950c7abe74" kind="function"><name>propulsion_updatePosition</name></member>
+    <member refid="propulsion_8h_1a5cf38964abca8e5d42f472c025763691" kind="function"><name>propulsion_followBezier</name></member>
   </compound>
   <compound refid="robot_8h" kind="file"><name>robot.h</name>
     <member refid="robot_8h_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
@@ -126,8 +129,6 @@
     <member refid="drv8825_8c_1aae52eaba834630cd056bdfefb7f8878f" kind="function"><name>drv8825_disable</name></member>
     <member refid="drv8825_8c_1a81de3e9930a1e964724b80c2994977d7" kind="function"><name>drv8825_setPWMFrequency</name></member>
     <member refid="drv8825_8c_1a88f3979f18202f3deda5ccec46b7f14c" kind="function"><name>drv8825_setRotationSpeed</name></member>
-    <member refid="drv8825_8c_1a748dcd834b79da0f777686bfdc7c1241" kind="function"><name>drv8825_moveMotorLineSpeed</name></member>
-    <member refid="drv8825_8c_1aed2f60bc232e202b9bd5ebb2d717af56" kind="function"><name>drv8825_setSpeed</name></member>
   </compound>
   <compound refid="odometry_8c" kind="file"><name>odometry.c</name>
     <member refid="odometry_8c_1a212e6b8f7e9ed2662711ad228dfc3e25" kind="variable"><name>robot</name></member>
@@ -145,6 +146,8 @@
     <member refid="propulsion_8c_1ab3b8837d916f7291cd4d84ec04fadb68" kind="function"><name>propulsion_enableMotors</name></member>
     <member refid="propulsion_8c_1a11ba711add37c5ead9d5933c9f2d58bb" kind="function"><name>propulsion_disableMotors</name></member>
     <member refid="propulsion_8c_1ae8b1c752e1dd78ac5c5c8a48f310789f" kind="function"><name>propulsion_setSpeeds</name></member>
+    <member refid="propulsion_8c_1a9929205fa69f972bc7789e950c7abe74" kind="function"><name>propulsion_updatePosition</name></member>
+    <member refid="propulsion_8c_1a5cf38964abca8e5d42f472c025763691" kind="function"><name>propulsion_followBezier</name></member>
   </compound>
   <compound refid="vector2_8c" kind="file"><name>vector2.c</name>
     <member refid="vector2_8c_1ad79bb88f4e389a80385e63e2aadb98b8" kind="function"><name>vector2_new</name></member>
