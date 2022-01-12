@@ -3,8 +3,8 @@
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Phobos Mainboard Firmware 2022"]]></value></option>
   <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[v0.2]]></value></option>
-  <option  id='PROJECT_BRIEF' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["Robot principal d'Ares ENSEA"]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[Doxygen/ares.svg]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[Doxygen]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
   <option  id='ALLOW_UNICODE_NAMES' default='yes' type='bool'><value>NO</value></option>
