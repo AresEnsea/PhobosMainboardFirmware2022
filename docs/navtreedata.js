@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Phobos Mainboard Firmware", "index.html", [
+  [ "Phobos Mainboard Firmware 2022", "index.html", [
     [ "Introduction", "index.html#intro_sec", null ],
     [ "Structure du projet", "index.html#structure_sec", null ],
     [ "Installation", "index.html#install_sec", null ],
