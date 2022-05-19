@@ -63,29 +63,83 @@ void propulsion_updatePosition(float dt) {
 		robot.angle = robot.angle + M_TWOPI;
 }
 
-void propulsion_followBezier(Bezier* b) {
+float propulsion_followBezier(Bezier* b, Direction dir) {
+	// Paramètre qui correspond au point de la courbe le plus proche du robot
+	// Autrement dit, la valeur t qui minimise distance(b(t), robot.position)
     float t = bezier_project(b, robot.position, 0.0001);
 
+    // Le point de la courbe le plus proche du robot, b(t)
     Vector2 pointOnCurve = bezier_eval(b, t);
-    float dist = vector2_dist(robot.position, pointOnCurve);
 
-    printf("t = %f, x: %.1fmm, y: %.1fmm, angle: %.1fdeg, dist: %fmm\r\n", t, robot.position.x, robot.position.y, robot.angle / M_PI / 2 * 360, dist);
+    // La tangente à la courbe en b(t)
+    Vector2 tangent = bezier_deriv1(b, t);
 
-    if (t > 0.99) {
+    // L'écart entre le robot et b(t)
+    Vector2 displacement = vector2_diff(robot.position, pointOnCurve);
+
+    // Le côté de la courbe du quel le robot se trouve
+    float sign = vector2_cross(displacement, tangent);
+
+    // Distance signée à la courbe (négatif d'un coté, positif de l'autre)
+    float signedDistance;
+    if (sign == 0)
+    	signedDistance = 0;
+    else
+    	signedDistance = sign / fabs(sign) * vector2_norm(displacement);
+
+    //
+    float angleError = (vector2_angle(tangent) - atan(signedDistance / 400.0)) - (robot.angle + (dir==BACKWARD?M_PI:0));
+    angleError = standardAngle(angleError);
+
+    //printf("t = %f, e = %.1f, rel-dist = %.1f \n", t, signedAngleError, signedDistance);
+
+    if (t > 0.999) {
     	propulsion_setSpeeds(0, 0);
-    	return;
+    	return t;
     }
 
     float k = bezier_curvature(b, t);
-    //let slow = 1/(1 + pow(abs(k), 2)*10000)
-    float v = (100*t*(1-t) + 8 *(1-t) + 8*t) * 2 * 10;
-    float v_g = v*(1-ENTRAXE_MOTOR*k/2);
-    float v_d = v*(1+ENTRAXE_MOTOR*k/2);
 
-    propulsion_setSpeeds(v_g, v_d);
+    float correctionSlowDownFactor = 1 - fabs(angleError/M_PI)*10;
+    correctionSlowDownFactor = correctionSlowDownFactor>0?correctionSlowDownFactor:0;
+
+    float v = (4*(1-t) + 80*t*(1-t)*(1-t) + 50*t*t*(1-t) + 3*t) * 15;
+    v *= correctionSlowDownFactor;
+    v *= (dir==BACKWARD?-1:1);
+    //if (fabs(v) > robot.measuredSpeed + 5) {
+    //	v = (robot.measuredSpeed + 5) * fabs(v) / v;
+    //}
+
+    //printf("v: %f, sdf: %f, ae: %f\r\n", v, correctionSlowDownFactor, angleError);
+
+    float v_g = v*(1+ENTRAXE_MOTOR*k/2);
+    float v_d = v*(1-ENTRAXE_MOTOR*k/2);
+
+    float maxCorrection = 40;
+
+    float correction = -angleError*100;
+
+    if (fabs(correction) > maxCorrection) {
+    	correction = maxCorrection * correction / abs(correction);
+    }
+
+    printf("t = %f, x: %.1fmm, y: %.1fmm, angle: %.1fdeg, dist: %fmm, corr: %.2f\r\n", t, robot.position.x, robot.position.y, robot.angle / M_PI / 2 * 360, signedDistance, correction);
+    //printf("angle: %.1fdeg, corr: %.2f\r\n", robot.angle / M_PI / 2 * 360, correction);
+
+
+    propulsion_setSpeeds(v_g - correction, v_d + correction);
+
+    //printf("v_g: %.1fmm/s, v_d: %.2fmm/s\r\n", v_g, v_d);
+    //propulsion_setSpeeds(v_g, v_d);
+
+    //propulsion_setSpeeds(-50, -50);
+
+    return t;
 }
 
-
+float standardAngle(float angle) {
+	return fmod(fmod(angle + M_PI, M_TWOPI) + M_TWOPI, M_TWOPI) - M_PI;
+}
 
 
 

@@ -2,6 +2,8 @@
 "./Core/Prod/Src/drv8825.o"
 "./Core/Prod/Src/odometry.o"
 "./Core/Prod/Src/propulsion.o"
+"./Core/Prod/Src/serial.o"
+"./Core/Prod/Src/strategy.o"
 "./Core/Prod/Src/vector2.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"

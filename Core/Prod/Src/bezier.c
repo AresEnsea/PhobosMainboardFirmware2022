@@ -75,7 +75,7 @@ float bezier_curvature(Bezier* b, float t) {
 }
 
 
-float bezier_projectLut(Bezier* b, Vector2 p) { // 19 µs 
+float bezier_projectLut(Bezier* b, Vector2 p) {
     float minDist = INFINITY;
     float minIndex = 0;
     for (int i=0; i<b->lutLength; i++) {

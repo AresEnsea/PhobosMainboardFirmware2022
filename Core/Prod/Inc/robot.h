@@ -29,6 +29,9 @@ typedef struct {
     /** Stucture associée au moteur propulsif droit. */
     Stepper* rightMotor;
     float rightSpeed;
+
+    /** Vitesse mesurée par les codeuses. */
+    float measuredSpeed;
 } Robot;
 
 /**

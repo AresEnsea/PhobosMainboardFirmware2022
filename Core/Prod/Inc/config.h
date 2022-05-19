@@ -11,10 +11,11 @@ typedef int bool;
 #define TRUE 1
 #define FALSE 0
 
-// Fonctions du robot
 
+/* Robot Select */
 
-/* Module Debug */
+//#define ISPHOBOS
+#define ISDEIMOS
 
 
 // Config Age of bots
@@ -33,17 +34,41 @@ typedef int bool;
 
 // Config propulsion
 #define STEPS_PER_REV  200
-#define MICROSTEPS     16
-#define WHEEL_RADIUS   38.6
+#define MICROSTEPS     32
 #define ROT_RPM_MAX    30
 #define MOV_RPM_MAX    50
-#define ENTRAXE_MOTOR  192
+
+#ifdef ISPHOBOS
+	#define WHEEL_RADIUS 38.6
+#endif
+#ifdef ISDEIMOS
+	#define WHEEL_RADIUS 27.15
+#endif
+
+#ifdef ISPHOBOS
+	#define ENTRAXE_MOTOR  120.5
+#endif
+#ifdef ISDEIMOS
+	#define ENTRAXE_MOTOR  112.32
+#endif
 
 
-// Config Odométrie
-#define COEFF_CODEUR_L 0.0405726153
-#define COEFF_CODEUR_R 0.0405726153//0.0403868872
-#define ENTRAXE_ODOMETRY 265
+// Config odometry
+#define TICKS_PER_REV  8192
+
+#ifdef ISPHOBOS
+	#define ODOMETRY_RADIUS 26.2255
+#endif
+#ifdef ISDEIMOS
+	#define ODOMETRY_RADIUS 27.245
+#endif
+#ifdef ISPHOBOS
+	#define ENTRAXE_ODOMETRY 200.165586
+#endif
+#ifdef ISDEIMOS
+	#define ENTRAXE_ODOMETRY 182.8
+#endif
+
 
 
 // Timer names

@@ -9,6 +9,20 @@
 #include <stdio.h>
 
 
+/** Définit les sens de parcours pour le robot. */
+typedef enum {
+    /** Sense de rotation trigonométrique face à l'axe du moteur. */
+    FORWARD=1,
+
+    /** Sense de rotation des aiguilles d'une montre. */
+    BACKWARD=-1
+} Direction;
+
+/**
+ * Renvoie un angle entre -pi et pi à partir de l'angle fourni.
+ */
+float standardAngle(float angle);
+
 /**
  * Initialse les deux moteurs pas-à-pas du bloc de propulsion.
  */
@@ -60,4 +74,4 @@ void propulsion_updatePosition(float dt);
  * 
  * @param b Pointeur vers la courbe de Bézier à suivre. 
  */
-void propulsion_followBezier(Bezier* b);
+float propulsion_followBezier(Bezier* b, Direction dir);

@@ -66,6 +66,14 @@ int ___io_putchar(int ch);
 #define L_MOTOR_DIR_GPIO_Port GPIOC
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
+#define L_ENCODER_A_Pin GPIO_PIN_6
+#define L_ENCODER_A_GPIO_Port GPIOA
+#define L_ENCODER_B_Pin GPIO_PIN_7
+#define L_ENCODER_B_GPIO_Port GPIOA
+#define R_ENCODER_A_Pin GPIO_PIN_8
+#define R_ENCODER_A_GPIO_Port GPIOA
+#define R_ENCODER_B_Pin GPIO_PIN_9
+#define R_ENCODER_B_GPIO_Port GPIOA
 #define R_MOTOR_DIR_Pin GPIO_PIN_11
 #define R_MOTOR_DIR_GPIO_Port GPIOC
 /* USER CODE BEGIN Private defines */
@@ -77,5 +85,3 @@ int ___io_putchar(int ch);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

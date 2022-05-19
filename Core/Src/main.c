@@ -29,6 +29,8 @@
 #include "odometry.h"
 #include "robot.h"
 #include "bezier.h"
+#include "strategy.h"
+#include "serial.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -112,9 +114,15 @@ int main(void)
   MX_TIM4_Init();
   MX_USART2_UART_Init();
   MX_TIM5_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start(&htim1);
+  HAL_TIM_Base_Start(&htim3);
   HAL_TIM_Base_Start_IT(&htim5);
+
+  //char test[] = "Hello, World!\r\n";
+
+  //serial_send(test, 15);
 
   printf("Initializing propulsion system.\r\n");
   propulsion_initialize();
@@ -122,25 +130,66 @@ int main(void)
   printf("Enabling propulsion system.\r\n");
   propulsion_enableMotors();
 
-  HAL_Delay(100);
+  HAL_Delay(2000);
 
-  updateRobotPosition();
+  odometry_updatePosition();
 
-  //Bezier* b = bezier_new(0, 0, 1000, 0, 0, 1000, 1000, 1000, 30);
-  Bezier* b = bezier_new(125, 849, 799, 843, 1698, 1654, 1698, 202, 30);
-  setRobotPosition(125, 849);
+  //Bezier** curves = (Bezier**) malloc(sizeof(Bezier*) * 5);
+  //curves[0] = bezier_new(0, 0, 200, 0, 300, 0, 500, 0, 30);
+  //curves[1] = bezier_new(500, 0, 500, 200, 500, 300, 500, 500, 30);
+  //curves[2] = bezier_new(500, 500, 700, 500, 800, 500, 1000, 500, 30);
+  //curves[3] = bezier_new(1000, 500, 1000, 300, 700, 0, 500, 0, 30);
+  //curves[4] = bezier_new(500, 0, 300, 0, 200, 0, 0, 0, 30);
+
+  Bezier** curves = (Bezier**) malloc(sizeof(Bezier*) * 10);
+  curves[0] = bezier_new(2002, 1803, 2002, 1348, 2012, 1052, 1503, 1045, 30);
+  curves[1] = bezier_new(1503, 1045, 994, 1038, 995, 1083, 997, 1318, 30);
+  curves[2] = bezier_new(997, 1318, 1000, 1553, 922, 1641, 667, 1645, 30);
+  curves[3] = bezier_new(667, 1645, 412, 1648, 401, 1512, 401, 1242, 30);
+  curves[4] = bezier_new(401, 1242, 401, 973, 505, 887, 796, 890, 30);
+  curves[5] = bezier_new(796, 890, 1087, 894, 1089, 1124, 1082, 1409, 30);
+  curves[6] = bezier_new(1082, 1409, 1075, 1693, 719, 1695, 637, 1692, 30);
+  curves[7] = bezier_new(637, 1692, 555, 1690, 456, 1679, 458, 1177, 30);
+  curves[8] = bezier_new(458, 1177, 461, 675, 1996, 1545, 1985, 1113, 30);
+  curves[9] = bezier_new(1985, 1113, 1974, 1300, 2002, 1802, 2002, 1803, 30);
+
+  //Bezier* b = bezier_new(0, 0, 200, 0, 300, 0, 500, 0, 30);
+  //Bezier* b = bezier_new(125, 849, 799, 843, 1698, 1654, 1698, 202, 30);
+  odometry_setPosition(curves[0]->p1.x, curves[0]->p1.y);
+  //odometry_setPosition(0, 0);
+  odometry_setAngle(-M_PI/2);
+  robot.measuredSpeed = 0;
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int count = 0;
+
+  int curveIndex = 0;
+
+  float t = 0;
+
+  //char* ptr = test;
 
   while (1) {
+	  //HAL_UART_Transmit(&huart6, (uint8_t *) ptr, 15, HAL_MAX_DELAY);
+	  //HAL_Delay(20);
+
 	  //updateRobotPosition();
 
-	  propulsion_followBezier(b);
+	  if (curveIndex == 9) {
+		  t = propulsion_followBezier(curves[curveIndex], BACKWARD);
+	  } else {
+		  t = propulsion_followBezier(curves[curveIndex], FORWARD);
+	  }
 
+	  if (t > 0.99) {
+	    curveIndex = (curveIndex + 1) % 10;
+	  }
+
+	//t = propulsion_followBezier(b, BACKWARD);
+
+	//propulsion_disableMotors();
 
     /* USER CODE END WHILE */
 
@@ -236,4 +285,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
