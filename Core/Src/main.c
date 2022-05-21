@@ -74,6 +74,8 @@ int _write(int file, char *ptr, int len) {
 	}
 	return len;
 }
+
+uint8_t serialData[16];
 /* USER CODE END 0 */
 
 /**
@@ -124,50 +126,46 @@ int main(void)
 
   //serial_send(test, 15);
 
-  printf("Initializing propulsion system.\r\n");
+  printf("Initializing propulsion system...");
   propulsion_initialize();
+  HAL_Delay(500);
+  printf(" Done.\r\n");
 
-  printf("Enabling propulsion system.\r\n");
+  printf("Enabling propulsion system...");
   propulsion_enableMotors();
+  HAL_Delay(500);
+  printf(" Done.\r\n");
 
-  HAL_Delay(2000);
+  printf("Initializing strategy...");
+  Strategy* strategy = strategy_initialize();
+  int curveIndex = 0;
+  HAL_Delay(500);
+  printf(" Done.\r\n");
 
-  odometry_updatePosition();
+  printf("Initializing odometry...");
+  Vector2 start = strategy->path[0]->p1;
+  Vector2 startTangent = strategy->path[0]->p2;
 
-  //Bezier** curves = (Bezier**) malloc(sizeof(Bezier*) * 5);
-  //curves[0] = bezier_new(0, 0, 200, 0, 300, 0, 500, 0, 30);
-  //curves[1] = bezier_new(500, 0, 500, 200, 500, 300, 500, 500, 30);
-  //curves[2] = bezier_new(500, 500, 700, 500, 800, 500, 1000, 500, 30);
-  //curves[3] = bezier_new(1000, 500, 1000, 300, 700, 0, 500, 0, 30);
-  //curves[4] = bezier_new(500, 0, 300, 0, 200, 0, 0, 0, 30);
+  float startAngle = vector2_angle(vector2_diff(startTangent, start));
+  odometry_setPosition(start.x, start.y);
+  odometry_setAngle(startAngle);
+  robot.measuredSpeed = 0;
+  float t = 0;
+  HAL_Delay(500);
+  printf(" Done.\r\n");
 
-  Bezier** curves = (Bezier**) malloc(sizeof(Bezier*) * 10);
-  curves[0] = bezier_new(2002, 1803, 2002, 1348, 2012, 1052, 1503, 1045, 30);
-  curves[1] = bezier_new(1503, 1045, 994, 1038, 995, 1083, 997, 1318, 30);
-  curves[2] = bezier_new(997, 1318, 1000, 1553, 922, 1641, 667, 1645, 30);
-  curves[3] = bezier_new(667, 1645, 412, 1648, 401, 1512, 401, 1242, 30);
-  curves[4] = bezier_new(401, 1242, 401, 973, 505, 887, 796, 890, 30);
-  curves[5] = bezier_new(796, 890, 1087, 894, 1089, 1124, 1082, 1409, 30);
-  curves[6] = bezier_new(1082, 1409, 1075, 1693, 719, 1695, 637, 1692, 30);
-  curves[7] = bezier_new(637, 1692, 555, 1690, 456, 1679, 458, 1177, 30);
-  curves[8] = bezier_new(458, 1177, 461, 675, 1996, 1545, 1985, 1113, 30);
-  curves[9] = bezier_new(1985, 1113, 1974, 1300, 2002, 1802, 2002, 1803, 30);
 
   //Bezier* b = bezier_new(0, 0, 200, 0, 300, 0, 500, 0, 30);
   //Bezier* b = bezier_new(125, 849, 799, 843, 1698, 1654, 1698, 202, 30);
-  odometry_setPosition(curves[0]->p1.x, curves[0]->p1.y);
-  //odometry_setPosition(0, 0);
-  odometry_setAngle(-M_PI/2);
-  robot.measuredSpeed = 0;
 
+  //odometry_setPosition(0, 0);
+  //odometry_setAngle(-M_PI/2);
+
+  HAL_UART_Receive_IT(&huart6, serialData, 2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  int curveIndex = 0;
-
-  float t = 0;
 
   //char* ptr = test;
 
@@ -175,21 +173,23 @@ int main(void)
 	  //HAL_UART_Transmit(&huart6, (uint8_t *) ptr, 15, HAL_MAX_DELAY);
 	  //HAL_Delay(20);
 
-	  //updateRobotPosition();
-
-	  if (curveIndex == 9) {
-		  t = propulsion_followBezier(curves[curveIndex], BACKWARD);
-	  } else {
-		  t = propulsion_followBezier(curves[curveIndex], FORWARD);
+	  if (curveIndex < strategy->length) {
+		  DEBUG_PROPULSION("n: %d, ", curveIndex);
+		  t = propulsion_followBezier(
+				  strategy->path[curveIndex],
+				  strategy->directions[curveIndex],
+				  strategy->speeds[curveIndex],
+				  strategy->speeds[curveIndex+1]
+		  );
 	  }
 
 	  if (t > 0.99) {
-	    curveIndex = (curveIndex + 1) % 10;
+	      curveIndex = (curveIndex + 1);// % strategy->length;
 	  }
 
-	//t = propulsion_followBezier(b, BACKWARD);
-
-	//propulsion_disableMotors();
+	  if (curveIndex == strategy->length) {
+		  propulsion_disableMotors();
+	  }
 
     /* USER CODE END WHILE */
 

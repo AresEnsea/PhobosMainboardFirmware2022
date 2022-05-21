@@ -41,7 +41,7 @@ Vector2 vector2_sum(Vector2 u, Vector2 v) {
 
 
 Vector2 vector2_diff(Vector2 u, Vector2 v) {
-    Vector2 diff = { v.x - u.x, v.y - u.y };
+    Vector2 diff = { u.x - v.x, u.y - v.y };
     return diff;
 }
 

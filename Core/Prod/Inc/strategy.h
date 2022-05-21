@@ -1,8 +1,12 @@
-/*#include "bezier.h"
+#include "bezier.h"
+#include "propulsion.h"
 
 typedef struct {
+	int length;
 	Bezier** path;
-	Action
+	Direction* directions;
+	float* speeds;
 
 } Strategy;
-*/
+
+Strategy* strategy_initialize();

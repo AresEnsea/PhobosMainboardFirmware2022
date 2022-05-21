@@ -1,7 +1,7 @@
 #include "drv8825.h"
 
 
-void drv8825_init(Stepper *stepper, uint16_t enablePin, 
+void drv8825_initialize(Stepper *stepper, uint16_t enablePin,
                   GPIO_TypeDef* enableGPIO, uint16_t dirPin, 
                   GPIO_TypeDef *dirGPIO, TIM_HandleTypeDef *timer, 
                   uint8_t channel) {

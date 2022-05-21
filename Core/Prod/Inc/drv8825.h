@@ -58,7 +58,7 @@ typedef enum {
  * @param timer Timer lié à la génération du signal PWM.
  * @param channel Numéro de canal utilisé du timer.
  */
-void drv8825_init(Stepper *stepper, 
+void drv8825_initialize(Stepper *stepper,
                   uint16_t enablePin, GPIO_TypeDef* enableGPIO, 
                   uint16_t dirPin, GPIO_TypeDef *dirGPIO, 
                   TIM_HandleTypeDef *timer, uint8_t channel);

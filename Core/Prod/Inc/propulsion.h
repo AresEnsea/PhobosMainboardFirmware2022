@@ -1,6 +1,9 @@
 /** 
  * @file propulsion.h
  */
+#ifndef _PROPULSION_
+#define _PROPULSION_
+
 #include "gpio.h"
 #include "tim.h"
 #include "robot.h"
@@ -74,4 +77,6 @@ void propulsion_updatePosition(float dt);
  * 
  * @param b Pointeur vers la courbe de Bézier à suivre. 
  */
-float propulsion_followBezier(Bezier* b, Direction dir);
+float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, float finalSpeed);
+
+#endif
