@@ -51,6 +51,26 @@ Bezier* bezier_new(float x1, float y1, float x2, float y2, float x3, float y3,
 
 
 /**
+ * Alloue de la mémoire pour stocker une courbe de Bézier. Elle devra être
+ * initialisée via `bezier_set` avant de pouvoir être utilisable.
+ */
+Bezier* bezier_newEmpty();
+
+
+/**
+ * Modifie une courbe de Bézier cubique à partir des points. Initialise
+ * également une LUT dont la taille est précisée en argument. Cette fonction
+ * est utile pour modifier une courbe de Bézier sans allouer davantage de
+ * mémoire.
+ *
+ * @param xn La coordonnée en abscisse du n-ième point.
+ * @param yn La coordonnée en ordonnée du n-ième point.
+ * @param lutLength La longueur de la LUT contenant les points précalculés.
+ */
+void bezier_set(Bezier* b, float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, int lutLength);
+
+
+/**
  * Affiche les points qui définissent la courbe de Bézier.
  * @param b Pointeur vers une courbe de Bezier.
  */

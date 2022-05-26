@@ -64,18 +64,24 @@ int ___io_putchar(int ch);
 #define R_MOTOR_EN_GPIO_Port GPIOC
 #define L_MOTOR_DIR_Pin GPIO_PIN_2
 #define L_MOTOR_DIR_GPIO_Port GPIOC
-#define LD2_Pin GPIO_PIN_5
-#define LD2_GPIO_Port GPIOA
+#define GREEN_LED_Pin GPIO_PIN_5
+#define GREEN_LED_GPIO_Port GPIOA
 #define L_ENCODER_A_Pin GPIO_PIN_6
 #define L_ENCODER_A_GPIO_Port GPIOA
 #define L_ENCODER_B_Pin GPIO_PIN_7
 #define L_ENCODER_B_GPIO_Port GPIOA
+#define TEAM_BUTTON_Pin GPIO_PIN_8
+#define TEAM_BUTTON_GPIO_Port GPIOC
 #define R_ENCODER_A_Pin GPIO_PIN_8
 #define R_ENCODER_A_GPIO_Port GPIOA
 #define R_ENCODER_B_Pin GPIO_PIN_9
 #define R_ENCODER_B_GPIO_Port GPIOA
+#define START_Pin GPIO_PIN_12
+#define START_GPIO_Port GPIOA
 #define R_MOTOR_DIR_Pin GPIO_PIN_11
 #define R_MOTOR_DIR_GPIO_Port GPIOC
+#define TEAM_LED_Pin GPIO_PIN_8
+#define TEAM_LED_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

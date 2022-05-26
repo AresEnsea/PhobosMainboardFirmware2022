@@ -11,6 +11,16 @@
 #include "drv8825.h"
 
 
+/** Définit les deux couleurs d'équipe. */
+typedef enum {
+    /** Jaune, gacuhe. */
+    YELLOW=0,
+
+    /** Violet, droite. */
+    PURPLE=1
+} Team;
+
+
 /** 
  * La structure Robot permet de stocker les états du robot ainsi que des 
  * structures liées au fonctionnement de certains de ses systèmes.
@@ -32,7 +42,17 @@ typedef struct {
 
     /** Vitesse mesurée par les codeuses. */
     float measuredSpeed;
+
+    /** Variables pour attendre la réalisation des actions à l'arrêt. */
+    bool waitingForOnSiteAction;
+
+    /** Variables pour attendre la réalisation des actions en mouvement. */
+    bool waitingForOnMoveAction;
+
+    /** Couleur d'équipe pour le match. */
+    Team team;
 } Robot;
+
 
 /**
  * Variable globale représentant le robot.

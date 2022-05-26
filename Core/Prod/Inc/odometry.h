@@ -4,7 +4,6 @@
 
 #include "robot.h"
 #include "tim.h"
-#include "config.h"
 #include <stdio.h>
 
 

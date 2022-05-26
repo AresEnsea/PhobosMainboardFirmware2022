@@ -3,6 +3,18 @@
 
 Bezier* bezier_new(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, int lutLength) {
     Bezier* b = (Bezier*) malloc(sizeof(Bezier));
+    bezier_set(b, x1, y1, x2, y2, x3, y3, x4, y4, lutLength);
+    return b;
+}
+
+
+Bezier* bezier_newEmpty() {
+    Bezier* b = (Bezier*) malloc(sizeof(Bezier));
+    return b;
+}
+
+
+void bezier_set(Bezier* b, float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, int lutLength) {
     b->p1 = vector2_new(x1, y1);
     b->p2 = vector2_new(x2, y2);
     b->p3 = vector2_new(x3, y3);
@@ -14,7 +26,6 @@ Bezier* bezier_new(float x1, float y1, float x2, float y2, float x3, float y3, f
         Vector2 eval = bezier_eval(b, t);
         b->lut[i] = eval;
     }
-    return b;
 }
 
 

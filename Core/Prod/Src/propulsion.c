@@ -94,7 +94,7 @@ float getRobotSpeed(float t, float angleError, Direction dir, float initialSpeed
 
     float speed = (dir==BACKWARD?-1:1) * slowDownFactor;
     if (initialSpeed < 1 && finalSpeed < 1)
-        speed *= 400*(1-t) + 20;
+        speed *= 600*(1-t) + 20;
     else
         speed *= initialSpeed*(1-t) + finalSpeed*t + 50;
 
@@ -117,8 +117,9 @@ void calculateMotorSpeeds(float* leftSpeed, float* rightSpeed, Bezier* b, float 
 void addCorrection(float* leftSpeed, float* rightSpeed, float angleError) {
     float correction = -angleError*200; // contre réaction
 
-    if (fabs(correction) > MAX_CORRECTION)
+    if (fabs(correction) > MAX_CORRECTION) {
         correction *= MAX_CORRECTION / abs(correction);
+    }
 
     DEBUG_PROPULSION("corr: %.1fmm\r\n", correction);
 
@@ -128,7 +129,7 @@ void addCorrection(float* leftSpeed, float* rightSpeed, float angleError) {
 
 
 // C'est ici que la magie a lieu !
-float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, float finalSpeed) {
+float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, float finalSpeed, bool reverse) {
     float t = bezier_project(b, robot.position, 0.0001); // (entre 0 et 1)
     Vector2 p = bezier_eval(b, t); // Point de la courbe le plus proche du robot
 
@@ -137,8 +138,16 @@ float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, floa
     // Erreur d'orientation
     float angleError = getAngleError(b, t, p, dir);
 
+    if (reverse) {
+    	angleError = 0;
+    }
+
     // Vitesse globale du robot
     float speed = getRobotSpeed(t, angleError, dir, initialSpeed, finalSpeed);
+
+    if (reverse) {
+    	speed *= -1;
+    }
 
     float leftSpeed, rightSpeed;
 

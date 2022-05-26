@@ -25,12 +25,16 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "config.h"
 #include "propulsion.h"
 #include "odometry.h"
 #include "robot.h"
 #include "bezier.h"
 #include "strategy.h"
 #include "serial.h"
+#include "lidar.h"
+#include "avoidance.h"
+#include "symetry.h"
 #include <stdio.h>
 #include <math.h>
 
@@ -75,7 +79,6 @@ int _write(int file, char *ptr, int len) {
 	return len;
 }
 
-uint8_t serialData[16];
 /* USER CODE END 0 */
 
 /**
@@ -117,83 +120,180 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM5_Init();
   MX_USART6_UART_Init();
+  MX_UART4_Init();
+  MX_UART5_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_Base_Start(&htim3);
   HAL_TIM_Base_Start_IT(&htim5);
 
-  //char test[] = "Hello, World!\r\n";
-
-  //serial_send(test, 15);
-
+  //HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
   printf("Initializing propulsion system...");
   propulsion_initialize();
-  HAL_Delay(500);
-  printf(" Done.\r\n");
-
-  printf("Enabling propulsion system...");
   propulsion_enableMotors();
-  HAL_Delay(500);
+  avoidance_initialize();
+  HAL_Delay(200);
   printf(" Done.\r\n");
 
+  //HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
   printf("Initializing strategy...");
   Strategy* strategy = strategy_initialize();
   int curveIndex = 0;
-  HAL_Delay(500);
+  int onSiteActionIndex = 0;
+  int onMoveActionIndex = 0;
+
+  robot.waitingForOnSiteAction = false;
+  robot.waitingForOnMoveAction = false;
+  robot.team = YELLOW;
+  float t = 0;
+
+  HAL_Delay(200);
   printf(" Done.\r\n");
+
+  //HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
+
+
+  //HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
+  printf("Initializing lidar...");
+  lidar_initialize();
+  HAL_Delay(200);
+  printf(" Done.\r\n");
+
+  bool waitingForMatchStart = true;
+
+  printf("Waiting for start...\r\n");
+
+  bool teamButtonVal = false;
+
+  while (waitingForMatchStart) {
+	  waitingForMatchStart = HAL_GPIO_ReadPin(START_GPIO_Port, START_Pin);
+
+	  if (HAL_GPIO_ReadPin(TEAM_BUTTON_GPIO_Port, TEAM_BUTTON_Pin) && !teamButtonVal) {
+		  switchTeam(strategy);
+	  }
+
+	  HAL_GPIO_WritePin(TEAM_LED_GPIO_Port, TEAM_LED_Pin, robot.team == PURPLE);
+	  teamButtonVal = HAL_GPIO_ReadPin(TEAM_BUTTON_GPIO_Port, TEAM_BUTTON_Pin);
+
+	  HAL_Delay(50);
+	  //printf("%d\r\n", teamButtonVal);
+	  //HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, teamButtonVal);
+  }
 
   printf("Initializing odometry...");
   Vector2 start = strategy->path[0]->p1;
   Vector2 startTangent = strategy->path[0]->p2;
-
   float startAngle = vector2_angle(vector2_diff(startTangent, start));
   odometry_setPosition(start.x, start.y);
   odometry_setAngle(startAngle);
   robot.measuredSpeed = 0;
-  float t = 0;
-  HAL_Delay(500);
+  HAL_Delay(200);
   printf(" Done.\r\n");
 
-
-  //Bezier* b = bezier_new(0, 0, 200, 0, 300, 0, 500, 0, 30);
-  //Bezier* b = bezier_new(125, 849, 799, 843, 1698, 1654, 1698, 202, 30);
+  printf("Go!\r\n");
 
   //odometry_setPosition(0, 0);
-  //odometry_setAngle(-M_PI/2);
+  //odometry_setAngle(0);
 
-  HAL_UART_Receive_IT(&huart6, serialData, 2);
+  HAL_UART_Receive_IT(&huart4, &lidarData, 1);
+  HAL_UART_Receive_IT(&huart6, &armData, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  //char* ptr = test;
+  /*while (1) {
+	  for (int i=0; i<16; i++) {
+		  printf("%d ", i);
+		  printf("(%d) ", lidar_timeSinceData[i]);
+	  }
+	  printf("\r\n");
+
+	  if (!lidar_frontIsClear()) {
+		  printf("Front stop!\r\n");
+	  }
+	  if (!lidar_backIsClear()) {
+		  printf("Back stop!\r\n");
+	  }
+
+	  HAL_Delay(100);
+  }*/
+
+  while (onSiteActionIndex < strategy->onSiteActionsLengths[0]) {
+	  uint8_t action = strategy->onSiteActions[0][onSiteActionIndex];
+	  serial_send(&action, 1, 6);
+	  robot.waitingForOnSiteAction = true;
+
+	  printf("Waiting for 0xFF...\r\n");
+	  printf("%d\r\n", robot.waitingForOnSiteAction);
+	  while (robot.waitingForOnSiteAction) {}
+	  printf("%d\r\n", robot.waitingForOnSiteAction);
+	  onSiteActionIndex++;
+  }
+
+  printf("About to move...\r\n");
 
   while (1) {
-	  //HAL_UART_Transmit(&huart6, (uint8_t *) ptr, 15, HAL_MAX_DELAY);
-	  //HAL_Delay(20);
+	  if (onMoveActionIndex < strategy->onMoveActionsLengths[curveIndex]
+              && !robot.waitingForOnMoveAction
+			  && !robot.waitingForOnSiteAction) {
+		  uint8_t action = strategy->onMoveActions[curveIndex][onMoveActionIndex];
+		  serial_send(&action, 1, 6);
+		  robot.waitingForOnMoveAction = true;
+	  }
 
-	  if (curveIndex < strategy->length) {
-		  DEBUG_PROPULSION("n: %d, ", curveIndex);
+	  avoidance_update(t, strategy->directions[curveIndex]);
+
+	  if (avoidanceState == PATH_CLEAR && curveIndex < strategy->length) {
 		  t = propulsion_followBezier(
 				  strategy->path[curveIndex],
 				  strategy->directions[curveIndex],
 				  strategy->speeds[curveIndex],
-				  strategy->speeds[curveIndex+1]
+				  strategy->speeds[curveIndex+1],
+				  false
+		  );
+	  } else if (avoidanceState == PATH_OBSTRUCTED) {
+		  propulsion_setSpeeds(0, 0);
+	  } else if (avoidanceState == BACKTRACKING) {
+		  t = propulsion_followBezier(
+				  strategy->path[curveIndex],
+				  strategy->directions[curveIndex],
+				  strategy->speeds[curveIndex],
+				  strategy->speeds[curveIndex+1],
+				  true
 		  );
 	  }
 
-	  if (t > 0.99) {
+	  if (t > 0.99 && !robot.waitingForOnMoveAction) {
 	      curveIndex = (curveIndex + 1);// % strategy->length;
+	      onSiteActionIndex = 0;
+	      while (onSiteActionIndex < strategy->onSiteActionsLengths[curveIndex]) {
+	    	  uint8_t action = strategy->onSiteActions[curveIndex][onSiteActionIndex];
+	    	  serial_send(&action, 1, 6);
+	    	  robot.waitingForOnSiteAction = true;
+
+	    	  while (robot.waitingForOnSiteAction) {
+	    		  propulsion_setSpeeds(0, 0);
+	    	  }
+	    	  onSiteActionIndex++;
+	      }
+	      onMoveActionIndex = 0;
 	  }
 
 	  if (curveIndex == strategy->length) {
-		  propulsion_disableMotors();
+		  break;
 	  }
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+  }
+
+  propulsion_disableMotors();
+  printf("Finished.\r\n");
+
+  while (1) {
+
   }
   /* USER CODE END 3 */
 }

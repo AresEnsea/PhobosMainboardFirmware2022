@@ -7,7 +7,6 @@
 #include "gpio.h"
 #include "tim.h"
 #include "robot.h"
-#include "config.h"
 #include "bezier.h"
 #include <stdio.h>
 
@@ -21,10 +20,12 @@ typedef enum {
     BACKWARD=-1
 } Direction;
 
+
 /**
  * Renvoie un angle entre -pi et pi à partir de l'angle fourni.
  */
 float standardAngle(float angle);
+
 
 /**
  * Initialse les deux moteurs pas-à-pas du bloc de propulsion.
@@ -77,6 +78,6 @@ void propulsion_updatePosition(float dt);
  * 
  * @param b Pointeur vers la courbe de Bézier à suivre. 
  */
-float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, float finalSpeed);
+float propulsion_followBezier(Bezier* b, Direction dir, float initialSpeed, float finalSpeed, bool reverse);
 
 #endif

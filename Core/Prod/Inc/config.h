@@ -8,13 +8,13 @@
 #include <math.h>
 
 typedef int bool;
-#define TRUE 1
-#define FALSE 0
+#define true 1
+#define false 0
 
 
 /******************************* Robot Select ********************************/
-#define ISPHOBOS
-// #define ISDEIMOS
+//#define ISPHOBOS
+#define ISDEIMOS
 
 
 /**************************** Config Age of bots *****************************/
@@ -22,8 +22,8 @@ typedef int bool;
 
 
 /***************************** Config propulsion *****************************/
-#define DEBUG_PROPULSION(format, args...) printf(format, ##args);
-// #define DEBUG_PROPULSION(format, args...) {};
+#define DEBUG_PROPULSION(format, args...) printf(format, ##args)
+//#define DEBUG_PROPULSION(format, args...) HAL_Delay(20);
 
 #define STEPS_PER_REV       200
 #define MICROSTEPS          32
@@ -43,8 +43,8 @@ typedef int bool;
 
 
 /****************************** Config odometry ******************************/
-// #define DEBUG_ODOMETRY(format, args...) printf(format, ##args);
-#define DEBUG_ODOMETRY(format, args...) {};
+//#define DEBUG_ODOMETRY(format, args...) printf(format, ##args)
+#define DEBUG_ODOMETRY(format, args...) {;}
 
 #define TICKS_PER_REV 8192
 
@@ -53,10 +53,17 @@ typedef int bool;
 	#define ENTRAXE_ODOMETRY 200.165586
 #endif
 #ifdef ISDEIMOS
-	#define ODOMETRY_RADIUS  27.245
-	#define ENTRAXE_ODOMETRY 182.8
+	#define ODOMETRY_RADIUS  26.9811
+//27.245
+	#define ENTRAXE_ODOMETRY 179.68306
 #endif
 
+
+/*********************************** Lidar ***********************************/
+
+#define LIDAR_THRESHOLD 40
+#define LIDAR_MAX_DISTANCE 60
+#define LIDAR_TIMEOUT 1000
 
 /******************************** Timer names ********************************/
 #define R_ENCODER htim1
