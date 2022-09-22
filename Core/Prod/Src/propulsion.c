@@ -1,7 +1,7 @@
 #include "propulsion.h"
 
 
-extern Robot robot;
+Robot robot;
 
 
 void propulsion_initialize() {

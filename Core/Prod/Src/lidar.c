@@ -1,5 +1,8 @@
 #include "lidar.h"
 
+int lidar_timeSinceData[16];
+uint8_t lidar_distances[16];
+
 void lidar_initialize() {
 	for (int i=0; i<16; i++) {
 		lidar_distances[i] = 255;

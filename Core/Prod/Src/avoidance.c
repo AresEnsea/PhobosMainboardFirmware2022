@@ -1,5 +1,9 @@
 #include "avoidance.h"
 
+AvoidanceState avoidanceState;
+Bezier* avoidanceCurve;
+float backtrackingAim;
+float avoidanceSpeedFactor;
 
 void avoidance_initialize() {
 	avoidanceState = PATH_CLEAR;

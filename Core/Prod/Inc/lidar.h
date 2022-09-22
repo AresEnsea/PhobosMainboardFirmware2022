@@ -8,8 +8,8 @@
 #include "propulsion.h"
 #include "serial.h"
 
-uint8_t lidar_distances[16];
-int lidar_timeSinceData[16];
+extern uint8_t lidar_distances[16];
+extern int lidar_timeSinceData[16];
 
 void lidar_initialize();
 

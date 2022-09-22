@@ -57,6 +57,6 @@ typedef struct {
 /**
  * Variable globale représentant le robot.
  */
-Robot robot;
+extern Robot robot;
 
 #endif

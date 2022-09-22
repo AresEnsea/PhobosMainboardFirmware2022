@@ -30,10 +30,10 @@ typedef enum {
 } AvoidanceState;
 
 
-AvoidanceState avoidanceState;
-Bezier* avoidanceCurve;
-float backtrackingAim;
-float avoidanceSpeedFactor;
+extern AvoidanceState avoidanceState;
+extern Bezier* avoidanceCurve;
+extern float backtrackingAim;
+extern float avoidanceSpeedFactor;
 
 
 void avoidance_initialize();

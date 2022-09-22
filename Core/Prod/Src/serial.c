@@ -1,4 +1,6 @@
 #include "serial.h"
+uint8_t lidarData;
+uint8_t armData;
 
 int serial_send(uint8_t *ptr, int len, int uartPort) {
 	if (uartPort == 4)

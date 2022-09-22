@@ -1,9 +1,6 @@
 #include "odometry.h"
 
 
-extern Robot robot;
-
-
 int16_t getRightEncoderCount() {
 	int16_t count = (int16_t) R_ENCODER.Instance->CNT;
 	R_ENCODER.Instance->CNT = 0;
